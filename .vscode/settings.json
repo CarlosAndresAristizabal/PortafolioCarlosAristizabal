@@ -1,0 +1,52 @@
+{
+	"liveServer.settings.fullReload": false,
+	"liveServer.settings.CustomBrowser": "chrome",
+	"liveServer.settings.useLocalIp": true,
+	"files.autoSave": "onFocusChange",
+	"workbench.colorTheme": "Dracula",
+	"editor.cursorBlinking": "expand",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.stickyScroll.enabled": true,
+	"editor.guides.bracketPairs": true,
+	"editor.guides.bracketPairsHorizontal": true,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"enableTelemetry": false,
+	"sync.gist": "a37b45a1387868a0fa94e86a41fd2763",
+	"editor.linkedEditing": true,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"window.zoomLevel": 1,
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"liveServer.settings.AdvanceCustomBrowserCmdLine": "msedge",
+	"editor.fontFamily": "Operator mono,Fira code, monospace",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"liveServer.settings.port": 5500,
+	"prettier.arrowParens": "always",
+	"prettier.bracketSpacing": true,
+	"prettier.htmlWhitespaceSensitivity": "css",
+	"prettier.insertPragma": false,
+	"prettier.bracketSameLine": true,
+	// "prettier.jsxBracketSameLine": false,
+	"prettier.jsxSingleQuote": false,
+	"prettier.proseWrap": "preserve",
+	"prettier.quoteProps": "as-needed",
+	"prettier.requirePragma": false,
+	"prettier.semi": true,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 2,
+	"prettier.trailingComma": "es5",
+	"prettier.useTabs": true,
+	"prettier.vueIndentScriptAndStyle": false,
+	"prettier.printWidth": 90,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	
+}
