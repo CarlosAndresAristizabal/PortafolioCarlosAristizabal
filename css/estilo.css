@@ -977,12 +977,15 @@ body {
 		padding: 0;
 		justify-content: space-evenly;
 	}
+	.inicio__nombre {
+		text-align: left;
+	}
 	.inicio__profecion {
 		text-align: left;
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 	.img_inicio {
-		max-width: 780px;
+		max-width: 480px;
 		width: 580px;
 	}
 	/*----------Section Sobre mi------------*/

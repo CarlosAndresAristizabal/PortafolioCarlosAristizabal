@@ -44,23 +44,23 @@ activeMenu.forEach(item => {
 ScrollReveal().reveal('.anima_bottom', {
     duration: 3000,
     origin: 'bottom',
-    distance: '-100px',
+    distance: '-100px', reset: true,
 });
 
 ScrollReveal().reveal('.anima_top', {
     duration: 4000,
     origin: 'top',
-    distance: '100px',
+    distance: '100px', reset: true,
 });
 ScrollReveal().reveal('.anima_left', {
     duration: 4000,
     origin: 'left',
-    distance: '-200px',
+    distance: '-200px', reset: true,
 });
 ScrollReveal().reveal('.anima_rigth', {
     duration: 4000,
     origin: 'rigth',
-    distance: '-300px',
+    distance: '-300px', reset: true,
 });
 
 modal1.addEventListener('click', e => {
