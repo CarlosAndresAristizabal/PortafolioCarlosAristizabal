@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Portafolio Carlos Aristizabal</title>
     <link rel="stylesheet" href="css/estilo.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -16,91 +15,128 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
 </head>
 
 <body>
-    <!-- fondo Principal -->
-    <div class="fondo__animado">
+    <!-- fondo Principal
+    <div class="fondo__animado ">
         <div class="fondo__cubo "></div>
         <div class="fondo__cubo "></div>
         <div class="fondo__cubo "></div>
         <div class="fondo__cubo "></div>
         <div class="fondo__cubo "></div>
         <div class="fondo__cubo "></div>
-    </div>
-    <header class="header">
-        <!-- menu de navegacion -->
-        <nav class="nav ">
-            <ul class="nav__lista " id="navegacion__lista">
-                <li class="nav__lista__item ">
-                    <a href="#inicio" class="nav__lista__link active activo">
-                        <span class="iconMenu"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="tituloMenu">Inicio</span>
-                    </a>
-                </li>
-                <li class="nav__lista__item">
-                    <a href="#acercaDeMi" class="nav__lista__link">
-                        <span class="iconMenu"><ion-icon name="person-outline"></ion-icon></span>
-                        <span class="tituloMenu">SOBRE MI</span>
-                    </a>
-                </li>
-                <li class="nav__lista__item">
-                    <a href="#portafolio" class="nav__lista__link">
-                        <span class="iconMenu"><ion-icon name="briefcase-outline"></ion-icon></span>
-                        <span class="tituloMenu">Portafolio</span>
-                    </a>
-                </li>
-                <li class="nav__lista__item">
-                    <a href="#contacto" class="nav__lista__link">
-                        <span class="iconMenu"><ion-icon name="call-outline"></ion-icon></span>
-                        <span class="tituloMenu">Contacto</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    </div> -->
+
+    <!-- menu de navegacion -->
+    <nav class="nav">
+        <input type="checkbox" name="hambuguer" id="check" />
+        <label for="check" class="checkbtn"><ion-icon name="grid-outline" size="large"></ion-icon></label>
+        <a href="#" class="logo">Portafolio</a>
+        <ul class="nav__lista " id="navegacion__lista">
+            <li class="nav__lista__item ">
+                <a href="#inicio" class="nav__lista__link activo">
+                    <span class="iconMenu"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="tituloMenu">Inicio</span>
+                </a>
+            </li>
+            <li class="nav__lista__item">
+                <a href="#acercaDeMi" class="nav__lista__link">
+                    <span class="iconMenu"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="tituloMenu">Sobre mi</span>
+                </a>
+            </li>
+            <li class="nav__lista__item">
+                <a href="#portafolio" class="nav__lista__link">
+                    <span class="iconMenu"><ion-icon name="briefcase-outline"></ion-icon></span>
+                    <span class="tituloMenu">Proyectos</span>
+                </a>
+            </li>
+            <li class="nav__lista__item">
+                <a href="#contacto" class="nav__lista__link">
+                    <span class="iconMenu"><ion-icon name="call-outline"></ion-icon></span>
+                    <span class="tituloMenu">Contacto</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
     <!-- setcion de inicio -->
-    <main class="main container">
-        <section id="inicio" class="section__inicio ">
-            <article class="incio__texto anima_left">
-                <h1 class="inicio__nombre anima_rigth">Carlos A. Aristizabal</h1>
-                <p class="inicio__profecion"> Desarrollador web (Front end / Back end)
-                    <br /> & Diseñador gráfico
-                </p>
-            </article>
-            <figure>
-                <img class="img_inicio anima_rigth lazyload" data-src="/img/yo.jpg" alt="imagen mia " />
-            </figure>
-        </section>
-        <section id="acercaDeMi" class="container section">
-            <article class="anima_rigth">
-                <h2 class=" titulo anima_bottom">SOBRE MI</h2>
-                <div class="union">
-                    <img src="/img/histo.png" class="img__Sobre anima_left" alt="imagen mia " />
-                    <p class="parrafo anima_left">Titulado como Tecnólogo en Producción
-                        Multimedia, Técnico en Operador de Computo con
-                        Énfasis en Diseño Gráfico, Técnico laboral de
-                        Mantenimiento de Computo, en Electrónica y además
-                        certificado en varios Cursos en Coursera, LinkedIn
-                        learning y el SENA enfocados en mi campo. <br><br>
-                        A nivel profesional tengo competencias y habilidades
-                        diversas dentro de tres aspectos principales: la
-                        Creación de recursos audiovisuales para optimizar
-                        todo tipo de comunicación gráfica y publicitaria; y
-                        en la Programación web (Front-end y back-end) y
-                        app's. <br><br>
-                        A nivel personal, considero que asumo las
-                        responsabilidades que se me asignan con todo el
-                        compromiso, con la facilidad de adaptarme al cambio
-                        y al trabajo en equipo; como también, destaco en ser
-                        recursivo por explorar soluciones alternativas a los
-                        problemas y buscar constantemente mantenerme
-                        actualizado en todos los campos mencionados de mi
-                        interés. <br><br>
-                    </p>
+    <main class="main container  ">
+        <section id="inicio" class="container ">
+            <article class="section__inicio anima_left">
+                <figure>
+                    <img class="img_inicio anima_rigth lazyload" data-src="/img/yo.jpg" alt="imagen mia " />
+                </figure>
+                <div class="text_Inicio">
+                    <h1 class="inicio__nombre anima_rigth">Carlos Andres Aristizabal Kenguan</h1>
+                    <h3 class="profecion anima_left">Desarrollador web Full Stack</h3>
+                    <div class="inicio__profecion">
+                        <p>
+                            <br>
+                            Soy un apasionado desarrollador web full stack con una sólida formación y con 3 años
+                            experiencia. mi enfoque se centra en crear soluciones tecnológicas eficientes y
+                            escalables
+                            que optimizan la experiencia del usuario y cumplan con los requisitos del negocio. Usando
+                            lenguajes de programación en <strong>Front-end</strong> como <strong>Html5</strong>,
+                            <strong>Css</strong> con el manejo del <strong>Back-end</strong> con
+                            <strong>JavaScript</strong>,
+                            <strong>Java</strong>, <strong>Python</strong> manejo de datos con<strong> MongoDB</strong>
+                            y <strong>MySql</strong> con sumiendos <strong>API's rest full</strong> y un control de
+                            veriones con <strong>Git y GitHub</strong> y proyectando el <strong> CI/CD</strong> con
+                            <strong>GitHub-Action</strong>, <strong>Docker</strong> y en la nube con
+                            <strong>AWS</strong>, y
+                            <strong>Jenkins</strong> y mucho más.
+                            <br>
+                            <br>
+                    </div>
                 </div>
-                <h3 class="subtitulos">Conocimientos:</h3>
+            </article>
+
+        </section>
+        <section id="acercaDeMi" class="container  section__inicio ">
+            <article class=" section anima_rigth"><br>
+                <br>
+                <h2 class=" titulo anima_bottom">SOBRE MI</h2>
+                <div class="union ">
+                    <figure>
+                        <img src="/img/histo.png" class="img__Sobre anima_left" alt="imagen mia " />
+                    </figure>
+                    <div class="text_Inicio">
+                        <p class="parrafo anima_left">Certificado como Developer Full Stack y titulado como Tecnólogo en
+                            Producción
+                            Multimedia, Técnico en Operador de Computo con
+                            Énfasis en Diseño Gráfico, Técnico laboral de
+                            Mantenimiento de Computo, en Electrónica y además
+                            certificado en varios Cursos en Coursera, LinkedIn
+                            learning y el SENA enfocados en mi campo. <br><br>
+                            A nivel personal, considero que asumo las
+                            responsabilidades que se me asignan con todo el
+                            compromiso, con la facilidad de adaptarme al cambio
+                            y al trabajo en equipo; como también, destaco en ser
+                            recursivo por explorar soluciones alternativas a los
+                            problemas y buscar constantemente mantenerme
+                            actualizado en todos los campos mencionados de mi
+                            interés. <br><br>
+
+                            * Desarrollo Frontend: dominio de tecnologías como Html5, Css3, Javascript (es6+), React.js,
+                            creando
+                            interfaces de usuario atractivas y funcionales.
+                            * Desarrollo Backend: experiencia sólida en el diseño y desarrollo de servidores utilizando
+                            tecnologías como Node.js, Express.js, Python y Java.
+                            * Base de datos: profundo conocimiento en el diseño y optimización de bases de datos
+                            relacionales
+                            (Mysql, Postgresql) y no relacionales (MongoDB).
+                            * Apis: creación y consumo de Apis Restfull, diseño y documentación con Swagger ⁄ OpenApi.
+                            * Control de versiones: uso experto de sistemas de control de versiones como Git, Github.
+                            * Despliegue y gestión: experiencia en implementación y administración de servidores
+                            utilizando
+                            Docker y orquestación con Github Actions y Jenkins, conocimientos en AWS.
+
+                        </p>
+                    </div>
+                </div>
+                <h3 class="subtitulos">Conocimientos técnicos:</h3>
                 <div class="contenedorIconos ">
                     <a href="https:/developer.mozilla.org/es/docs/Web/HTML" target="_blank">
                         <div class="tooltip top">
@@ -269,17 +305,17 @@
         </section>
         <section id="portafolio" class="section container">
             <articule class="anima_top">
-                <h2 class="titulo">Portafolio</h2>
+                <h2 class="titulo">Proyectos</h2>
                 <div class="flexcard anima_bottom">
-                    <div class="box anima_rigth abrirModalDiseno">
-                        <div class="box__container"></div>
-                        <div class="box__icon diseno"></div>
-                        <h1 class="box__titulo parrafo">Diseños</h1>
-                    </div>
                     <div class="box anima_top abrirModalWeb">
                         <div class="box__container "></div>
                         <div class="box__icon web"></div>
                         <h1 class="box__titulo parrafo">Web</h1>
+                    </div>
+                    <div class="box anima_rigth abrirModalDiseno">
+                        <div class="box__container"></div>
+                        <div class="box__icon diseno"></div>
+                        <h1 class="box__titulo parrafo">Diseños</h1>
                     </div>
                     <div class="box anima_left abrirModal3D">
                         <div class="box__container "></div>
@@ -301,8 +337,6 @@
                     <a href="https://www.facebook.com/Andymar14" target="_blank" class="icon_redes anima_bottom">
                         <ion-icon name="logo-facebook"></ion-icon>
                     </a>
-                    <a href="https://twitter.com/carlosaristi22" target="_blank" class="icon_redes anima_top"><ion-icon
-                            name="logo-twitter"></ion-icon></a>
                     <a href="https://www.linkedin.com/in/carlosaristizabal/" target="_blank"
                         class="icon_redes anima_bottom">
                         <ion-icon name="logo-linkedin"></ion-icon>
@@ -316,9 +350,8 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <p class="parrafo_footer"> Carlos Andres Aristizabal <br> Desarrollador Web & Diseñador
-                Gráfico</p>
-            <p class="parrafo_footer">&copy; Copyright 2023 | Todos los derechos reservados.</p>
+            <p class="parrafo_footer"> Carlos Andres Aristizabal Kenguan <br> Desarrollador Web Full Stack</p>
+            <p class="parrafo_footer">&copy; Copyright 2024 | Todos los derechos reservados.</p>
         </div>
     </footer>
 
@@ -1055,8 +1088,10 @@
     </section>
     <section class="CursoSeis">
         <div class="modal__container__curso">
+            <p class="modal__cerrar_curso">X</p>
             <h2 class="modal__titulo">
                 Preste sus Servicios de Forma Automatizada.</h2>
+
             <div class=" slider-container swiper ">
                 <div class="slider__content__img  swiper-wrapper">
                     <img class="slider-item swiper-slide"
@@ -1095,7 +1130,6 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-            <p class="modal__cerrar_curso">X</p>
         </div>
     </section>
     <section class="CursoSiete">
