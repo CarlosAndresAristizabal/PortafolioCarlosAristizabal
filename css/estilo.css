@@ -14,7 +14,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 }
 body {
 	width: 100%;
@@ -28,11 +28,11 @@ body {
 }
 .lazyloading {
 	opacity: 1;
-	transition: opacity 300ms;
-	-webkit-transition: opacity 300ms;
-	-moz-transition: opacity 300ms;
-	-ms-transition: opacity 300ms;
-	-o-transition: opacity 300ms;
+	transition: opacity 500ms;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-ms-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
 }
 .fondo__animado {
 	width: 100%;
@@ -198,6 +198,10 @@ body {
 	margin-right: 5%;
 	cursor: pointer;
 	display: none;
+	position: absolute;
+	display: flex;
+	flex-direction: row-reverse;
+	right: 0;
 }
 #check {
 	display: none;
@@ -210,13 +214,6 @@ body {
 	bottom: -5px;
 	width: 100%;
 }
-.checkbtn {
-	position: absolute;
-	display: flex;
-	flex-direction: row-reverse;
-	right: 0;
-}
-
 #check:checked ~ .nav__lista {
 	top: 100%;
 }
@@ -228,7 +225,7 @@ body {
 	flex-direction: column;
 	width: 100%;
 	gap: 1.5em;
-	padding-top: 70px;
+	padding-top: 75px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -236,12 +233,13 @@ body {
 }
 
 .inicio__nombre,
-.titulo {
+.titulo,
+.subtitulos {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	color: var(--colorSeleccion);
-	font-size: 1.5em;
+	font-size: 1.9em;
 	font-family: var(--font-titulo);
 	text-shadow: 0 0px 2px black;
 	letter-spacing: 0.02em;
@@ -274,7 +272,7 @@ body {
 .img_inicio {
 	display: flex;
 	margin: 0 auto;
-	max-width: 150px;
+	max-width: 250px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
@@ -294,7 +292,7 @@ body {
 .img__Sobre {
 	display: flex;
 	margin: 0 auto;
-	max-width: 200px;
+	max-width: 250px;
 	-webkit-filter: drop-shadow(0 0 10px var(--colorHover));
 	filter: drop-shadow(0 0 10px var(--colorHover));
 	padding: 3% 5%;
@@ -306,26 +304,14 @@ body {
 	font-size: 1.1em;
 	padding: 3% 5%;
 }
-.subtitulos {
-	width: 100%;
-	color: var(--colorSeleccion);
-	font-size: 1.5em;
-	font-family: var(--font-titulo);
-	text-shadow: 0 0px 2px var(--colorHover);
-	letter-spacing: 1px;
-	font-weight: 200;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 .contenedorIconos {
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 1em;
+	gap: 3.5em 1em;
 	padding: 2.5em 0;
 }
 .tooltip {
@@ -369,17 +355,7 @@ body {
 	left: 50%;
 	border-color: #0074b79d transparent transparent transparent;
 }
-.tooltip.bottom .tiptext {
-	margin-left: -50%;
-	top: 100%;
-	left: 50%;
-}
-.tooltip.bottom .tiptext::after {
-	top: -50%;
-	bottom: 100%;
-	left: 50%;
-	border-color: transparent transparent #0074b79d transparent;
-}
+
 .icons__img {
 	width: 80px;
 	height: 80px;
@@ -416,9 +392,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	gap: 15px;
-	padding: 2em 0;
+	justify-content: space-evenly;
+	gap: 25px;
+	padding: 2.5em 1em;
 }
 .box {
 	width: 250px;
