@@ -714,8 +714,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 1em;
-	width: 400px;
-	height: 320px;
+	width: max-content;
+	height: max-content;
 	padding: 1em;
 	background-color: var(--colorSegundario);
 	border: 2px solid var(--colorHover);
