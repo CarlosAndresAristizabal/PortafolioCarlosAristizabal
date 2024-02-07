@@ -15,7 +15,6 @@
 	text-decoration: none;
 	list-style: none;
 	/* outline: 1px solid red; */
-	text-justify: inter-word;
 }
 body {
 	width: 100%;
@@ -257,10 +256,10 @@ body {
 }
 .inicio__profecion {
 	padding: 3% 5%;
-	text-align: justify;
+	text-align: left;
 	color: var(--colorSegundario);
 	font-size: 1em;
-	letter-spacing: 0.04rem;
+	letter-spacing: 0.1em;
 	border: 1px solid #fff;
 	background-color: #1617189c;
 	box-shadow: 0px 0px 5px rgba(49, 47, 47, 0.871);
@@ -301,11 +300,11 @@ body {
 }
 .parrafo {
 	width: 100%;
-	letter-spacing: 0.04rem;
+	letter-spacing: 0.05em;
 	color: var(--colorSegundario);
 	font-size: 1.1em;
 	padding: 3% 5%;
-	text-align: justify;
+	text-align: left;
 }
 
 .contenedorIconos {
