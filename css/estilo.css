@@ -15,6 +15,7 @@
 	text-decoration: none;
 	list-style: none;
 	/* outline: 1px solid red; */
+	text-justify: inter-word;
 }
 body {
 	width: 100%;
@@ -304,6 +305,7 @@ body {
 	color: var(--colorSegundario);
 	font-size: 1.1em;
 	padding: 3% 5%;
+	text-align: justify;
 }
 
 .contenedorIconos {
