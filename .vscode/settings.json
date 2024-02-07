@@ -14,7 +14,7 @@
 	"sync.gist": "a37b45a1387868a0fa94e86a41fd2763",
 	"editor.linkedEditing": true,
 	"liveServer.settings.donotShowInfoMsg": true,
-	"window.zoomLevel": 1,
+	"window.zoomLevel": 0,
 	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},

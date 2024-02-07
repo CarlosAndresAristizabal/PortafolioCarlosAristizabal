@@ -14,7 +14,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 }
 body {
 	width: 100%;
@@ -261,7 +261,7 @@ body {
 	font-size: 1em;
 	letter-spacing: 0.1em;
 	border: 1px solid #fff;
-	background-color: #1617189c;
+	background-color: #1617186a;
 	box-shadow: 0px 0px 5px rgba(49, 47, 47, 0.871);
 	backdrop-filter: blur(10px);
 	border-radius: 15px;
@@ -305,6 +305,140 @@ body {
 	font-size: 1.1em;
 	padding: 3% 5%;
 	text-align: left;
+}
+
+.cardtabs {
+	width: 100%;
+	padding: 1em 0;
+	border-radius: 10px;
+	border: 1px solid #e3e3e3;
+	margin: 0 auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+}
+.tab {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	height: 10%;
+	padding: 1em;
+	gap: 0.1em;
+	background-color: #2e2e2e;
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-ms-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+}
+
+.cardtabs input {
+	display: none;
+}
+/* .tabs {
+	position: relative;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	display: none;
+} */
+
+.tabs input + label:hover {
+	color: #777;
+}
+/* .tabs .tabsShadow {
+	width: 100%;
+	padding: 10px;
+	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+	box-sizing: border-box;
+	position: absolute;
+	height: 35px;
+	z-index: 0;
+	top: 0;
+	pointer-events: none;
+} */
+
+.content .item {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+	position: absolute;
+	padding: 10px 20px;
+}
+
+#tab-1:checked ~ section #content-1,
+#tab-2:checked ~ section #content-2,
+#tab-3:checked ~ section #content-3,
+#tab-4:checked ~ section #content-4,
+#tab-5:checked ~ section #content-5,
+#tab-6:checked ~ section #content-6,
+#tab-7:checked ~ section #content-7 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.tab + label {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	min-width: 60px;
+	padding: 1em 1.5em 1em 0.5em;
+	box-shadow: 1px 1px 2px 1px #231f20;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 0.8em;
+	transition: all 0.3s;
+	background: #151414;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.content {
+	margin: 0px auto;
+	text-align: left;
+	line-height: 20px;
+	height: 240px;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+	display: block;
+	padding: 1.25rem;
+	z-index: 2;
+	border-top: 1px solid #3b3d3f;
+	background: hsl(232deg 16% 15%);
+	position: relative;
+}
+.content p {
+	margin: 10px 15px 10px 0;
+	letter-spacing: 0.75px;
+	font-size: 14pt;
+	font-style: normal;
+	color: #f0f2fc;
+	line-height: 30px;
+	margin-top: 10pt;
+	font-family: 'freight-display-pro';
+	font-weight: 300 !important;
+}
+
+#tab-1:checked + label,
+#tab-2:checked + label,
+#tab-3:checked + label,
+#tab-4:checked + label,
+#tab-5:checked + label,
+#tab-6:checked + label,
+#tab-7:checked + label {
+	background-color: var(--colorSeleccion);
+	color: black;
+	font-weight: bold;
+	letter-spacing: 0.01em;
+	box-shadow: 0px 0px 10px 0px hsl(17.72deg 100% 70% / 70%);
 }
 
 .contenedorIconos {
@@ -568,21 +702,18 @@ body {
 }
 .modal__container,
 .modal__container__curso {
-	width: 80%;
-	height: 85%;
+	width: 90%;
+	height: 90%;
 	background-color: var(--colorSegundario);
-	border-radius: 6px;
 	padding: 1em;
+	border-radius: 6px;
 	margin: auto;
-	transform: var(--transform);
-	transition: var(--transition);
+	text-align: center;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	-ms-border-radius: 6px;
 	-o-border-radius: 6px;
 	overflow: hidden;
-	color: black;
-	text-align: center;
 }
 .modal__container__curso {
 	height: auto;
@@ -626,19 +757,18 @@ body {
 .galeria {
 	display: flex;
 	flex-flow: wrap;
-	width: 100%;
-	height: 100%;
+	height: 90%;
 	justify-content: center;
-	gap: 0.8em;
+	gap: 1em;
+	padding: 1em 0;
 	overflow: hidden;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
-	padding: 1em 0;
 }
 .galeria__figure,
 .galeria__img {
 	display: flex;
-	width: 300px;
+	max-width: auto;
 	position: relative;
 	overflow: hidden;
 	object-fit: cover;
@@ -671,7 +801,7 @@ body {
 	color: var(--colorSegundario);
 	opacity: 0;
 	width: 100%;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	margin: 0;
 	padding: 5px 0;
 	text-align: center;
@@ -885,9 +1015,7 @@ body {
 	.nav__lista__link:hover:after {
 		width: 100%;
 	}
-	.checkbtn {
-		display: none;
-	}
+
 	.activo {
 		color: #0074b7;
 		width: 100%;

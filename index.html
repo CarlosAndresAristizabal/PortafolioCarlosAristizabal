@@ -61,12 +61,12 @@
         </ul>
     </nav>
 
-    <!-- setcion de inicio -->
+    <!-- sección de inicio -->
     <main class="main container  ">
         <section id="inicio" class="container ">
             <article class="section__inicio ">
                 <figure>
-                    <img class="img_inicio  lazyload" data-src="/img/yo.jpg" alt="imagen mia " />
+                    <img class="img_inicio  lazyload lazyloading" data-src="/img/yo.jpg" alt="imagen mia " />
                 </figure>
                 <div class="text_Inicio">
                     <h1 class="inicio__nombre ">Carlos Andres Aristizabal Kenguan</h1>
@@ -100,7 +100,7 @@
                 <h2 class=" titulo ">Sobre mi</h2>
                 <div class="union ">
                     <figure>
-                        <img src="/img/histo.png" class="img__Sobre  lazyload" alt="imagen mia " />
+                        <img src="/img/histo.png" class="img__Sobre  lazyload lazyloading" alt="imagen mia " />
                     </figure>
                     <div class="text_Inicio">
                         <p class="parrafo ">Certificado como Developer Full Stack y titulado como Tecnólogo en
@@ -137,50 +137,128 @@
                     </div>
                 </div>
                 <h3 class="subtitulos">Conocimientos técnicos:</h3>
+                <div class="containerTabs">
+                    <div class="cardtabs ">
+                        <input id="tab-1" type="radio" class="tab tab-selector" checked="checked" name="tab" />
+                        <label for="tab-1" class="tab  ">FrontEnd</label>
+                        <input id="tab-2" type="radio" class="tab tab-selector" name="tab" />
+                        <label for="tab-2" class="tab ">BackEnd</label>
+                        <input id="tab-3" type="radio" class="tab tab-selector" name="tab" />
+                        <label for="tab-3" class="tab ">BD</label>
+                        <input id="tab-4" type="radio" class="tab tab-selector" name="tab" />
+                        <label for="tab-4" class="tab ">Apis</label>
+                        <input id="tab-5" type="radio" class="tab tab-selector" name="tab" />
+                        <label for="tab-5" class="tab ">Version</label>
+                        <input id="tab-6" type="radio" class="tab tab-selector" name="tab" />
+                        <label for="tab-6" class="tab ">CI/CD</label>
+                        <input id="tab-7" type="radio" class="tab tab-selector" name="tab" />
+                        <label for="tab-7" class="tab ">Diseño</label>
+                    </div>
+                    <section class="content">
+                        <div class="item" id="content-1">
+                            <h2 class="tab-title tab-primary">Sweep + Slide Dog Toy</h2>
+                            <p>
+                                <span class="numit">1</span> The Sweep + Slide is an indoor dog toy with a sleek
+                                base designed to glide across any floor. Not only does this toy stimulate your
+                                dog's natural chase instincts, but it also sweeps away floor dust and grime with
+                                a replaceable sweeper bottom cover.
+                            </p>
+                        </div>
+                        <div class="item" id="content-2">
+                            <h2 class="tab-title tab-success">Tab 2</h2>
+                            <p>
+                                <span class="numit">2</span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor
+                            </p>
+                        </div>
+                        <div class="item" id="content-3">
+                            <h2 class="tab-title tab-default">Tab 3</h2>
+                            <p>
+                                <span class="numit">3</span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis
+                            </p>
+                        </div>
+                        <div class="item" id="content-4">
+                            <h2 class="tab-title tab-warning">Tab 4</h2>
+                            <p>
+                                <span class="numit">4</span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="item" id="content-5">
+                            <h2 class="tab-title tab-info">Tab 5</h2>
+                            <p>
+                                <span class="numit">4</span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="item" id="content-6">
+                            <h2 class="tab-title tab-warning">Tab 6</h2>
+                            <p>
+                                <span class="numit">4</span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="item" id="content-7">
+                            <h2 class="tab-title tab-warning">Tab 7</h2>
+                            <p>
+                                <span class="numit">4</span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                </div>
                 <div class="contenedorIconos ">
                     <a href="https:/developer.mozilla.org/es/docs/Web/HTML" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload " data- src="/img/programas/html.png" alt="html"
-                                name="html5">
+                            <img class="icons__img  lazyload lazyloading " data- src="/img/programas/html.png"
+                                alt="html" name="html5">
                             <span class="tiptext">Html</span>
                         </div>
                     </a>
                     <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/css.png" alt="css" name="css">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/css.png" alt="css"
+                                name="css">
                             <span class="tiptext">Css</span>
                         </div>
                     </a>
                     <a href="https://developer.mozilla.org/es/docs/Web/JAVASCRIPT" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/javascript.png" alt="javascript"
-                                name="javascript">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/javascript.png"
+                                alt="javascript" name="javascript">
                             <span class="tiptext">JavaScript</span>
                         </div>
                     </a>
                     <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/boostrap.png" alt="boostrap"
-                                name="boostrap">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/boostrap.png"
+                                alt="boostrap" name="boostrap">
                             <span class="tiptext">Bosstrap</span>
                         </div>
                     </a>
                     <a href="https://sass-lang.com/documentation/" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/sass.png" alt="sass" name="sass">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/sass.png" alt="sass"
+                                name="sass">
                             <span class="tiptext">Sass</span>
                         </div>
                     </a>
                     <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/tailwind.png" alt="tailwind"
-                                name="tailwind">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/tailwind.png"
+                                alt="tailwind" name="tailwind">
                             <span class="tiptext">Tailwind</span>
                         </div>
                     </a>
                     <a href="https://materializecss.com/about.html" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/materialize.png"
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/materialize.png"
                                 alt="materialize" name="materialize">
                             <span class="tiptext">Materialize</span>
                         </div>
@@ -188,111 +266,112 @@
                     <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/Tools_and_setup/Using_Github_pages"
                         target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/github.png" alt="github"
-                                name="github">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/github.png"
+                                alt="github" name="github">
                             <span class="tiptext">GitHub</span>
                         </div>
                     </a>
                     <a href="https://wordpress.com/es/" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/wordpress.png" alt="wordpress"
-                                name="wordpress">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/wordpress.png"
+                                alt="wordpress" name="wordpress">
                             <span class="tiptext">Wordpress</span>
                         </div>
                     </a>
                     <a href="https://www.mysql.com/" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/mysql.png" alt="mysql"
-                                name="mysql">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/mysql.png"
+                                alt="mysql" name="mysql">
                             <span class="tiptext">MySql</span>
                         </div>
                     </a>
                     <a href="https://www.java.com/es/" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/java.png" alt="java" name="java">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/java.png" alt="java"
+                                name="java">
                             <span class="tiptext">Java</span>
                         </div>
                     </a>
                     <a href="https://www.python.org/" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/python.png" alt="python"
-                                name="python">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/python.png"
+                                alt="python" name="python">
                             <span class="tiptext">Python</span>
                         </div>
                     </a>
                     <a href="https://www.android.com/intl/es_es/" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/android.png" alt="android"
-                                name="android">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/android.png"
+                                alt="android" name="android">
                             <span class="tiptext">Android</span>
                         </div>
                     </a>
                     <a href="https://www.coreldraw.com/la/" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/corel-draw-color.png"
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/corel-draw-color.png"
                                 alt="corel-draw" name="corel-draw">
                             <span class="tiptext">Corel Draw</span>
                         </div>
                     </a>
                     <a href="https://www.adobe.com/co/products/photoshop.html" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/photoshop.png" alt="photoshop"
-                                name="photoshop">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/photoshop.png"
+                                alt="photoshop" name="photoshop">
                             <span class="tiptext">Photoshop</span>
                         </div>
                     </a>
                     <a href="https://www.adobe.com/co/products/illustrator.html" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/illustrator.png"
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/illustrator.png"
                                 alt="illustrator" name="illustrator">
                             <span class="tiptext">Illustrator</span>
                         </div>
                     </a>
                     <a href="https://helpx.adobe.com/co/xd/get-started.html" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/adobe-XD.png" alt="adobeXD"
-                                name="adobeXD">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/adobe-XD.png"
+                                alt="adobeXD" name="adobeXD">
                             <span class="tiptext">Adobe-XD</span>
                         </div>
                     </a>
                     <a href="https://latinoamerica.autodesk.com/products/3ds-max/overview?term=1-YEAR&tab=subscription"
                         target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/3dmax.png" alt="3dmax"
-                                name="3dmax">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/3dmax.png"
+                                alt="3dmax" name="3dmax">
                             <span class="tiptext">3Dmax</span>
                         </div>
                     </a>
                     <a href="https://www.figma.com/" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/figma.png" alt="figma"
-                                name="figma">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/figma.png"
+                                alt="figma" name="figma">
                             <span class="tiptext">Figma</span>
                         </div>
                     </a>
                     <a href="https://es.wix.com/" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/wix.png" alt="wix"
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/wix.png" alt="wix"
                                 name="wix"><span class="tiptext">Wix</span>
                         </div>
                     </a>
                     <a href="https://articulate.com/360/storyline" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/storyline.png" alt="storyline"
-                                name="storyline">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/storyline.png"
+                                alt="storyline" name="storyline">
                             <span class="tiptext">storyline</span>
                         </div>
                     </a>
                     <a href="https://www.sketchup.com/es" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/sketchup.png" alt="sketchup"
-                                name="sketchup">
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/sketchup.png"
+                                alt="sketchup" name="sketchup">
                             <span class="tiptext">Sketchup</span>
                         </div>
                     </a>
                     <a href="https://www.chaos.com/es/vray/sketchup" target="_blank">
                         <div class="tooltip top ">
-                            <img class="icons__img  lazyload" data-src="/img/programas/Vray.png" alt="vyray"
+                            <img class="icons__img  lazyload lazyloading" data-src="/img/programas/Vray.png" alt="vyray"
                                 name="vyray">
                             <span class="tiptext">Vray</span>
                         </div>
@@ -358,208 +437,219 @@
             <h2 class="modal__titulo">¡Bienvenido a los Diseño!</h2>
             <div class="galeria">
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/aviso_luminoso_mamanena.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/aviso_luminoso_mamanena.jpg"
                         alt="aviso_luminoso_mamanena">
                     <figcaption class="galeria__caption">Aviso luminoso mamanena</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/certificado_iela.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/certificado_iela.jpg"
                         alt="certificado_iela">
                     <figcaption class="galeria__caption">Certificado IELA</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/frutos_el_manantial.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/frutos_el_manantial.jpg"
                         alt="frutos_el_manantial">
                     <figcaption class="galeria__caption">Frutos El Manantial</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/logo_de_multirepuesto.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/logo_de_multirepuesto.jpg"
                         alt="logo_de_multirepuesto">
                     <figcaption class="galeria__caption">Logo Multirepuesto</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/microperforados_gobierno_del_cesar.jpg"
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/microperforados_gobierno_del_cesar.jpg"
                         alt="microperforados_gobierno_del_cesar">
                     <figcaption class="galeria__caption">Microperforados Gobierno del Cesar</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-
+                    <img class="galeria__img  lazyload lazyloading" data-
                         src="/img/Diseno/microperforados_puerta_iglesia_pentecostal.jpg"
                         alt="microperforados_puerta_iglesia_pentecostal">
                     <figcaption class="galeria__caption">Microperforados Iglesia Pentecosatal</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/pedon_olimpiadas_iela.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/pedon_olimpiadas_iela.jpg"
                         alt="pedon_olimpiadas_iela">
                     <figcaption class="galeria__caption">Pendón Olimpiadas IELA</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/pedon_publicitario.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/pedon_publicitario.jpg"
                         alt="pedon_publicitario">
                     <figcaption class="galeria__caption">Pendón Publicitario Soporte y Mantenimiento</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/pedon_publicitario1.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/pedon_publicitario1.jpg"
                         alt="pedon_publicitario1">
                     <figcaption class="galeria__caption">Pendón Publicitario Soporte Y Mantenimiento PC</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img lazyload" data-src="/img/Diseno/pedon_quinceañero.jpg"
+                    <img class="galeria__img lazyload lazyloading" data-src="/img/Diseno/pedon_quinceañero.jpg"
                         alt="pedon_quinceañero">
                     <figcaption class="galeria__caption">Pendón Quinceañero</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/vinilo_tipicos_sanjose.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/vinilo_tipicos_sanjose.jpg"
                         alt="vinilo_tipicos_sanjose">
                     <figcaption class="galeria__caption">Publicidad Tipicos San José</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img lazyload" data-src="/img/Diseno/tipicos_sanjose_redes.jpg"
+                    <img class="galeria__img lazyload lazyloading" data-src="/img/Diseno/tipicos_sanjose_redes.jpg"
                         alt="tipicos_sanjose_redes">
                     <figcaption class="galeria__caption">Publicidad para Redes Sociales Tipicos San José</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/resultado_tipicos_sanjose1.jpg"
-                        alt="resultado_tipicos_sanjose1">
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/resultado_tipicos_sanjose1.jpg" alt="resultado_tipicos_sanjose1">
                     <figcaption class="galeria__caption">Resultado de Publicidad Tipicos San José</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/resultado_tipicos_sanjose2.jpg"
-                        alt="resultado_tipicos_sanjose1">
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/resultado_tipicos_sanjose2.jpg" alt="resultado_tipicos_sanjose1">
                     <figcaption class="galeria__caption">Resultado de Publicidad Tipicos San José</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/vinilo_comercializadora.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/vinilo_comercializadora.jpg"
                         alt="vinilo_comercializadora">
                     <figcaption class="galeria__caption">Vinilo Cormecializadora</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/vinilo_jugo.jpg" alt="vinilo_jugo">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/vinilo_jugo.jpg"
+                        alt="vinilo_jugo">
                     <figcaption class="galeria__caption">Vinilo de Jugos</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/vinilo_jugo1.jpg" alt="vinilo_jugo1">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/vinilo_jugo1.jpg"
+                        alt="vinilo_jugo1">
                     <figcaption class="galeria__caption">Vinilo de Jugos de un Restaurante</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/vinilo_jugo2.jpg" alt="vinilo_jugo2">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/vinilo_jugo2.jpg"
+                        alt="vinilo_jugo2">
                     <figcaption class="galeria__caption">Vinilo de Jugos de un Restaurante</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/vinilos_tienda_escolar_el_carmelo.jpg"
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/vinilos_tienda_escolar_el_carmelo.jpg"
                         alt="vinilos_tienda_escolar_el_carmelo">
                     <figcaption class="galeria__caption">Vinilo Tienda Escolar Evento del Colegio Parroquial El Carmelo
                     </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_alcaldia_chiriguana.jpg"
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_alcaldia_chiriguana.jpg"
                         alt="samblasting_alcaldia_chiriguana  ">
                     <figcaption class="galeria__caption">Diseño para Samblasting Alcadia de Chiriguana</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_alcaldia_de_astrea.jpg"
-                        alt="samblasting_alcaldia_de_astrea">
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_alcaldia_de_astrea.jpg" alt="samblasting_alcaldia_de_astrea">
                     <figcaption class="galeria__caption">Diseño para Samblasting Alcadia de Astrea</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_alcaldia_de_becerril.jpg"
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_alcaldia_de_becerril.jpg"
                         alt="samblasting_alcaldia_de_becerril">
                     <figcaption class="galeria__caption">Diseño para Samblasting Alcadia de Becerril</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_alcaldia_de_fonseca.jpg"
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_alcaldia_de_fonseca.jpg"
                         alt="samblasting_alcaldia_de_fonseca">
                     <figcaption class="galeria__caption">Diseño para Samblasting Alcadia de Fonseca</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-
+                    <img class="galeria__img  lazyload lazyloading" data-
                         src="/img/Diseno/samblasting_alcaldia_de_la_jagua_de_ibirico.jpg"
                         alt="samblasting_alcaldia_de_la_jagua_de_ibirico">
                     <figcaption class="galeria__caption">Diseño para Samblasting Alcadia de la Jagua de Ibirico
                     </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_alcaldia_de_la_paz.jpg"
-                        alt="samblasting_alcaldia_de_la_paz">
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_alcaldia_de_la_paz.jpg" alt="samblasting_alcaldia_de_la_paz">
                     <figcaption class="galeria__caption">Diseño para Samblasting Alcadiade la Paz</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_alcaldia_de_sandiego.jpg"
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_alcaldia_de_sandiego.jpg"
                         alt="samblasting_alcaldia_de_sandiego">
                     <figcaption class="galeria__caption">Diseño para Samblasting Alcadia de San Diego</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_alcaldia_el_molino.jpg"
-                        alt="samblasting_alcaldia_el_molino">
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_alcaldia_el_molino.jpg" alt="samblasting_alcaldia_el_molino">
                     <figcaption class="galeria__caption">Diseño para Samblasting Alcadia El Molino</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_clinica_codazzi.jpg"
-                        alt="samblasting_clinica_codazzi">
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_clinica_codazzi.jpg" alt="samblasting_clinica_codazzi">
                     <figcaption class="galeria__caption">Diseño para Samblasting Clinica Codazzi</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-
+                    <img class="galeria__img  lazyload lazyloading" data-
                         src="/img/Diseno/samblasting_con_progreso_gana_el_pueblo.jpg"
                         alt="samblasting_con_progreso_gana_el_pueblo">
                     <figcaption class="galeria__caption">Diseño para Samblasting Con Progreso Gana el Pueblo
                     </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_dra_martha_paredes.jpg"
-                        alt="samblasting_dra_martha_paredes">
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_dra_martha_paredes.jpg" alt="samblasting_dra_martha_paredes">
                     <figcaption class="galeria__caption">Diseño para Samblasting Dra Martha Paredes</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_el_buen_pastor.jpg"
-                        alt="samblasting_el_buen_pastor">
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_el_buen_pastor.jpg" alt="samblasting_el_buen_pastor">
                     <figcaption class="galeria__caption">Diseño para Samblasting El Buen Pastor</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_la_gloria.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/samblasting_la_gloria.jpg"
                         alt="samblasting_la_gloria">
                     <figcaption class="galeria__caption">Diseño para Samblasting La Gloria</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-
+                    <img class="galeria__img  lazyload lazyloading" data-
                         src="/img/Diseno/samblasting_laboratorio_clinico_reahs_ips.jpg"
                         alt="samblasting_laboratorio_clinico_reahs_ips">
                     <figcaption class="galeria__caption">Diseño para Samblasting Laboratorio Clinico REAHS ips
                     </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_puertas_oficinas.jpg"
-                        alt="samblasting_puertas_oficinas">
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_puertas_oficinas.jpg" alt="samblasting_puertas_oficinas">
                     <figcaption class="galeria__caption">Diseño para Samblasting Puertas de Oficinas</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_salon_frances.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/samblasting_salon_frances.jpg"
                         alt="samblasting_salon_frances">
                     <figcaption class="galeria__caption">Diseño para Samblasting Salón Frances</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_sanmartin.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/samblasting_sanmartin.jpg"
                         alt="samblasting_sanmartin">
                     <figcaption class="galeria__caption">Diseño para Samblasting San Martin</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_sofia_hotel.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/samblasting_sofia_hotel.jpg"
                         alt="samblasting_sofia_hotel">
                     <figcaption class="galeria__caption">Diseño para Samblasting Sofia Hotel </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_sohec.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/Diseno/samblasting_sohec.jpg"
                         alt="samblasting_sohec">
                     <figcaption class="galeria__caption">Diseño para Samblasting SOHEC</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data- src="/img/Diseno/samblasting_un_paso_de_oportunidades.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-
+                        src="/img/Diseno/samblasting_un_paso_de_oportunidades.jpg"
                         alt="samblasting_un_paso_de_oportunidades">
                     <figcaption class="galeria__caption">Diseño para Samblasting Logo Un Paso de Oportunidades
                     </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/Diseno/samblasting_una_vision_diferente.png"
+                    <img class="galeria__img  lazyload lazyloading"
+                        data-src="/img/Diseno/samblasting_una_vision_diferente.png"
                         alt="samblasting_una_vision_diferente">
                     <figcaption class="galeria__caption">Diseño para Samblasting Una Vision Diferente</figcaption>
                 </figure>
@@ -573,7 +663,7 @@
             <div class="containerCards">
                 <div class="card abrirModalCrusoUno">
                     <div class="cardImg">
-                        <img class="lazyload card__img"
+                        <img class="lazyload lazyloading card__img"
                             data-src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva1.JPG"
                             alt="Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes">
                     </div>
@@ -590,7 +680,7 @@
                 </div>
                 <div class="card abrirModalCrusoDos">
                     <div class="cardImg">
-                        <img class="lazyload card__img"
+                        <img class="lazyload lazyloading card__img"
                             data-src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva1.JPG"
                             alt="Mockup_Cree_su_Plan_de _Comunicacion">
                     </div>
@@ -608,7 +698,7 @@
                 </div>
                 <div class="card abrirModalCrusoTres">
                     <div class="cardImg">
-                        <img class="lazyload card__img"
+                        <img class="lazyload lazyloading card__img"
                             data-src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva1.JPG"
                             alt="Mockup_Maneje_Eficientemente_sus_Invetarios">
                     </div>
@@ -626,7 +716,7 @@
                 </div>
                 <div class="card abrirModalCrusoCuatro">
                     <div class="cardImg">
-                        <img class="lazyload card__img"
+                        <img class="lazyload lazyloading card__img"
                             data-src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva1.JPG"
                             alt="Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados">
                     </div>
@@ -643,7 +733,7 @@
                 </div>
                 <div class="card abrirModalCrusoCinco">
                     <div class="cardImg">
-                        <img class="lazyload card__img"
+                        <img class="lazyload lazyloading card__img"
                             data-src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva1.JPG"
                             alt="Mockup_Potencializa_el_Uso_del_CRM">
                     </div>
@@ -660,7 +750,7 @@
                 </div>
                 <div class="card abrirModalCrusoSeis">
                     <div class="cardImg">
-                        <img class="lazyload card__img"
+                        <img class="lazyload lazyloading card__img"
                             data-src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva1.JPG"
                             alt="Mockup_Preste_sus_Servicios_de_Forma_Automatizada">
                     </div>
@@ -677,7 +767,7 @@
                 </div>
                 <div class="card abrirModalCrusoSiete">
                     <div class="cardImg">
-                        <img class="lazyload card__img"
+                        <img class="lazyload lazyloading card__img"
                             data-src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva1.JPG"
                             alt="Mockup_Branded_Content">
                     </div>
@@ -694,7 +784,7 @@
                 </div>
                 <div class="card abrirModalCrusoOcho">
                     <div class="cardImg">
-                        <img class="lazyload card__img"
+                        <img class="lazyload lazyloading card__img"
                             data-src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva1.JPG"
                             alt="Mockup_Como_Hacer_Contratos_con_sus_Clientes">
                     </div>
@@ -711,7 +801,7 @@
                 </div>
                 <div class="card abrirModalCrusoNueve">
                     <div class="cardImg">
-                        <img class="lazyload card__img"
+                        <img class="lazyload lazyloading card__img"
                             data-src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva1.JPG"
                             alt="Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC">
                     </div>
@@ -735,118 +825,126 @@
             <h2 class="modal__titulo">¡Bienvenidos a los proyectos en 3D!</h2>
             <div class="galeria">
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/local_de_ropa.jpg" alt="local_de_ropa">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/local_de_ropa.jpg"
+                        alt="local_de_ropa">
                     <figcaption class="galeria__caption">Local de Ropa Mobiliario</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/local_de_ropa1.jpg" alt="local_de_ropa">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/local_de_ropa1.jpg"
+                        alt="local_de_ropa">
                     <figcaption class="galeria__caption">Local de Ropa Mobiliario</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/local_de_ropa2.jpg" alt="local_de_ropa">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/local_de_ropa2.jpg"
+                        alt="local_de_ropa">
                     <figcaption class="galeria__caption">Local de Ropa Mobiliario</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/local_de_ropa3.jpg" alt="local_de_ropa">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/local_de_ropa3.jpg"
+                        alt="local_de_ropa">
                     <figcaption class="galeria__caption">Local de Ropa Mobiliario</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/modulo_de_vidrio.jpg" alt="modulo_de_vidrio">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/modulo_de_vidrio.jpg"
+                        alt="modulo_de_vidrio">
                     <figcaption class="galeria__caption">Modulo de Vidrio</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/puerta_vidrio1.jpg" alt="puerta_de_vidrio">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/puerta_vidrio1.jpg"
+                        alt="puerta_de_vidrio">
                     <figcaption class="galeria__caption">Puerta de Entrada de Vidrio</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/puerta_vidrio2.jpg" alt="puerta_de_vidrio">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/puerta_vidrio2.jpg"
+                        alt="puerta_de_vidrio">
                     <figcaption class="galeria__caption">Puerta de Entrada de Vidrio</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/puertas_electricas_sohec.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/puertas_electricas_sohec.jpg"
                         alt="puertas_electricas_sohec">
                     <figcaption class="galeria__caption">Diseño de Puertas Electricas SOHEC</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/puertas_electricas_sohec1.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/puertas_electricas_sohec1.jpg"
                         alt="puertas_electricas_sohec1">
                     <figcaption class="galeria__caption">Diseño de Puertas Electricas SOHEC</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/techo.jpg" alt="techo">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/techo.jpg" alt="techo">
                     <figcaption class="galeria__caption">Diseño de Techo con Laminas Acrilicas y Soporte Metalico
                     </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/techo_1.jpg" alt="techo">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/techo_1.jpg" alt="techo">
                     <figcaption class="galeria__caption">Diseño de Techo con Laminas Acrilicas y Soporte Metalico
                     </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/ventanal.jpg" alt="ventanal">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/ventanal.jpg" alt="ventanal">
                     <figcaption class="galeria__caption">Diseño de Ventanal Interno</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/ventanal_esquina_casa.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/ventanal_esquina_casa.jpg"
                         alt="ventanal_esquina_casa">
                     <figcaption class="galeria__caption">Diseño de Ventana para Casa</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/ventanal_frente_casa.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/ventanal_frente_casa.jpg"
                         alt="ventanal_frente_casa">
                     <figcaption class="galeria__caption">Diseño de Ventana de Casa</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/ventanal_fachada.jpg" alt="ventanal_fachada">
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/ventanal_fachada.jpg"
+                        alt="ventanal_fachada">
                     <figcaption class="galeria__caption">Diseño de Fachada de Ventanas</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/vidrieria_lateral_clinica.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/vidrieria_lateral_clinica.jpg"
                         alt="vidrieria_lateral_clinica">
                     <figcaption class="galeria__caption">Diseño de Vidrieria Clinica</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/vidrios_tienda_d1.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/vidrios_tienda_d1.jpg"
                         alt="vidrios_tienda_d1">
                     <figcaption class="galeria__caption">Diseño de Vidrios Tienda D1 </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/vidrios_tienda_d1_1.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/vidrios_tienda_d1_1.jpg"
                         alt="vidrios_tienda_d1_1">
                     <figcaption class="galeria__caption">Diseño de Vidrios de Tienda D1</figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/vidrios_tienda_d1_2.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/vidrios_tienda_d1_2.jpg"
                         alt="vidrios_tienda_d1">
                     <figcaption class="galeria__caption">Diseño de Vidrios Tienda D1 </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/vidrios_tienda_d1_3.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/vidrios_tienda_d1_3.jpg"
                         alt="vidrios_tienda_d1">
                     <figcaption class="galeria__caption">Diseño de Vidrios Tienda D1 </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/vidrios_tienda_d1_4.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/vidrios_tienda_d1_4.jpg"
                         alt="vidrios_tienda_d1">
                     <figcaption class="galeria__caption">Diseño de Vidrios Tienda D1 </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/vitrinas_drogueria.jpg"
+                    <img class="galeria__img lazyload lazyloading" data-src="/img/3D/vitrinas_drogueria.jpg"
                         alt="vitrinas_drogueria">
                     <figcaption class="galeria__caption">Diseño de Vitrinas de Vidrios en Drogueria </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/vitrinas_drogueria_1.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/vitrinas_drogueria_1.jpg"
                         alt="vitrinas_drogueria">
                     <figcaption class="galeria__caption">Diseño de Vitrinas de Vidrios en Drogueria </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/vitrinas_drogueria_2.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/vitrinas_drogueria_2.jpg"
                         alt="vitrinas_drogueria">
                     <figcaption class="galeria__caption">Diseño de Vitrinas de Vidrios en Drogueria </figcaption>
                 </figure>
                 <figure class="galeria__figure cap-bot">
-                    <img class="galeria__img  lazyload" data-src="/img/3D/vitrinas_drogueria_3.jpg"
+                    <img class="galeria__img  lazyload lazyloading" data-src="/img/3D/vitrinas_drogueria_3.jpg"
                         alt="vitrinas_drogueria">
                     <figcaption class="galeria__caption">Diseño de Vitrinas de Vidrios en Drogueria </figcaption>
                 </figure>
