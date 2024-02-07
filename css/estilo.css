@@ -707,6 +707,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 1.5em;
+	overflow-x: hidden;
 }
 .card {
 	display: flex;
@@ -714,7 +715,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 1em;
-	width: max-content;
+	width: 100%;
 	height: max-content;
 	padding: 1em;
 	background-color: var(--colorSegundario);
