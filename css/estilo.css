@@ -34,88 +34,7 @@ body {
 	-ms-transition: opacity 500ms;
 	-o-transition: opacity 500ms;
 }
-.fondo__animado {
-	width: 100%;
-}
-.fondo__cubo {
-	z-index: -10;
-	position: absolute;
-	top: 80%;
-	left: 45%;
-	width: 10px;
-	height: 10px;
-	background-color: black;
-	-webkit-border-radius: 1px;
-	-moz-border-radius: 1px;
-	-ms-border-radius: 1px;
-	-o-border-radius: 1px;
-	border-radius: 1px;
-	-webkit-transform-origin: top left;
-	transform-origin: top left;
-	-webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
-	transform: scale(0) rotate(0deg) translate(-50%, -50%);
-	-webkit-animation: cubo 10s ease-in forwards infinite;
-	animation: cubo 10s ease-in forwards infinite;
-	-webkit-filter: blur(1px);
-	filter: blur(1px);
-}
-.fondo__cubo:nth-child(2n) {
-	background-color: #adafb1;
-}
-.fondo__cubo:nth-child(2) {
-	-webkit-animation-delay: 2s;
-	animation-delay: 2s;
-	left: 25vw;
-	top: 40vh;
-}
-.fondo__cubo:nth-child(3) {
-	-webkit-animation-delay: 4s;
-	animation-delay: 4s;
-	left: 75vw;
-	top: 50vh;
-}
-.fondo__cubo:nth-child(4) {
-	-webkit-animation-delay: 6s;
-	animation-delay: 6s;
-	left: 90vw;
-	top: 10vh;
-}
-.fondo__cubo:nth-child(5) {
-	-webkit-animation-delay: 8s;
-	animation-delay: 8s;
-	left: 10vw;
-	top: 85vh;
-}
-.fondo__cubo:nth-child(6) {
-	-webkit-animation-delay: 10s;
-	animation-delay: 10s;
-	left: 50vw;
-	top: 10vh;
-}
-@-webkit-keyframes cubo {
-	from {
-		-webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
-		transform: scale(0) rotate(0deg) translate(-50%, -50%);
-		opacity: 1;
-	}
-	to {
-		-webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
-		transform: scale(20) rotate(960deg) translate(-50%, -50%);
-		opacity: 0;
-	}
-}
-@keyframes cubo {
-	from {
-		-webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
-		transform: scale(0) rotate(0deg) translate(-50%, -50%);
-		opacity: 1;
-	}
-	to {
-		-webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
-		transform: scale(20) rotate(960deg) translate(-50%, -50%);
-		opacity: 0;
-	}
-}
+
 .container {
 	width: 90%;
 	margin: 0 auto;
@@ -263,7 +182,6 @@ body {
 	border: 1px solid #fff;
 	background-color: #1617186a;
 	box-shadow: 0px 0px 5px rgba(49, 47, 47, 0.871);
-	backdrop-filter: blur(10px);
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -307,138 +225,65 @@ body {
 	text-align: left;
 }
 
-.cardtabs {
-	width: 100%;
-	padding: 1em 0;
-	border-radius: 10px;
-	border: 1px solid #e3e3e3;
-	margin: 0 auto;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	color: #fff;
-	display: flex;
-	flex-direction: row;
-}
-.tab {
-	display: flex;
-	flex-direction: row;
-	width: auto;
-	height: 10%;
-	padding: 1em;
-	gap: 0.1em;
-	background-color: #2e2e2e;
-	border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-ms-border-radius: 5px 5px 0 0;
-	-o-border-radius: 5px 5px 0 0;
-}
-
 .cardtabs input {
 	display: none;
 }
-/* .tabs {
-	position: relative;
-	opacity: 0;
-	margin: 0;
-	padding: 0;
-	display: none;
-} */
-
-.tabs input + label:hover {
-	color: #777;
-}
-/* .tabs .tabsShadow {
-	width: 100%;
-	padding: 10px;
-	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
-	box-sizing: border-box;
-	position: absolute;
-	height: 35px;
-	z-index: 0;
-	top: 0;
-	pointer-events: none;
-} */
-
-.content .item {
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.3s;
-	position: absolute;
-	padding: 10px 20px;
-}
-
-#tab-1:checked ~ section #content-1,
-#tab-2:checked ~ section #content-2,
-#tab-3:checked ~ section #content-3,
-#tab-4:checked ~ section #content-4,
-#tab-5:checked ~ section #content-5,
-#tab-6:checked ~ section #content-6,
-#tab-7:checked ~ section #content-7 {
-	opacity: 1;
-	visibility: visible;
-}
-
-.tab + label {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	min-width: 60px;
-	padding: 1em 1.5em 1em 0.5em;
-	box-shadow: 1px 1px 2px 1px #231f20;
-	text-transform: uppercase;
-	text-align: left;
-	font-size: 0.8em;
-	transition: all 0.3s;
-	background: #151414;
-	letter-spacing: 0.1em;
-	cursor: pointer;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-}
-
-.content {
-	margin: 0px auto;
-	text-align: left;
-	line-height: 20px;
-	height: 240px;
-	border-radius: 5px;
-	box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+.contentTab {
 	display: block;
-	padding: 1.25rem;
-	z-index: 2;
-	border-top: 1px solid #3b3d3f;
-	background: hsl(232deg 16% 15%);
-	position: relative;
+	width: 100%;
+	height: auto;
+	color: white;
+	background-color: #2d2e30;
+	padding: 20px 0 0;
+	border-top: 1px solid #ddd;
 }
-.content p {
-	margin: 10px 15px 10px 0;
-	letter-spacing: 0.75px;
-	font-size: 14pt;
-	font-style: normal;
-	color: #f0f2fc;
-	line-height: 30px;
-	margin-top: 10pt;
-	font-family: 'freight-display-pro';
-	font-weight: 300 !important;
+.tab {
+	display: inline-flex;
+	margin: 0 0 -1px;
+	padding: 1em 0.5em;
+	color: white;
+	border: 1px solid transparent;
+	background-color: #504a4a;
+	border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
+	-ms-border-radius: 7px 7px 0 0;
+	-o-border-radius: 7px 7px 0 0;
+	font-size: 0.9em;
+}
+.item {
+	color: #0074b7;
+	font-weight: bold;
+	text-shadow: 0px 0px 10px 0px #fffefee0;
+}
+hover {
+	color: black;
+	font-weight: bold;
+	background-color: var(--colorHover);
+	cursor: pointer;
 }
 
-#tab-1:checked + label,
-#tab-2:checked + label,
-#tab-3:checked + label,
-#tab-4:checked + label,
-#tab-5:checked + label,
-#tab-6:checked + label,
-#tab-7:checked + label {
+input:checked + label,
+input:checked + label,
+input:checked + label,
+input:checked + label,
+input:checked + label,
+input:checked + label,
+input:checked + label {
 	background-color: var(--colorSeleccion);
 	color: black;
 	font-weight: bold;
 	letter-spacing: 0.01em;
 	box-shadow: 0px 0px 10px 0px hsl(17.72deg 100% 70% / 70%);
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3
+/* #tab-4:checked ~ .contentTab #content-4,
+#tab-5:checked ~ .contentTab #content-5,
+#tab-6:checked ~ .contentTab #content-6,
+#tab-7:checked ~ .contentTab #content-7 { */ {
+	display: block;
 }
 
 .contenedorIconos {
@@ -1022,6 +867,9 @@ body {
 	.activo::after {
 		bottom: -5px;
 		width: 100%;
+	}
+	.checkbtn {
+		display: none;
 	}
 
 	.container {
