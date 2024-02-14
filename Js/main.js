@@ -1,43 +1,44 @@
-const menu = document.querySelector('#navegacion__lista')
-const modal1 = document.querySelector('.abrirModalDiseno')
-const modal2 = document.querySelector('.abrirModalWeb')
-const modal3 = document.querySelector('.abrirModal3D')
-const modalDiseno = document.querySelector('.modalDiseno')
-const modalWeb = document.querySelector('.modalWeb')
-const modal3D = document.querySelector('.modal3D')
-const modal4 = document.querySelector('.abrirModalCrusoUno')
-const modal5 = document.querySelector('.abrirModalCrusoDos')
-const modal6 = document.querySelector('.abrirModalCrusoTres')
-const modal7 = document.querySelector('.abrirModalCrusoCuatro')
-const modal8 = document.querySelector('.abrirModalCrusoCinco')
-const modal9 = document.querySelector('.abrirModalCrusoSeis')
-const modal10 = document.querySelector('.abrirModalCrusoSiete')
-const modal11 = document.querySelector('.abrirModalCrusoOcho')
-const modal12 = document.querySelector('.abrirModalCrusoNueve')
-const modalCursoUno = document.querySelector('.CursoUno')
-const modalCursoDos = document.querySelector('.CursoDos')
-const modalCursoTres = document.querySelector('.CursoTres')
-const modalCursoCuatro = document.querySelector('.CursoCuatro')
-const modalCursoCinco = document.querySelector('.CursoCinco')
-const modalCursoSeis = document.querySelector('.CursoSeis')
-const modalCursoSiete = document.querySelector('.CursoSiete')
-const modalCursoOcho = document.querySelector('.CursoOcho')
-const modalCursoNueve = document.querySelector('.CursoNueve')
-const cerrarModal = document.querySelectorAll('.modal__cerrar')
-const cerrarModal_curso = document.querySelectorAll('.modal__cerrar_curso')
+import dataDiseno from './datadiseno.js'
+import data3D from './data3d.js'
 
-modal1.addEventListener('click', e => {
-    e.preventDefault();
-    modalDiseno.classList.add('modal__mostrar');
+const activeMenu = document.querySelectorAll('.nav__lista__link'),
+    modalDiseno = document.querySelector('.modalDiseno'),
+    modal3D = document.querySelector('.modal3D'),
+    modalWeb = document.querySelector(".modalWeb"),
+    modal4 = document.querySelector('.abrirModalCrusoUno'),
+    modal5 = document.querySelector('.abrirModalCrusoDos'),
+    modal6 = document.querySelector('.abrirModalCrusoTres'),
+    modal7 = document.querySelector('.abrirModalCrusoCuatro'),
+    modal8 = document.querySelector('.abrirModalCrusoCinco'),
+    modal9 = document.querySelector('.abrirModalCrusoSeis'),
+    modal10 = document.querySelector('.abrirModalCrusoSiete'),
+    modal11 = document.querySelector('.abrirModalCrusoOcho'),
+    modal12 = document.querySelector('.abrirModalCrusoNueve'),
+    modalCursoUno = document.querySelector('.CursoUno'),
+    modalCursoDos = document.querySelector('.CursoDos'),
+    modalCursoTres = document.querySelector('.CursoTres'),
+    modalCursoCuatro = document.querySelector('.CursoCuatro'),
+    modalCursoCinco = document.querySelector('.CursoCinco'),
+    modalCursoSeis = document.querySelector('.CursoSeis'),
+    modalCursoSiete = document.querySelector('.CursoSiete'),
+    modalCursoOcho = document.querySelector('.CursoOcho'),
+    modalCursoNueve = document.querySelector('.CursoNueve'),
+    cerrarModal_curso = document.querySelectorAll('.modal__cerrar_curso')
+
+activeMenu.forEach(item => {
+    item.addEventListener('click', () => {
+        activeMenu.forEach(item => {
+            item.classList.remove('active', 'activo');
+            if (screen.width < 600) {
+                item.classList.remove('active');
+            }
+        });
+        item.classList.add('active', 'activo');
+    });
 });
-modal2.addEventListener('click', e => {
-    e.preventDefault();
-    modalWeb.classList.add('modal__mostrar');
-});
-modal3.addEventListener('click', e => {
-    e.preventDefault();
-    modal3D.classList.add('modal__mostrar');
-});
+alert('Estamos actualizando')
+
+
 modal4.addEventListener('click', e => {
     e.preventDefault();
     modalCursoUno.classList.add('modal__mostrar');
@@ -74,25 +75,82 @@ modal12.addEventListener('click', e => {
     e.preventDefault();
     modalCursoNueve.classList.add('modal__mostrar');
 });
-cerrarModal.forEach(item => {
-    item.addEventListener('click', e => {
-        modalWeb.classList.remove('modal__mostrar');
-        modalDiseno.classList.remove('modal__mostrar');
-        modal3D.classList.remove('modal__mostrar');
-    });
-});
-cerrarModal_curso.forEach(item => {
-    item.addEventListener('click', e => {
-        modalCursoUno.classList.remove('modal__mostrar');
-        modalCursoDos.classList.remove('modal__mostrar');
-        modalCursoTres.classList.remove('modal__mostrar');
-        modalCursoCuatro.classList.remove('modal__mostrar');
-        modalCursoCinco.classList.remove('modal__mostrar');
-        modalCursoSeis.classList.remove('modal__mostrar');
-        modalCursoSiete.classList.remove('modal__mostrar');
-        modalCursoOcho.classList.remove('modal__mostrar');
-        modalCursoNueve.classList.remove('modal__mostrar');
-    });
-});
 
+
+const itemsDiseno = document.getElementById('cardsDiseno')
+const items3D = document.getElementById('cards3D')
+const cardDiseno = document.getElementById('templateCardsDiseno').content
+const fragment = document.createDocumentFragment()
+const slider = document.querySelector(".slider__content__img");
+
+document.addEventListener('click', e => {
+
+    // -------------- click open modals of the project--------
+    const modals = e.target.dataset.id
+    const quitarClass = document.querySelector(" .modal__mostrar")
+
+    console.log('aca', e.target)
+    if (modals == 'tresD') {
+        modal3D.classList.add('modal__mostrar');
+        e.stopPropagation()
+        pintarCards3D(data3D)
+    } if (modals == 'web') {
+        e.stopPropagation()
+        modalWeb.classList.add('modal__mostrar');
+    } if (modals == 'diseno') {
+        modalDiseno.classList.add('modal__mostrar');
+        e.stopPropagation()
+        pintarCardsDiseno(dataDiseno)
+    }
+    //--------------------- click close modals of the project-------------------
+    if (e.target.matches('.modal__cerrar')) {
+        quitarClass.classList.remove("modal__mostrar")
+    }
+    if (e.target.matches('.modal__cerrar_curso')) {
+        modalWeb.classList.add('modal__mostrar');
+        quitarClass.classList.remove("modal__mostrar")
+    }
+    // ------------------next and prev of the courses-----------
+    if (e.target.classList.contains('button-prev')) {
+        slider.scrollLeft -= 500
+        // e.target.classList.contains('button-prev')
+        e.stopPropagation()
+    }
+    if (e.target.classList.contains('button-next')) {
+        slider.scrollLeft += 500
+        // e.target.classList.contains('button-next')
+        e.stopPropagation()
+    }
+    e.stopPropagation()
+
+})
+
+// creation of an arrow function for the section of the cards of the design projects through an object and using a template
+const pintarCardsDiseno = dataDiseno => {
+    const datos = dataDiseno
+    datos.forEach(itemsDiseno => {
+        cardDiseno.querySelector('figcaption').textContent = itemsDiseno.titulo;
+        cardDiseno.querySelector('img').setAttribute('data-src', itemsDiseno.urlImagen)
+        cardDiseno.querySelector('img').setAttribute('alt', itemsDiseno.titulo)
+
+        const clone = cardDiseno.cloneNode(true)
+        fragment.appendChild(clone)
+    })
+    itemsDiseno.appendChild(fragment)
+
+}
+// creation of an arrow function for the section of the cards of the 3D design  projects through an object and using a template
+const pintarCards3D = data3D => {
+    const datos = data3D
+    datos.forEach(items3D => {
+        cardDiseno.querySelector('figcaption').textContent = items3D.titulo;
+        cardDiseno.querySelector('img').setAttribute('data-src', items3D.urlImagen)
+        cardDiseno.querySelector('img').setAttribute('alt', items3D.titulo)
+
+        const clone = cardDiseno.cloneNode(true)
+        fragment.appendChild(clone)
+    })
+    items3D.appendChild(fragment)
+
+}
 
