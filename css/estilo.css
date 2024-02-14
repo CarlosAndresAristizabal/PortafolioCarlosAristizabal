@@ -14,14 +14,13 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 }
 body {
-	width: 100%;
+	width: 90%;
 	scroll-behavior: smooth;
 	font-family: var(--font-parrafo);
 	background: #2e2e2e;
-	overflow-x: hidden;
 }
 .lazyload {
 	opacity: 0;
