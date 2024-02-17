@@ -12,6 +12,7 @@ const items3D = document.getElementById('cards3D')
 const itemsWeb = document.getElementById('cardsWeb')
 const cardDiseno = document.getElementById('templateCardsProyecto').content
 const cardWeb = document.getElementById('templateCardsWeb').content
+const cardCurso = document.getElementById('templateCursoWeb').content
 const fragment = document.createDocumentFragment()
 // const slider = document.querySelector(".slider__content__img");
 let galeria = []
@@ -46,6 +47,7 @@ document.addEventListener('click', e => {
     pintarCardsDiseno(dataDiseno)
     e.stopPropagation()
   }
+  // --------------capture the course by means of the id --------------
   if (e.target.classList.contains('btnImagen')) {
     modalCurso.classList.add('modal__mostrar')
     pintarCurso(e.target.parentElement)
@@ -58,10 +60,6 @@ document.addEventListener('click', e => {
     modalWeb.classList.add('modal__mostrar');
     quitarClass.classList.remove("modal__mostrar")
   }
-
-  // --------------capture the course by means of the id --------------
-
-
   e.stopPropagation()
 })
 
@@ -94,8 +92,6 @@ const pintarCards3D = data3D => {
 
 // Creation of an arrow function for section of the cards of the web design  projects through an object and using a template
 const pintarCardsWeb = dataweb => {
-
-  // console.log(dataweb)
   const datosweb = dataweb
   datosweb.forEach(itemsWeb => {
     cardWeb.querySelector('h2').textContent = itemsWeb.titulo;
@@ -103,26 +99,18 @@ const pintarCardsWeb = dataweb => {
     cardWeb.querySelector('img').setAttribute('src', itemsWeb.urlImage)
     cardWeb.querySelector('img').setAttribute('alt', itemsWeb.titulo)
     cardWeb.querySelector('.btnImagen').dataset.id = itemsWeb.id
-    // cardWeb.querySelector('.modal__titulo').textContent = 'Web'
     galeria = itemsWeb.galeria
     const clone = cardWeb.cloneNode(true)
     fragment.appendChild(clone)
-
   })
-
   itemsWeb.appendChild(fragment)
-
 }
 
 
 const pintarCurso = item => {
-  // console.log(item)
+  console.log(item)
 
-  const cursoGaleria = {
-    titulo: item.querySelector('h2').textContent,
-    id: item.querySelector('.btnImagen').dataset.id,
-  }
-  let element = cursoGaleria.id
+
 
 }
 

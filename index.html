@@ -65,6 +65,7 @@
           <img class="img_inicio  lazyload lazyloading" data-src="/img/yo.jpg" alt="imagen mia " />
         </figure>
         <div class="text_Inicio">
+          <h1 class="profecion parrafo" style="font-size: 5em">Hola! Me llamo </h1>
           <h1 class="inicio__nombre ">Carlos Andres Aristizabal Kenguan</h1>
           <h3 class="profecion ">Desarrollador web Full Stack</h3>
           <div class="inicio__profecion">
@@ -430,9 +431,9 @@
     <section class="modalCurso">
       <div class="modal__container__curso">
         <p class="modal__cerrar_curso">X</p>
-        <h2 class="modal__titulo"></h2>
-        <div class=" slider-container  id=" cursoId"></div>
+
       </div>
+
     </section>
 
     <!-- ---------------Contacto-------------- -->
@@ -490,6 +491,9 @@
 
   <!-- -------------------Modal de Cursos Web---------------- -->
   <template id="templateCursoWeb">
+    <div class=" slider-container  id=" cursoId">
+      <h2 class="modal__titulo"></h2>
+    </div>
     <div class="slider__content__img">
       <img class="slider-item">
     </div>
@@ -497,7 +501,6 @@
       <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
     </span>
     <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
-    </div>
   </template>
 
 
