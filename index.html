@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <!-- menu de navegacion -->
+  <!----------------- menu de navegacion ------------------------->
   <nav class="nav">
     <input type="checkbox" name="hambuguer" id="check">
     <label for="check" class="checkbtn"><ion-icon name="grid-outline" size="large"></ion-icon></label>
@@ -49,13 +49,13 @@
     </ul>
   </nav>
 
-  <!-- sección de inicio -->
+  <!--------------- sección de inicio --------------------->
   <main class="main container  ">
     <section id="inicio" class="container ">
       <article class="section__inicio ">
         <div class="fondo__animado ">
           <div class="fondo__cubo Python"></div>
-          <div class="fondo__cubo html "></div>
+          <div class="fondo__cubo iconHtml "></div>
           <div class="fondo__cubo javaScript"></div>
           <div class="fondo__cubo java"></div>
           <div class="fondo__cubo css "></div>
@@ -91,7 +91,7 @@
           </div>
         </div>
       </article>
-
+      <!-- -----------------------Sobre mi----------- -->
     </section>
     <section id="acercaDeMi" class="container  section__inicio ">
       <article class=" section "><br>
@@ -122,257 +122,261 @@
         </div>
         <h3 class="subtitulos">Conocimientos técnicos:</h3>
         <div class="containerTabs">
+          <input class="radio" id="tab-1" name="tabsCard" type="radio" checked - />
+          <input class="radio" id="tab-2" name="tabsCard" type="radio" />
+          <input class="radio" id="tab-3" name="tabsCard" type="radio" />
+          <input class="radio" id="tab-4" name="tabsCard" type="radio" />
+          <input class="radio" id="tab-5" name="tabsCard" type="radio" />
+          <input class="radio" id="tab-6" name="tabsCard" type="radio" />
+          <input class="radio" id="tab-7" name="tabsCard" type="radio" />
           <section class="cardtabs">
-            <input id="tab-1" type="radio" class=" tab" checked name="tab" />
-            <label for="tab" class="tab  ">FrontEnd</label>
-            <input id="tab-2" type="radio" class=" tab" name="tab" />
-            <label for="tab" class="tab ">BackEnd</label>
-            <input id="tab-3" type="radio" class=" tab" name="tab" />
-            <label for="tab" class="tab ">BD</label>
-            <input id="tab-4" type="radio" class=" tab" name="tab" />
-            <label for="tab" class="tab ">Apis</label>
-            <input id="tab-5" type="radio" class="tab" name="tab" />
-            <label for="tab" class="tab ">Version</label>
-            <input id="tab-6" type="radio" class="tab" name="tab" />
-            <label for="tab" class="tab ">CI/CD</label>
-            <input id="tab-7" type="radio" class="tab" name="tab" />
-            <label for="tab" class="tab ">Diseño</label>
+            <label for="tab-1" id="tab1" class="tab ">FrontEnd</label>
+            <label for="tab-2" id="tab2" class="tab ">BackEnd</label>
+            <label for="tab-3" id="tab3" class="tab ">BD</label>
+            <label for="tab-4" id="tab4" class="tab ">Apis</label>
+            <label for="tab-5" id="tab5" class="tab ">Version</label>
+            <label for="tab-6" id="tab6" class="tab ">CI/CD</label>
+            <label for="tab-7" id="tab7" class="tab ">Diseño</label>
           </section>
-          <section id="content-1" class="itemTabs">
-            <p class="parrafo">
-              <span class="item">Desarrollo Frontend:</span> dominio de tecnologías para el
-              desarrollo y
-              creación de
-              interfaces de usuario atractivas y funcionales.
-            </p>
-            <div class="contenedorIconos ">
-              <a href="https:/developer.mozilla.org/es/docs/Web/HTML" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading " data- src="/img/programas/html.png" alt="html"
-                    name="html5">
-                  <span class="tiptext">Html</span>
-                </div>
-              </a>
-              <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/css.png" alt="css" name="css">
-                  <span class="tiptext">Css</span>
-                </div>
-              </a>
-              <a href="https://developer.mozilla.org/es/docs/Web/JAVASCRIPT" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/javascript.png"
-                    alt="javascript" name="javascript">
-                  <span class="tiptext">JavaScript</span>
-                </div>
-              </a>
-              <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/boostrap.png" alt="boostrap"
-                    name="boostrap">
-                  <span class="tiptext">Bosstrap</span>
-                </div>
-              </a>
-              <a href="https://sass-lang.com/documentation/" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/sass.png" alt="sass"
-                    name="sass">
-                  <span class="tiptext">Sass</span>
-                </div>
-              </a>
-              <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/tailwind.png" alt="tailwind"
-                    name="tailwind">
-                  <span class="tiptext">Tailwind</span>
-                </div>
-              </a>
-              <a href="https://materializecss.com/about.html" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/materialize.png"
-                    alt="materialize" name="materialize">
-                  <span class="tiptext">Materialize</span>
-                </div>
-              </a><a href="https://wordpress.com/es/" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/wordpress.png" alt="wordpress"
-                    name="wordpress">
-                  <span class="tiptext">Wordpress</span>
-                </div>
-              </a>
-              <a href="https://www.android.com/intl/es_es/" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/android.png" alt="android"
-                    name="android">
-                  <span class="tiptext">Android</span>
-                </div>
-              </a>
-              <a href="https://es.wix.com/" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/wix.png" alt="wix"
-                    name="wix"><span class="tiptext">Wix</span>
-                </div>
-              </a>
-              <a href="https://articulate.com/360/storyline" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/storyline.png" alt="storyline"
-                    name="storyline">
-                  <span class="tiptext">storyline</span>
-                </div>
-              </a>
+          <div class="contenidoTabs">
+            <div id="content-1" class="itemTabs">
+              <p class="parrafo">
+                <span class="item">Desarrollo Frontend:</span> dominio de tecnologías para el
+                desarrollo y
+                creación de
+                interfaces de usuario atractivas y funcionales.
+              </p>
+              <div class="contenedorIconos ">
+                <a href="https:/developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading " data- src="/img/programas/html.png" alt="html"
+                      name="html5">
+                    <span class="tiptext">Html</span>
+                  </div>
+                </a>
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/css.png" alt="css"
+                      name="css">
+                    <span class="tiptext">Css</span>
+                  </div>
+                </a>
+                <a href="https://developer.mozilla.org/es/docs/Web/JAVASCRIPT" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/javascript.png"
+                      alt="javascript" name="javascript">
+                    <span class="tiptext">JavaScript</span>
+                  </div>
+                </a>
+                <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/boostrap.png" alt="boostrap"
+                      name="boostrap">
+                    <span class="tiptext">Bosstrap</span>
+                  </div>
+                </a>
+                <a href="https://sass-lang.com/documentation/" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/sass.png" alt="sass"
+                      name="sass">
+                    <span class="tiptext">Sass</span>
+                  </div>
+                </a>
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/tailwind.png" alt="tailwind"
+                      name="tailwind">
+                    <span class="tiptext">Tailwind</span>
+                  </div>
+                </a>
+                <a href="https://materializecss.com/about.html" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/materialize.png"
+                      alt="materialize" name="materialize">
+                    <span class="tiptext">Materialize</span>
+                  </div>
+                </a><a href="https://wordpress.com/es/" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/wordpress.png"
+                      alt="wordpress" name="wordpress">
+                    <span class="tiptext">Wordpress</span>
+                  </div>
+                </a>
+                <a href="https://www.android.com/intl/es_es/" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/android.png" alt="android"
+                      name="android">
+                    <span class="tiptext">Android</span>
+                  </div>
+                </a>
+                <a href="https://es.wix.com/" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/wix.png" alt="wix"
+                      name="wix"><span class="tiptext">Wix</span>
+                  </div>
+                </a>
+                <a href="https://articulate.com/360/storyline" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/storyline.png"
+                      alt="storyline" name="storyline">
+                    <span class="tiptext">storyline</span>
+                  </div>
+                </a>
+              </div>
             </div>
-          </section>
-          <section id="content-2" class="itemTabs">
-            <p class="parrafo">
-              <span class="item">Desarrollo Backend:</span> experiencia sólida en el diseño y desarrollo
-              de servidores utilizando tecnologías como:
-            </p>
-            <div class="contenedorIconos">
-              <a href="https://www.java.com/es/" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/java.png" alt="java"
-                    name="java">
-                  <span class="tiptext">Java</span>
-                </div>
-              </a>
-              <a href="https://www.python.org/" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/python.png" alt="python"
-                    name="python">
-                  <span class="tiptext">Python</span>
-                </div>
-              </a>
-              <a href="https://nodejs.org/es" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="https://nodejs.org/static/images/logo.svg"
-                    alt="NodeJs" name="NodeJs">
-                  <span class="tiptext">NodeJs</span>
-                </div>
-              </a>
-            </div>
-          </section>
-          <section id="content-3" class="itemTabs">
-            <p class="parrafo">
-              <span class="item">Base de datos:</span> profundo conocimiento en el diseño y optimización
-              de bases de datos relacionales (Mysql, Postgresql) y no relacionales (MongoDB).
-            </p>
-            <div class="contenedorIconos">
-              <a href="https://www.mysql.com/" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/mysql.png" alt="mysql"
-                    name="mysql">
-                  <span class="tiptext">MySql</span>
-                </div>
-              </a>
-              <a href="https://www.mongodb.com/es" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading"
-                    data-src="/https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress"
-                    alt="MongoDB" name="MongoDB">
-                  <span class="tiptext">MySql</span>
-                </div>
-              </a>
-            </div>
-          </section>
-          <section id="content-4" class="itemTabs">
-            <p class="parrafo">
-              <span class="item">Apis:</span>creación y consumo de Apis Restfull, diseño y documentación
-              con Swagger ⁄ OpenApi.
-            </p>
-          </section>
-          <section id="content-5" class="itemTabs">
-            <p class="parrafo">
-              <span class="item">Control de versiones:</span> uso experto de sistemas de control de
-              versiones como Git, Github.
-            </p>
-            <div class="contenedorIconos">
-              <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/Tools_and_setup/Using_Github_pages"
-                target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/github.png" alt="github"
-                    name="github">
-                  <span class="tiptext">GitHub</span>
-                </div>
-              </a>
-            </div>
-          </section>
-          <section id="content-6" class="itemTabs">
-            <p class="parrafo">
-              <span class="item">Despliegue y gestión:</span>experiencia en implementación y
-              administración
-              de servidores utilizando Docker y orquestación con Github Actions y Jenkins, conocimientos
-              en AWS.
-            </p>
+            <section id="content-2" class="itemTabs">
+              <p class="parrafo">
+                <span class="item">Desarrollo Backend:</span> experiencia sólida en el diseño y desarrollo
+                de servidores utilizando tecnologías como:
+              </p>
+              <div class="contenedorIconos">
+                <a href="https://www.java.com/es/" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/java.png" alt="java"
+                      name="java">
+                    <span class="tiptext">Java</span>
+                  </div>
+                </a>
+                <a href="https://www.python.org/" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/python.png" alt="python"
+                      name="python">
+                    <span class="tiptext">Python</span>
+                  </div>
+                </a>
+                <a href="https://nodejs.org/es" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="https://nodejs.org/static/images/logo.svg"
+                      alt="NodeJs" name="NodeJs">
+                    <span class="tiptext">NodeJs</span>
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section id="content-3" class="itemTabs">
+              <p class="parrafo">
+                <span class="item">Base de datos:</span> profundo conocimiento en el diseño y optimización
+                de bases de datos relacionales (Mysql, Postgresql) y no relacionales (MongoDB).
+              </p>
+              <div class="contenedorIconos">
+                <a href="https://www.mysql.com/" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/mysql.png" alt="mysql"
+                      name="mysql">
+                    <span class="tiptext">MySql</span>
+                  </div>
+                </a>
+                <a href="https://www.mongodb.com/es" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading"
+                      data-src="/https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress"
+                      alt="MongoDB" name="MongoDB">
+                    <span class="tiptext">MySql</span>
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section id="content-4" class="itemTabs">
+              <p class="parrafo">
+                <span class="item">Apis:</span>creación y consumo de Apis Restfull, diseño y documentación
+                con Swagger ⁄ OpenApi.
+              </p>
+            </section>
+            <section id="content-5" class="itemTabs">
+              <p class="parrafo">
+                <span class="item">Control de versiones:</span> uso experto de sistemas de control de
+                versiones como Git, Github.
+              </p>
+              <div class="contenedorIconos">
+                <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/Tools_and_setup/Using_Github_pages"
+                  target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/github.png" alt="github"
+                      name="github">
+                    <span class="tiptext">GitHub</span>
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section id="content-6" class="itemTabs">
+              <p class="parrafo">
+                <span class="item">Despliegue y gestión:</span>experiencia en implementación y
+                administración
+                de servidores utilizando Docker y orquestación con Github Actions y Jenkins, conocimientos
+                en AWS.
+              </p>
 
-          </section>
-          <section id="content-7" class="itemTabs">
-            <p class="parrafo">
-              <span class="item">Diseño:</span> imágenes digitales de publicidad y en 3D usan estas
-              tecnologias
-            </p>
-            <div class="contenedorIconos">
-              <a href="https://www.coreldraw.com/la/" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/corel-draw-color.png"
-                    alt="corel-draw" name="corel-draw">
-                  <span class="tiptext">Corel Draw</span>
-                </div>
-              </a>
-              <a href="https://www.adobe.com/co/products/photoshop.html" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/photoshop.png" alt="photoshop"
-                    name="photoshop">
-                  <span class="tiptext">Photoshop</span>
-                </div>
-              </a>
-              <a href="https://www.adobe.com/co/products/illustrator.html" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/illustrator.png"
-                    alt="illustrator" name="illustrator">
-                  <span class="tiptext">Illustrator</span>
-                </div>
-              </a>
-              <a href="https://helpx.adobe.com/co/xd/get-started.html" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/adobe-XD.png" alt="adobeXD"
-                    name="adobeXD">
-                  <span class="tiptext">Adobe-XD</span>
-                </div>
-              </a>
-              <a href="https://latinoamerica.autodesk.com/products/3ds-max/overview?term=1-YEAR&tab=subscription"
-                target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/3dmax.png" alt="3dmax"
-                    name="3dmax">
-                  <span class="tiptext">3Dmax</span>
-                </div>
-              </a>
-              <a href="https://www.figma.com/" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/figma.png" alt="figma"
-                    name="figma">
-                  <span class="tiptext">Figma</span>
-                </div>
-              </a>
-              <a href="https://www.sketchup.com/es" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/sketchup.png" alt="sketchup"
-                    name="sketchup">
-                  <span class="tiptext">Sketchup</span>
-                </div>
-              </a>
-              <a href="https://www.chaos.com/es/vray/sketchup" target="_blank">
-                <div class="tooltip top ">
-                  <img class="icons__img  lazyload lazyloading" data-src="/img/programas/Vray.png" alt="vyray"
-                    name="vyray">
-                  <span class="tiptext">Vray</span>
-                </div>
-              </a>
-            </div>
-          </section>
+            </section>
+            <section id="content-7" class="itemTabs">
+              <p class="parrafo">
+                <span class="item">Diseño:</span> imágenes digitales de publicidad y en 3D usan estas
+                tecnologias
+              </p>
+              <div class="contenedorIconos">
+                <a href="https://www.coreldraw.com/la/" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/corel-draw-color.png"
+                      alt="corel-draw" name="corel-draw">
+                    <span class="tiptext">Corel Draw</span>
+                  </div>
+                </a>
+                <a href="https://www.adobe.com/co/products/photoshop.html" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/photoshop.png"
+                      alt="photoshop" name="photoshop">
+                    <span class="tiptext">Photoshop</span>
+                  </div>
+                </a>
+                <a href="https://www.adobe.com/co/products/illustrator.html" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/illustrator.png"
+                      alt="illustrator" name="illustrator">
+                    <span class="tiptext">Illustrator</span>
+                  </div>
+                </a>
+                <a href="https://helpx.adobe.com/co/xd/get-started.html" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/adobe-XD.png" alt="adobeXD"
+                      name="adobeXD">
+                    <span class="tiptext">Adobe-XD</span>
+                  </div>
+                </a>
+                <a href="https://latinoamerica.autodesk.com/products/3ds-max/overview?term=1-YEAR&tab=subscription"
+                  target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/3dmax.png" alt="3dmax"
+                      name="3dmax">
+                    <span class="tiptext">3Dmax</span>
+                  </div>
+                </a>
+                <a href="https://www.figma.com/" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/figma.png" alt="figma"
+                      name="figma">
+                    <span class="tiptext">Figma</span>
+                  </div>
+                </a>
+                <a href="https://www.sketchup.com/es" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/sketchup.png" alt="sketchup"
+                      name="sketchup">
+                    <span class="tiptext">Sketchup</span>
+                  </div>
+                </a>
+                <a href="https://www.chaos.com/es/vray/sketchup" target="_blank">
+                  <div class="tooltip top ">
+                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/Vray.png" alt="vyray"
+                      name="vyray">
+                    <span class="tiptext">Vray</span>
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
         </div>
       </article>
     </section>
+    <!-- -----------------Portafolio------------- -->
     <section id="portafolio" class="container section__inicio ">
       <articule class="section">
         <h2 class="titulo ">Proyectos</h2>
@@ -395,6 +399,43 @@
         </div>
       </articule>
     </section>
+    <!-- ---------------------Modal Web---------------- -->
+
+    <section class="modalWeb">
+      <div class="modal__container">
+        <p class="modal__cerrar">X</p>
+        <h2 class="modal__titulo">¡Proyectos Web!</h2>
+        <div class="containerCards" id="cardsWeb"></div>
+      </div>
+    </section>
+    <!-- -------------------Modal de Diseño---------------- -->
+
+    <section class="modalDiseno">
+      <div class="modal__container">
+        <p class="modal__cerrar">X</p>
+        <h2 class="modal__titulo">Diseños</h2>
+        <div class="galeria" id="cardsDiseno"></div>
+      </div>
+    </section>
+    <!-- -------------------Modal de 3D---------------- -->
+    <section class="modal3D">
+      <div class="modal__container">
+        <p class="modal__cerrar">X</p>
+        <h2 class="modal__titulo">Proyectos en 3D</h2>
+        <div class="galeria " id="cards3D"></div>
+      </div>
+    </section>
+
+    <!-- -------------Modal Curso Web------------ -->
+    <section class="modalCurso">
+      <div class="modal__container__curso">
+        <p class="modal__cerrar_curso">X</p>
+        <h2 class="modal__titulo"></h2>
+        <div class=" slider-container  id=" cursoId"></div>
+      </div>
+    </section>
+
+    <!-- ---------------Contacto-------------- -->
     <section id="contacto" class="container section__inicio">
       <article class="section__redes section ">
         <h1 class="subtitulo titulo ">Redes sociales</h1>
@@ -417,7 +458,7 @@
       </article>
     </section>
   </main>
-
+  <!-- -----------------------Footer-------- -->
   <footer class="footer">
     <div class="container">
       <p class="parrafo_footer"> Carlos Andres Aristizabal Kenguan <br> Desarrollador Web Full Stack</p>
@@ -427,108 +468,41 @@
   <!-- ------------Templates----------------- -->
   <template id="templateCardsProyecto">
     <figure class="galeria__figure cap-bot">
-      <img class="galeria__img  lazyload lazyloading" data-src="" alt="">
+      <img class="galeria__img  lazyload lazyloading">
       <figcaption class="galeria__caption"></figcaption>
     </figure>
   </template>
 
   <template id="templateCardsWeb">
-    <div class="card abrirModalCrusoUno">
+    <div class="card">
       <div class="cardImg">
-        <img class="lazyload lazyloading card__img"
-          data-src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva1.JPG"
-          alt="Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes">
+        <img class="lazyload lazyloading card__img">
       </div>
       <div class="cardTitulo">
-        <h2 class="subtitulo">
-          Conoce Como Utilizar CRM para Retener y Fidelizar Clientes.</h2>
+        <h2 class="subtitulo"></h2>
       </div>
       <div class="cardParrafo">
-        <p class="parrafo">
-          Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de
-            Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>.
-        </p>
+        <p class="parrafo"></p>
       </div>
+      <button type="button" class="btnImagen">Ver más.</button>
     </div>
   </template>
-  <!-- ---------------------MODALES---------------- -->
 
-  <section class="modalWeb">
-    <div class="modal__container">
-      <p class="modal__cerrar">X</p>
-      <h2 class="modal__titulo">¡Bienvenido a proyectos Web!</h2>
-      <div class="containerCards"></div>
-    </div>
-  </section>
-  <!-- -------------------Modal de Diseño---------------- -->
-  <section class="modalDiseno">
-    <div class="modal__container">
-      <p class="modal__cerrar">X</p>
-      <h2 class="modal__titulo">¡Bienvenido a los Diseño!</h2>
-      <div class="galeria" id="cardsDiseno"></div>
-    </div>
-  </section>
-  <!-- -------------------Modal de 3D---------------- -->
-
-  <section class="modal3D">
-    <div class="modal__container">
-      <p class="modal__cerrar">X</p>
-      <h2 class="modal__titulo">¡Bienvenidos a los proyectos en 3D!</h2>
-      <div class="galeria " id="cards3D"></div>
-    </div>
-  </section>
   <!-- -------------------Modal de Cursos Web---------------- -->
-
-  <section class="CursoUno" data-id="uno">
-    <div class="modal__container__curso">
-      <p class="modal__cerrar_curso">X</p>
-      <h2 class="modal__titulo">
-        Conoce Como Utilizar CRM para Retener y Fidelizar Clientes.</h2>
-      <div class=" slider-container  ">
-        <div class="slider__content__img  ">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva1.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva2.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva3.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva4.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva5.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva6.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva7.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva8.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva9.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva10.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva11.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva12.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva13.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva14.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva15.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva16.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conoce_Como_Utilizar_CRM_Para_Retener__y_Fidelizar_Clientes/Diapositiva17.JPG">
-        </div>
-        <span class="button-prev">
-          <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
-        </span>
-        <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
-      </div>
+  <template id="templateCursoWeb">
+    <div class="slider__content__img">
+      <img class="slider-item">
     </div>
-  </section>
-  <section class="CursoDos" data-id="dos">
+    <span class="button-prev">
+      <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
+    </span>
+    <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
+    </div>
+  </template>
+
+
+
+  <!-- <section class="CursoDos" data-id="dos">
     <div class="modal__container__curso">
       <p class="modal__cerrar_curso">X</p>
       <h2 class="modal__titulo">
@@ -848,12 +822,11 @@
         <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
       </div>
     </div>
-  </section>
+  </section> -->
   <script src="/Js/main.js" type="module"></script>
   <script src="/js/vanilla-tilt.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script>
     VanillaTilt.init(document.querySelectorAll(".box"), {
       max: 20,
