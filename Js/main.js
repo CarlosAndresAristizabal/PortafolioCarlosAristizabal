@@ -1,21 +1,26 @@
 import dataDiseno from './datadiseno.js'
 import data3D from './data3d.js'
 import dataweb from './dataweb.js'
-
+// -----------------Menu-------------
 const activeMenu = document.querySelectorAll('.nav__lista__link')
+// ---------------Cards de los modales del proyecto-----------------
 const modalDiseno = document.querySelector('.modalDiseno')
 const modal3D = document.querySelector('.modal3D')
 const modalWeb = document.querySelector(".modalWeb")
 const modalCurso = document.querySelector(".modalCurso")
+// -------------------capturas donde iran los fragment de los templates---------------
 const itemsDiseno = document.getElementById('cardsDiseno')
 const items3D = document.getElementById('cards3D')
 const itemsWeb = document.getElementById('cardsWeb')
+const itemsCurso = document.getElementById('cursoId')
+
+// ---------------Templates---------------
 const cardDiseno = document.getElementById('templateCardsProyecto').content
 const cardWeb = document.getElementById('templateCardsWeb').content
 const cardCurso = document.getElementById('templateCursoWeb').content
+// ---------------Fragment------------
 const fragment = document.createDocumentFragment()
-// const slider = document.querySelector(".slider__content__img");
-let galeria = []
+const slider = document.querySelector(".slider__content__img");
 // ------------- Activating each item in the menu bar----------
 activeMenu.forEach(item => {
   item.addEventListener('click', () => {
@@ -25,9 +30,6 @@ activeMenu.forEach(item => {
     item.classList.add('activo');
   });
 });
-
-
-
 document.addEventListener('click', e => {
 
   // -------------- click open modals of the project--------
@@ -61,8 +63,8 @@ document.addEventListener('click', e => {
     quitarClass.classList.remove("modal__mostrar")
   }
   e.stopPropagation()
-})
 
+})
 // creation of an arrow function for the section of the cards of the design projects through an object and using a template
 const pintarCardsDiseno = dataDiseno => {
   const datos = dataDiseno
@@ -89,7 +91,6 @@ const pintarCards3D = data3D => {
   items3D.appendChild(fragment)
 
 }
-
 // Creation of an arrow function for section of the cards of the web design  projects through an object and using a template
 const pintarCardsWeb = dataweb => {
   const datosweb = dataweb
@@ -99,35 +100,40 @@ const pintarCardsWeb = dataweb => {
     cardWeb.querySelector('img').setAttribute('src', itemsWeb.urlImage)
     cardWeb.querySelector('img').setAttribute('alt', itemsWeb.titulo)
     cardWeb.querySelector('.btnImagen').dataset.id = itemsWeb.id
-    galeria = itemsWeb.galeria
     const clone = cardWeb.cloneNode(true)
     fragment.appendChild(clone)
   })
   itemsWeb.appendChild(fragment)
 }
-
-
+// Creation of an arrow function to paint the courses according to their ID of each of the web design projects through an object and using a template.
 const pintarCurso = item => {
-  console.log(item)
+  itemsCurso.innerHTML = ""
+  const cardItem = {
+    id: item.querySelector('.btnImagen').dataset.id,
+  }
+  let dataItem = dataweb.map((item) => item.galeria)
+  dataItem[ cardItem.id - 1 ].forEach(img => {
+    cardCurso.querySelector('.slider-item').setAttribute('src', img)
+    const clone = cardCurso.cloneNode(true)
+    fragment.appendChild(clone)
+  })
+  itemsCurso.appendChild(fragment)
+  // ------------------next and prev of the courses-----------
 
+  // if (e.target.classList.contains('button-prev')) {
+  //   slider.scrollLeft -= 500
+  //   e.target.classList.contains('button-prev')
+  //   console.log(e.target.classList)
+  //   e.stopPropagation()
+  // }
+  // if (e.target.classList.contains('button-next')) {
+  //   slider.scrollLeft += 500
+  //   e.target.classList.contains('button-next')
+  //   console.log(e.target.classList)
 
-
+  // e.stopPropagation()
+  // }
 }
 
 
 
-
-
-
-//   // ------------------next and prev of the courses-----------
-//   if (e.target.classList.contains('button-prev')) {
-//     slider.scrollLeft -= 500
-//     e.target.classList.contains('button-prev')
-//     e.stopPropagation()
-//   }
-//   if (e.target.classList.contains('button-next')) {
-//     slider.scrollLeft += 500
-//     e.target.classList.contains('button-next')
-//     e.stopPropagation()
-//   }
-//   e.stopPropagation()

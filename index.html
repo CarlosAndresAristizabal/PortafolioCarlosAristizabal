@@ -71,19 +71,20 @@
           <div class="inicio__profecion">
             <p>
               <br>
-              Soy un apasionado desarrollador web full stack con una sólida formación y con 3 años
+              Soy un apasionado <strong>desarrollador web full stack</strong> con una sólida formación y con 3 años
               experiencia. mi enfoque se centra en crear soluciones tecnológicas eficientes y
               escalables
               que optimizan la experiencia del usuario y cumplan con los requisitos del negocio. Usando
-              lenguajes de programación en la parte del<strong>Front-end</strong> como
+              lenguajes de programación en la parte del <strong>Front-end</strong> como
               <strong>Html5</strong>,
               <strong>Css</strong> con el manejo del <strong>Back-end</strong> y su logíca de programación
               de
               <strong>JavaScript</strong>,
               <strong>Java</strong>, <strong>Python</strong>,realizando el manejo de datos con<strong>
                 MongoDB</strong>
-              y <strong>MySql</strong>, usando recursos de<strong>API's rest full</strong> y un control de
-              veriones con <strong>Git y GitHub</strong> y proyectando el <strong> CI/CD</strong> con
+              y <strong>MySql</strong>, usando recursos de<strong> API's rest full</strong> y un control de
+              veriones con <strong>Git y GitHub</strong> y proyectando el despliegeue de la aplicación con <strong>
+                CI/CD</strong> con
               <strong>GitHub-Action</strong>, <strong>Docker</strong> y en la nube con
               <strong>AWS</strong>, y
               <strong>Jenkins</strong> y mucho más.
@@ -431,9 +432,10 @@
     <section class="modalCurso">
       <div class="modal__container__curso">
         <p class="modal__cerrar_curso">X</p>
-
+        <h2 class="modal__titulo_curso"></h2>
+        <div class=" slider-container" id="cursoId">
+        </div>
       </div>
-
     </section>
 
     <!-- ---------------Contacto-------------- -->
@@ -491,9 +493,6 @@
 
   <!-- -------------------Modal de Cursos Web---------------- -->
   <template id="templateCursoWeb">
-    <div class=" slider-container  id=" cursoId">
-      <h2 class="modal__titulo"></h2>
-    </div>
     <div class="slider__content__img">
       <img class="slider-item">
     </div>
@@ -503,329 +502,6 @@
     <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
   </template>
 
-
-
-  <!-- <section class="CursoDos" data-id="dos">
-    <div class="modal__container__curso">
-      <p class="modal__cerrar_curso">X</p>
-      <h2 class="modal__titulo">
-        Cree su Plan de Comunicación Digital.</h2>
-      <div class=" slider-container  ">
-        <div class="slider__content__img  ">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva1.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva2.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva3.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva4.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva5.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva6.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva7.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva8.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva9.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva10.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva11.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva12.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva13.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva14.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva15.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva16.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva17.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva18.JPG">
-        </div>
-        <span class="button-prev">
-          <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
-        </span>
-        <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
-      </div>
-    </div>
-  </section>
-  <section class="CursoTres" data-id="tres">
-    <div class="modal__container__curso">
-      <p class="modal__cerrar_curso">X</p>
-      <h2 class="modal__titulo">
-        Maneje Eficientemente sus Inventarios a Través de la Sistematización.</h2>
-      <div class=" slider-container  ">
-        <div class="slider__content__img  ">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva1.JPG">
-          <img class=" slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva2.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva3.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva4.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva5.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva6.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva7.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva8.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva9.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva10.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva11.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva12.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva13.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva14.JPG">
-        </div>
-        <span class="button-prev">
-          <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
-        </span>
-        <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
-      </div>
-    </div>
-  </section>
-  <section class="CursoCuatro" data-id="cuatro">
-    <div class="modal__container__curso">
-      <p class="modal__cerrar_curso">X</p>
-      <h2 class="modal__titulo">
-        Conozca las Herramientas y los Beneficios de Contar con sus Inventarios Automatizados.</h2>
-      <div class=" slider-container  ">
-        <div class="slider__content__img  ">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva1.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva2.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva3.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva4.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva5.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva6.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva7.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva8.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva9.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva10.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva11.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva12.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva13.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva14.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva15.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva16.JPG">
-        </div>
-        <span class="button-prev">
-          <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
-        </span>
-        <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
-      </div>
-    </div>
-  </section>
-  <section class="CursoCinco" data-id="cinco">
-    <div class="modal__container__curso">
-      <p class="modal__cerrar_curso">X</p>
-      <h2 class="modal__titulo">
-        Pontencializa el Uso del CRM en tu Empresa.</h2>
-      <div class=" slider-container  ">
-        <div class="slider__content__img  ">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva1.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva2.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva3.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva4.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva5.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva6.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva7.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva8.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva9.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva10.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva11.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva12.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva13.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva14.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva15.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva16.JPG">
-          <img class="slider-item " src="/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva17.JPG">
-        </div>
-        <span class="button-prev">
-          <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
-        </span>
-        <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
-      </div>
-    </div>
-  </section>
-  <section class="CursoSeis" data-id="seis">
-    <div class="modal__container__curso">
-      <p class="modal__cerrar_curso">X</p>
-      <h2 class="modal__titulo">
-        Preste sus Servicios de Forma Automatizada.</h2>
-
-      <div class=" slider-container  ">
-        <div class="slider__content__img  ">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva1.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva2.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva3.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva4.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva5.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva6.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva7.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva8.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva9.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva10.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva11.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva12.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva13.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva14.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva15.JPG">
-          <img class="slider-item "
-            src="/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva16.JPG">
-        </div>
-        <span class="button-prev">
-          <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
-        </span>
-        <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
-      </div>
-    </div>
-  </section>
-  <section class="CursoSiete" data-id="siete">
-    <div class="modal__container__curso">
-      <p class="modal__cerrar_curso">X</p>
-      <h2 class="modal__titulo">
-        Como darle Notoriedad a su Marca con el Branded Content.</h2>
-      <div class=" slider-container  ">
-        <div class="slider__content__img  ">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva1.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva2.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva3.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva4.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva5.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva6.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva7.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva8.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva9.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva10.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva11.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva12.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva13.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva14.JPG">
-          <img class="slider-item " src="/img/Web/storeLine/Mockup_Branded_Content/Diapositiva15.JPG">
-        </div>
-        <span class="button-prev">
-          <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
-        </span>
-        <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
-      </div>
-    </div>
-  </section>
-  <section class="CursoOcho" data-id="ocho">
-    <div class="modal__container__curso">
-      <p class="modal__cerrar_curso">X</p>
-      <h2 class="modal__titulo">
-        Como Hacer Contratos con sus Clientes y Proveedores.</h2>
-      <div class=" slider-container  ">
-        <div class="slider__content__img  ">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva1.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva2.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva3.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva4.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva5.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva6.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva7.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva8.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva9.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva10.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva11.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva12.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva13.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva14.JPG">
-        </div>
-        <span class="button-prev">
-          <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
-        </span>
-        <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
-      </div>
-    </div>
-  </section>
-  <section class="CursoNueve" data-id="nueve">
-    <div class="modal__container__curso">
-      <p class="modal__cerrar_curso">X</p>
-      <h2 class="modal__titulo">
-        Conoce los Beneficios para Ser una Sociedad BIC.</h2>
-      <div class="slider-container  ">
-        <div class="slider__content__img  ">
-          <img class="slider-item  "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva1.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva2.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva3.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva4.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva5.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva6.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva7.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva8.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva9.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva10.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva11.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva12.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva13.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva14.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva15.JPG">
-          <img class="slider-item "
-            src="/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva16.JPG">
-        </div>
-        <span class="button-prev"><ion-icon name="chevron-back-outline" class="ionfont"></ion-icon></span>
-        <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
-      </div>
-    </div>
-  </section> -->
   <script src="/Js/main.js" type="module"></script>
   <script src="/js/vanilla-tilt.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

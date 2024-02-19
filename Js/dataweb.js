@@ -28,49 +28,190 @@ const dataweb = [
         "id": 2,
         "titulo": "Cree su Plan de Comunicación Digital.",
         "urlImage": "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva1.JPG",
-        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>."
+        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>.",
+        "galeria": [
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva1.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva2.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva3.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva4.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva5.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva6.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva7.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva8.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva9.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva10.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva11.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva12.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva13.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva14.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva15.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva16.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva17.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva18.JPG" ]
     },
     {
         "id": 3,
         "titulo": " Maneje Eficientemente sus Inventarios através de la Sistematización.",
         "urlImage": "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva1.JPG",
-        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>."
+        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>.",
+        "galeria": [
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva1.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva2.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva3.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva4.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva5.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva6.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva7.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva8.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva9.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva10.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva11.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva12.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva13.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Maneje_Eficientemente_sus_Invetarios/Diapositiva14.JPG"
+        ]
     },
     {
         "id": 4,
         "titulo": "Conozca los Beneficios de Contar con sus Inventarios Automatizados.",
         "urlImage": "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva1.JPG",
-        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>."
+        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>.",
+        "galeria": [
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva1.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva2.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva3.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva4.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva5.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva6.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva7.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva8.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva9.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva10.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva11.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva12.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva13.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva14.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva15.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Conozca_las_Herramientas_y Los_Beneficios_de_Contar_con_sus_Inventarios_Automatizados/Diapositiva16.JPG"
+        ]
     },
     {
         "id": 5,
         "titulo": "Pontencializa el Uso del CRM en tu Empresa.",
         "urlImage": "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva1.JPG",
-        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>."
+        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>.",
+        "galeria": [
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva1.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva2.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva3.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva4.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva5.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva6.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva7.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva8.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva9.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva10.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva11.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva12.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva13.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva14.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva15.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva16.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Potencializa_el_Uso_del_CRM/Diapositiva17.JPG"
+        ]
     },
     {
         "id": 6,
         "titulo": "Preste sus Servicios de Forma Automatizada.",
         "urlImage": "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva1.JPG",
-        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>."
+        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>.",
+        "galeria": [
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva1.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva2.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva3.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva4.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva5.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva6.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva7.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva8.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva9.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva10.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva11.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva12.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva13.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva14.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva15.JPG",
+            "/img/Web/htmlCSsJs/Mockup_Preste_sus_Servicios_de_Forma_Automatizada/Diapositiva16.JPG"
+        ]
     },
     {
         "id": 7,
         "titulo": "Como darle Notoriedad a su Marca con el Branded Content.",
         "urlImage": "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva1.JPG",
-        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>."
+        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>.",
+        "galeria": [
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva1.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva2.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva3.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva4.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva5.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva6.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva7.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva8.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva9.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva10.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva11.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva12.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva13.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva14.JPG",
+            "/img/Web/storeLine/Mockup_Branded_Content/Diapositiva15.JPG"
+        ]
     },
     {
         "id": 8,
         "titulo": "Como Hacer Contratos con sus Clientes y Proveedores.",
         "urlImage": "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva1.JPG",
-        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>."
+        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>.",
+        "galeria": [
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva1.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva2.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva3.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva4.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva5.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva6.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva7.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva8.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva9.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva10.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva11.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva12.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva13.JPG",
+            "/img/Web/storeLine/Mockup_Como_Hacer_Contratos_con_sus_Clientes _y_Provedores/Diapositiva14.JPG"
+        ]
     },
     {
         "id": 9,
         "titulo": "Conoce los Beneficios para Ser una Sociedad BIC.",
         "urlImage": "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva1.JPG",
-        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>."
+        "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>.",
+        "galeria": [
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva1.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva2.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva3.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva4.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva5.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva6.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva7.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva8.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva9.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva10.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva11.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva12.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva13.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva14.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva15.JPG",
+            "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva16.JPG"
+        ]
     },
 
 ]
