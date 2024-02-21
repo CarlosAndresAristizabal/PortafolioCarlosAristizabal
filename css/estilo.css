@@ -936,23 +936,20 @@ body {
 	height: calc(100% - 1em);
 	position: relative;
 	overflow: hidden;
-	display: flex;
-	flex-direction: row;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
-	scroll-snap-type: x mandatory;
-	scroll-snap-align: center;
 }
 .slider__content__img img {
 	object-fit: scale-down;
 	width: 100%;
 	height: 100%;
-	position: relative;
-	scroll-behavior: smooth;
-	scroll-snap-type: x mandatory;
-	scroll-snap-align: center;
 }
-
+.animeImgIn {
+	animation: imgCursoIn 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+	-webkit-animation: imgCursoIn 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+.animeImgOut {
+	animation: imgCursoOut 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+	-webkit-animation: imgCursoOut 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
 .button-next,
 .button-prev {
 	position: absolute;
@@ -997,7 +994,70 @@ body {
 	opacity: 0.8;
 	color: var(--colorHover);
 }
-
+@-webkit-keyframes imgCursoOut {
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+	}
+	0% {
+		-webkit-transform: translateX(100px);
+		transform: translateX(100px);
+		-moz-transform: translateX(100px);
+		-ms-transform: translateX(100px);
+		-o-transform: translateX(100px);
+	}
+}
+@keyframes imgCursoOut {
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+	}
+	0% {
+		-webkit-transform: translateX(100px);
+		transform: translateX(100px);
+		-moz-transform: translateX(100px);
+		-ms-transform: translateX(100px);
+		-o-transform: translateX(100px);
+	}
+}
+@-webkit-keyframes imgCursoIn {
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+	}
+	0% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
+		-moz-transform: translateX(-100px);
+		-ms-transform: translateX(-100px);
+		-o-transform: translateX(-100px);
+	}
+}
+@keyframes imgCursoIn {
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+	}
+	0% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
+		-moz-transform: translateX(-100px);
+		-ms-transform: translateX(-100px);
+		-o-transform: translateX(-100px);
+	}
+}
 /*--------------section Redes-------------*/
 .section__redes {
 	display: flex;

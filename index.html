@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
 </head>
 
 <body>
@@ -432,7 +434,6 @@
     <section class="modalCurso">
       <div class="modal__container__curso">
         <p class="modal__cerrar_curso">X</p>
-        <h2 class="modal__titulo_curso"></h2>
         <div class=" slider-container" id="cursoId">
         </div>
       </div>
@@ -475,7 +476,6 @@
       <figcaption class="galeria__caption"></figcaption>
     </figure>
   </template>
-
   <template id="templateCardsWeb">
     <div class="card">
       <div class="cardImg">
@@ -491,17 +491,16 @@
     </div>
   </template>
 
-  <!-- -------------------Modal de Cursos Web---------------- -->
   <template id="templateCursoWeb">
     <div class="slider__content__img">
       <img class="slider-item">
     </div>
-    <span class="button-prev">
+    <span class="button-prev" id="atras">
       <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>
     </span>
-    <span class="button-next"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
+    <span class="button-next" id="siguiente"><ion-icon name="chevron-forward-outline" class="ionfont"></ion-icon></span>
   </template>
-
+  <!-- -------------------------Scripts-------------------- -->
   <script src="/Js/main.js" type="module"></script>
   <script src="/js/vanilla-tilt.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

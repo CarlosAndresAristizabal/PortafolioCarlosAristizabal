@@ -13,14 +13,15 @@ const itemsDiseno = document.getElementById('cardsDiseno')
 const items3D = document.getElementById('cards3D')
 const itemsWeb = document.getElementById('cardsWeb')
 const itemsCurso = document.getElementById('cursoId')
-
 // ---------------Templates---------------
 const cardDiseno = document.getElementById('templateCardsProyecto').content
 const cardWeb = document.getElementById('templateCardsWeb').content
 const cardCurso = document.getElementById('templateCursoWeb').content
 // ---------------Fragment------------
 const fragment = document.createDocumentFragment()
-const slider = document.querySelector(".slider__content__img");
+// ---------------Variables----------------
+let galeria = []
+let indexImg = 0
 // ------------- Activating each item in the menu bar----------
 activeMenu.forEach(item => {
   item.addEventListener('click', () => {
@@ -52,7 +53,7 @@ document.addEventListener('click', e => {
   // --------------capture the course by means of the id --------------
   if (e.target.classList.contains('btnImagen')) {
     modalCurso.classList.add('modal__mostrar')
-    pintarCurso(e.target.parentElement)
+    obtenerCurso(e.target.parentElement)
   }
   //--------------------- click close modals of the project-------------------
   if (e.target.matches('.modal__cerrar')) {
@@ -61,9 +62,10 @@ document.addEventListener('click', e => {
   if (e.target.matches('.modal__cerrar_curso')) {
     modalWeb.classList.add('modal__mostrar');
     quitarClass.classList.remove("modal__mostrar")
+    galeria = []
+    indexImg = 0
   }
   e.stopPropagation()
-
 })
 // creation of an arrow function for the section of the cards of the design projects through an object and using a template
 const pintarCardsDiseno = dataDiseno => {
@@ -106,34 +108,78 @@ const pintarCardsWeb = dataweb => {
   itemsWeb.appendChild(fragment)
 }
 // Creation of an arrow function to paint the courses according to their ID of each of the web design projects through an object and using a template.
-const pintarCurso = item => {
-  itemsCurso.innerHTML = ""
+const obtenerCurso = (item) => {
+
   const cardItem = {
     id: item.querySelector('.btnImagen').dataset.id,
   }
   let dataItem = dataweb.map((item) => item.galeria)
   dataItem[ cardItem.id - 1 ].forEach(img => {
-    cardCurso.querySelector('.slider-item').setAttribute('src', img)
-    const clone = cardCurso.cloneNode(true)
-    fragment.appendChild(clone)
+    galeria.push(img)
   })
-  itemsCurso.appendChild(fragment)
-  // ------------------next and prev of the courses-----------
-
-  // if (e.target.classList.contains('button-prev')) {
-  //   slider.scrollLeft -= 500
-  //   e.target.classList.contains('button-prev')
-  //   console.log(e.target.classList)
-  //   e.stopPropagation()
-  // }
-  // if (e.target.classList.contains('button-next')) {
-  //   slider.scrollLeft += 500
-  //   e.target.classList.contains('button-next')
-  //   console.log(e.target.classList)
-
-  // e.stopPropagation()
-  // }
+  pintarCurso(galeria, indexImg)
 }
+const pintarCurso = (galeria, indexImg) => {
+  itemsCurso.innerHTML = ""
+  let index = indexImg
+  cardCurso.querySelector('.slider-item').setAttribute('src', galeria[ index ])
+  const clone = cardCurso.cloneNode(true)
+  fragment.appendChild(clone)
+  itemsCurso.appendChild(fragment)
+  imagenCursoSiguiente()
+}
+const imagenCursoSiguiente = () => {
+
+  const btnNext = document.getElementById('siguiente')
+  const btnBack = document.getElementById('atras')
+
+  btnNext.addEventListener('click', () => {
+    const anima = itemsCurso.classList
+    anima.add('animeImgIn')
+
+
+    if (indexImg == galeria.length - 1) {
+      btnNext.setAttribute('disable', true)
+    } else if (indexImg < galeria.length - 1) {
+      console.log(anima)
+      anima.remove('animeImgIn')
+      console.log(anima)
+
+      pintarCurso(galeria, indexImg + 1)
+      indexImg++;
+
+
+    }
+
+    // if (itemsCurso.classList.contains('animeImgIn')) {
+
+    //   itemsCurso.classList.remove('animeImgIn')
+    // }
+
+    // itemsCurso.classList.add('animeImgIn')
+  })
+  btnBack.addEventListener('click', () => {
+    if (itemsCurso.classList.contains('animeImgOut')) {
+
+      itemsCurso.classList.add('animeImgOut')
+
+    }
+
+    if (indexImg == 0) {
+      btnNext.setAttribute('disable', true)
+    } else if (indexImg <= galeria.length) {
+
+      pintarCurso(galeria, indexImg - 1)
+      indexImg--;
+      itemsCurso.classList.remove('animeImgOut')
+
+    }
+  })
+}
+
+
+
+
 
 
 
