@@ -123,47 +123,31 @@ const pintarCurso = (galeria, indexImg) => {
   itemsCurso.innerHTML = ""
   let index = indexImg
   cardCurso.querySelector('.slider-item').setAttribute('src', galeria[ index ])
+  cardCurso.querySelector('.slider-item').classList.add('animeImgIn', 'animeImgOut')
   const clone = cardCurso.cloneNode(true)
   fragment.appendChild(clone)
   itemsCurso.appendChild(fragment)
   imagenCursoSiguiente()
 }
-const imagenCursoSiguiente = () => {
 
+//Realizamos los movimientodel el Slide
+const imagenCursoSiguiente = () => {
   const btnNext = document.getElementById('siguiente')
   const btnBack = document.getElementById('atras')
 
   btnNext.addEventListener('click', () => {
-    const anima = itemsCurso.classList
-    anima.add('animeImgIn')
-
 
     if (indexImg == galeria.length - 1) {
       btnNext.setAttribute('disable', true)
     } else if (indexImg < galeria.length - 1) {
-      console.log(anima)
-      anima.remove('animeImgIn')
-      console.log(anima)
-
       pintarCurso(galeria, indexImg + 1)
       indexImg++;
-
-
+      itemsCurso.classList.remove('animeImgOut')
     }
 
-    // if (itemsCurso.classList.contains('animeImgIn')) {
 
-    //   itemsCurso.classList.remove('animeImgIn')
-    // }
-
-    // itemsCurso.classList.add('animeImgIn')
   })
   btnBack.addEventListener('click', () => {
-    if (itemsCurso.classList.contains('animeImgOut')) {
-
-      itemsCurso.classList.add('animeImgOut')
-
-    }
 
     if (indexImg == 0) {
       btnNext.setAttribute('disable', true)
@@ -171,15 +155,15 @@ const imagenCursoSiguiente = () => {
 
       pintarCurso(galeria, indexImg - 1)
       indexImg--;
-      itemsCurso.classList.remove('animeImgOut')
+      itemsCurso.classList.remove('animeImgIn')
 
     }
   })
+
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
