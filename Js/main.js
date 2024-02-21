@@ -3,12 +3,12 @@ import data3D from './data3d.js'
 import dataweb from './dataweb.js'
 // -----------------Menu-------------
 const activeMenu = document.querySelectorAll('.nav__lista__link')
-// ---------------Cards de los modales del proyecto-----------------
+// ---------------Cards of the project's manners-----------------
 const modalDiseno = document.querySelector('.modalDiseno')
 const modal3D = document.querySelector('.modal3D')
 const modalWeb = document.querySelector(".modalWeb")
 const modalCurso = document.querySelector(".modalCurso")
-// -------------------capturas donde iran los fragment de los templates---------------
+// -------------------captures where the fragments of the templates will be placed---------------
 const itemsDiseno = document.getElementById('cardsDiseno')
 const items3D = document.getElementById('cards3D')
 const itemsWeb = document.getElementById('cardsWeb')
@@ -52,7 +52,7 @@ document.addEventListener('click', e => {
   }
   // --------------capture the course by means of the id --------------
   if (e.target.classList.contains('btnImagen')) {
-    modalCurso.classList.add('modal__mostrar')
+    modalCurso.classList.add('modal__mostrar_curso')
     obtenerCurso(e.target.parentElement)
   }
   //--------------------- click close modals of the project-------------------
@@ -60,8 +60,7 @@ document.addEventListener('click', e => {
     quitarClass.classList.remove("modal__mostrar")
   }
   if (e.target.matches('.modal__cerrar_curso')) {
-    modalWeb.classList.add('modal__mostrar');
-    quitarClass.classList.remove("modal__mostrar")
+    modalCurso.classList.remove("modal__mostrar_curso")
     galeria = []
     indexImg = 0
   }
@@ -119,6 +118,7 @@ const obtenerCurso = (item) => {
   })
   pintarCurso(galeria, indexImg)
 }
+//creation of an arrow function for the section of the gallery of the web projects through an object and using a template
 const pintarCurso = (galeria, indexImg) => {
   itemsCurso.innerHTML = ""
   let index = indexImg
@@ -129,14 +129,11 @@ const pintarCurso = (galeria, indexImg) => {
   itemsCurso.appendChild(fragment)
   imagenCursoSiguiente()
 }
-
-//Realizamos los movimientodel el Slide
+//We perform the movements of the Slide
 const imagenCursoSiguiente = () => {
   const btnNext = document.getElementById('siguiente')
   const btnBack = document.getElementById('atras')
-
   btnNext.addEventListener('click', () => {
-
     if (indexImg == galeria.length - 1) {
       btnNext.setAttribute('disable', true)
     } else if (indexImg < galeria.length - 1) {
@@ -144,26 +141,14 @@ const imagenCursoSiguiente = () => {
       indexImg++;
       itemsCurso.classList.remove('animeImgOut')
     }
-
-
   })
   btnBack.addEventListener('click', () => {
-
     if (indexImg == 0) {
       btnNext.setAttribute('disable', true)
     } else if (indexImg <= galeria.length) {
-
       pintarCurso(galeria, indexImg - 1)
       indexImg--;
       itemsCurso.classList.remove('animeImgIn')
-
     }
   })
-
-
-
-
-
-
-
 }
