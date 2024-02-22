@@ -153,7 +153,7 @@ body {
 	align-items: center;
 	text-align: center;
 }
-/*Menu de navegacion CSS*/
+/*----------------Menú de navegación -------------------------*/
 .nav {
 	position: fixed;
 	display: flex;
@@ -356,7 +356,8 @@ body {
 	-moz-border-radius: 7px 7px 0 0;
 	-ms-border-radius: 7px 7px 0 0;
 	-o-border-radius: 7px 7px 0 0;
-	font-size: 0.7em;
+	font-size: 0.6em;
+	font-weight: bold;
 }
 
 .tab:hover {
@@ -365,8 +366,9 @@ body {
 	background-color: var(--colorHover);
 	cursor: pointer;
 	font-size: 1em;
-	animation: all 1s;
-	-webkit-animation: all 1s;
+	font-weight: bold;
+	animation: all 1s ease-in;
+	-webkit-animation: all 1s ease-In;
 }
 .radio {
 	display: none;
@@ -409,6 +411,7 @@ body {
 	color: #0074b7;
 	font-weight: bold;
 	text-shadow: 0px 0px 10px 0px #fffefee0;
+	font-size: 1.2em;
 }
 
 #tab-1:checked ~ .contenidoTabs #content-1,
@@ -516,7 +519,7 @@ body {
 	-o-transition: 0.2s ease-in;
 	box-shadow: 0 0 15px var(--colorHover);
 }
-/*-----------section Portafolio----------------*/
+/*-----------section Portafolio cards----------------*/
 .flexcard {
 	width: 100%;
 	display: flex;
@@ -647,7 +650,7 @@ body {
 	text-shadow: 5px 5px 20px var(--colorHover);
 }
 
-/* --------------modal------------ */
+/* --------------modals------------ */
 
 .modalDiseno,
 .modal3D,
@@ -753,6 +756,8 @@ body {
 	color: var(--colorSeleccion);
 	background-color: var(--colorSegundario);
 }
+
+/* ------------Section de galeria de diseño y 3d--------------- */
 .galeria {
 	display: flex;
 	flex-flow: wrap;
@@ -828,7 +833,7 @@ body {
 .cap-bot:hover .galeria__caption {
 	bottom: 0;
 }
-
+/* --------------------Section proyectos Web------------------ */
 .containerCards {
 	display: flex;
 	width: 100%;
@@ -849,7 +854,8 @@ body {
 	gap: 1em;
 	width: 100%;
 	height: 450px;
-	padding: 3em 1em;
+	min-height: 400px;
+	padding: 2em 1em;
 	background-color: var(--colorSegundario);
 	border: 2px solid var(--colorHover);
 	border-radius: 10px;
@@ -936,7 +942,7 @@ body {
 	-o-transition: all 0.5s;
 }
 
-/*-------------slider---------------------*/
+/*---------------Sections de los Cursos Web------------------------*/
 .slider-container {
 	position: relative;
 	width: 100%;
@@ -1073,7 +1079,7 @@ body {
 		-o-transform: translateX(-100px);
 	}
 }
-/*--------------section Redes-------------*/
+/*--------------section Redes sociales -------------*/
 .section__redes {
 	display: flex;
 	width: 100%;

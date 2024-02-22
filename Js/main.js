@@ -133,13 +133,15 @@ const pintarCurso = (galeria, indexImg) => {
 const imagenCursoSiguiente = () => {
   const btnNext = document.getElementById('siguiente')
   const btnBack = document.getElementById('atras')
+
   btnNext.addEventListener('click', () => {
     if (indexImg == galeria.length - 1) {
       btnNext.setAttribute('disable', true)
     } else if (indexImg < galeria.length - 1) {
       pintarCurso(galeria, indexImg + 1)
       indexImg++;
-      itemsCurso.classList.remove('animeImgOut')
+      itemsCurso.firstElementChild.firstChild.nextElementSibling.classList.remove('animeImgOut')
+
     }
   })
   btnBack.addEventListener('click', () => {
@@ -148,7 +150,7 @@ const imagenCursoSiguiente = () => {
     } else if (indexImg <= galeria.length) {
       pintarCurso(galeria, indexImg - 1)
       indexImg--;
-      itemsCurso.classList.remove('animeImgIn')
+      itemsCurso.firstElementChild.firstChild.nextElementSibling.classList.remove('animeImgIn')
     }
   })
 }
