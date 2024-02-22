@@ -20,6 +20,7 @@ body {
 	scroll-behavior: smooth;
 	font-family: var(--font-parrafo);
 	background: #2e2e2e;
+	overflow-x: hidden;
 }
 .lazyload {
 	opacity: 0;
@@ -342,6 +343,13 @@ body {
 	flex-direction: column;
 	align-items: center;
 	padding: 4em 1em;
+	width: 100%;
+}
+.cardtabs {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .tab {
@@ -349,15 +357,15 @@ body {
 	cursor: pointer;
 	padding: 1em 0.5em;
 	color: white;
-	width: auto;
+	width: 100%;
 	background-color: #504a4a;
-	border-radius: 7px 7px 0 0;
-	-webkit-border-radius: 7px 7px 0 0;
-	-moz-border-radius: 7px 7px 0 0;
-	-ms-border-radius: 7px 7px 0 0;
-	-o-border-radius: 7px 7px 0 0;
-	font-size: 0.6em;
-	font-weight: bold;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	font-size: 0.65em;
+	letter-spacing: 0.1em;
 }
 
 .tab:hover {
@@ -366,19 +374,20 @@ body {
 	background-color: var(--colorHover);
 	cursor: pointer;
 	font-size: 1em;
-	font-weight: bold;
 	animation: all 1s ease-in;
 	-webkit-animation: all 1s ease-In;
+	text-align: center;
+	padding-top: 1em 0 0 0;
 }
 .radio {
 	display: none;
 }
 .contenidoTabs {
-	box-shadow: 0 2rem 2rem #00000080;
-	min-height: 200px;
+	box-shadow: 0 2em 2em #00000080;
 	width: 100%;
-	max-width: 500px;
+	min-height: 200px;
 	border-radius: 15px;
+	padding: 2em;
 }
 
 .itemTabs {
@@ -433,9 +442,11 @@ body {
 #tab-7:checked ~ .cardtabs #tab7 {
 	background-color: var(--colorSeleccion);
 	color: black;
-	font-weight: bold;
+	font-weight: 700;
 	letter-spacing: 0.01em;
 	box-shadow: 0px 0px 10px 0px hsl(17.72deg 100% 70% / 70%);
+	font-size: 1em;
+	text-align: center;
 }
 
 .contenedorIconos {
@@ -1274,9 +1285,9 @@ body {
 		color: white;
 	}
 }
-/*
+
 @media screen and (min-width: 1024px) {
-	/*----------Section Inicio------------*
+	/*----------Section Inicio------------*/
 	.section__inicio {
 		gap: 1em;
 		flex-direction: row;
@@ -1294,7 +1305,5 @@ body {
 		max-width: 480px;
 		width: 580px;
 	}
-	/*----------Section Sobre mi------------*
-	
+	/*----------Section Sobre mi------------*/
 }
-*/
