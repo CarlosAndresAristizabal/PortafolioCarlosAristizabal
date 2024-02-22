@@ -1313,7 +1313,7 @@ body {
 	}
 	/*------------inicio------------*/
 	.img_inicio {
-		min-width: 580px;
+		width: 100%;
 	}
 	/*----------Section Inicio------------*/
 	.section__inicio {
