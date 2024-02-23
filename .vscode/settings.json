@@ -25,7 +25,7 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "liveServer.settings.AdvanceCustomBrowserCmdLine": "msedge",
-    "editor.fontFamily": "Operator mono,Fira code, monospace",
+    "editor.fontFamily": "Fira code, Operator mono, monospace",
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "liveServer.settings.port": 5500,
@@ -47,5 +47,6 @@
     "prettier.vueIndentScriptAndStyle": false,
     "prettier.printWidth": 90,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "cSpell.language": "es-ES,es"
 }

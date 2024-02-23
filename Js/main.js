@@ -128,6 +128,7 @@ const pintarCurso = (galeria, indexImg) => {
   fragment.appendChild(clone)
   itemsCurso.appendChild(fragment)
   imagenCursoSiguiente()
+
 }
 //We perform the movements of the Slide
 const imagenCursoSiguiente = () => {
@@ -154,3 +155,5 @@ const imagenCursoSiguiente = () => {
     }
   })
 }
+
+
