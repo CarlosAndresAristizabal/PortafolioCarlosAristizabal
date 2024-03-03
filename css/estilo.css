@@ -673,7 +673,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #111111bd;
+	background-color: #1111116b;
 	display: flex;
 	opacity: 0;
 	pointer-events: none;
@@ -717,7 +717,7 @@ body {
 .modal__container__curso {
 	width: calc(90% - 40px);
 	height: calc(90% - 40px);
-	background-color: var(--colorSegundario);
+	background-color: #ffffff70;
 	padding: 1em;
 	border-radius: 6px;
 	margin: auto;
@@ -727,6 +727,7 @@ body {
 	-ms-border-radius: 6px;
 	-o-border-radius: 6px;
 	overflow: hidden;
+	backdrop-filter: blur(5px);
 }
 .modal__container__curso {
 	max-width: calc(100% - 2em);
