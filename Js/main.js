@@ -23,37 +23,37 @@ const fragment = document.createDocumentFragment()
 let galeria = []
 let indexImg = 0
 // ------------- Activating each item in the menu bar----------
-// const verificacion = (entries) => {
-//   const entry = entries[ 0 ]
-//   if (entry.isIntersecting) {
-//     activeMenu.forEach(item => {
-//       item.classList.remove('activo')
-//       if (item.classList.contains('contacto')) {
-//         console.log(item.classList.add('activo'))
-//       }
+const verificacion = (entries) => {
+  entries.forEach(itemEntry => {
+    const id = itemEntry.target.getAttribute('id')
+    const activo = document.querySelector(`.nav__lista__item a[href="#${id}"]`)
+    if (itemEntry.isIntersecting) {
+      activo.classList.add('activo')
+    } else {
+      activo.classList.remove('activo')
+    }
+  })
+}
 
-//     });
-//   };
-
-
-// }
-
-// const observer = new IntersectionObserver(verificacion)
-// const portafolio = document.getElementById('portafolio')
-// const contacto = document.getElementById('contacto')
-
-// observer.observe(contacto)
+const observer = new IntersectionObserver(verificacion, { rootMargin: "-60% 0px -40% 0px" })
 
 const activaMenu = () => {
   activeMenu.forEach(item => {
     item.addEventListener('click', () => {
+      document.getElementById("check").checked = false;
       activeMenu.forEach(item => {
         item.classList.remove('activo');
       });
       item.classList.add('activo');
     });
+    const hash = item.getAttribute("href")
+    const targetItem = document.querySelector(hash)
+    observer.observe(targetItem)
+
   });
 }
+activaMenu()
+
 document.addEventListener('click', e => {
 
   // -------------- click open modals of the project--------
@@ -181,14 +181,17 @@ const imagenCursoSiguiente = () => {
   })
 }
 
-activaMenu()
 
 ScrollReveal({
   reset: true,
   distance: '70px',
   duration: 4000,
   delay: 100,
-  opacity: 0
+  opacity: 0,
+  useDelay: 'always',
+  viewOffset: {
+    top: 10
+  }
 });
 
 ScrollReveal().reveal('.nav, .logo ', { container: '.nav', delay: 100, origin: 'left', interval: 200 })

@@ -16,8 +16,10 @@
 	list-style: none;
 	/* outline: 1px solid red; */
 }
-body {
+html {
 	scroll-behavior: smooth;
+}
+body {
 	font-family: var(--font-parrafo);
 	background: #2e2e2e;
 	overflow-x: hidden;
