@@ -77,6 +77,8 @@ document.addEventListener('click', e => {
   if (e.target.classList.contains('btnImagen')) {
     modalCurso.classList.add('modal__mostrar_curso')
     obtenerCurso(e.target.parentElement)
+    e.stopPropagation()
+
   }
   //--------------------- click close modals of the project-------------------
   if (e.target.matches('.modal__cerrar')) {
