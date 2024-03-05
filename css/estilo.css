@@ -318,13 +318,12 @@ img {
 .img_inicio {
 	display: flex;
 	margin: 0 auto;
-	width: 250px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	box-shadow: 0 0 10px var(--colorHover);
+	width: 300px;
+	object-fit: contain;
+	filter: drop-shadow(0 0 10px var (--colorHover));
+	-webkit-filter: drop-shadow(0 0 10px var (--colorHover));
+	-webkit-filter: drop-shadow(0 0 10px var(--colorHover));
+	transform: scaleX(-1);
 }
 /*----------Section Sobre mi------------*/
 .section {
@@ -335,13 +334,21 @@ img {
 	flex-wrap: wrap;
 	gap: 2em;
 }
+figure img .img__sobre {
+}
 .img__Sobre {
 	display: flex;
 	margin: 0 auto;
 	max-width: 250px;
 	-webkit-filter: drop-shadow(0 0 10px var(--colorHover));
 	filter: drop-shadow(0 0 10px var(--colorHover));
-	padding: 3% 5%;
+	/* padding: 3% 5%; */
+	border-image: 5px solid white;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
 }
 .parrafo {
 	width: 100%;
@@ -1121,33 +1128,103 @@ img {
 .section__icon_redes {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	width: 250px;
 	font-size: 3em;
-	gap: 1em;
+	/* gap: 0.2em; */
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	padding: 1em 0;
 }
 .icon_redes {
-	display: flex;
-	color: var(--colorSegundario);
+	height: 350px;
+	object-fit: cover;
+	color: white;
 	cursor: pointer;
-}
-.icon_redes:hover {
-	background-color: var(--colorSeleccion);
-	color: var(--colorSegundario);
+	justify-content: flex-start;
+	align-items: center;
+	font-weight: bold;
+	text-shadow: 0 0 0.2em #000000;
 	border-radius: 5px;
-	border: 1px solid var(--colorHover);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
-	box-shadow: 0 0 15px var(--colorHover);
-	transition: 0.5s ease;
-	-webkit-transition: 0.5s ease;
-	-moz-transition: 0.5s ease;
-	-ms-transition: 0.5s ease;
-	-o-transition: 0.5s ease;
+	padding: 0.5em;
+}
+
+.icon_redes:nth-child(1) {
+	background-image: url('/img/instagram.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.icon_redes:nth-child(2) {
+	background-image: url('/img/facebook.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.icon_redes:nth-child(3) {
+	background-image: url('/img/linkedin.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.icon_redes:nth-child(4) {
+	background-image: url('/img/github.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+ion-icon {
+	filter: drop-shadow(0 0 0.2em #000000);
+	-webkit-filter: drop-shadow(0 0 0.2em #000000);
+}
+ion-icon:hover {
+	filter: drop-shadow(0 0 0.2em #0074b7);
+	-webkit-filter: drop-shadow(0 0 0.2em #0074b7);
+}
+.icon_redes:nth-child(1):hover {
+	background-image: url('/img/instagramEfect.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-webkit-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-moz-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-ms-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-o-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+}
+.icon_redes:nth-child(2):hover {
+	background-image: url('/img/facebookEfect.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-webkit-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-moz-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-ms-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-o-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+}
+.icon_redes:nth-child(3):hover {
+	background-image: url('/img/linkedinEfect.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-webkit-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-moz-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-ms-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-o-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+}
+.icon_redes:nth-child(4):hover {
+	background-image: url('/img/githubEfect.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-webkit-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-moz-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-ms-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	-o-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+}
+.icon_redes:hover {
+	color: #0074b7;
+	filter: drop-shadow(0 0 0.2em var(--colorHover));
+	object-fit: contain;
+	-webkit-filter: drop-shadow(0 0 0.2em var(--colorHover));
 }
 
 /*-------Footer-------*/
@@ -1375,5 +1452,17 @@ img {
 	/*-----------Redes Sociales---------------*/
 	.section__redes {
 		padding-bottom: 10%;
+	}
+	.section__icon_redes {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.icon_redes {
+		width: 255px;
+		object-fit: cover;
 	}
 }

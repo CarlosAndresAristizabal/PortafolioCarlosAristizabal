@@ -184,22 +184,18 @@ const imagenCursoSiguiente = () => {
 
 ScrollReveal({
   reset: true,
-  distance: '70px',
-  duration: 4000,
+  distance: '60px',
+  duration: 3000,
   delay: 100,
-  opacity: 0,
-  useDelay: 'always',
-  viewOffset: {
-    top: 10
-  }
+
 });
 
 ScrollReveal().reveal('.nav, .logo ', { container: '.nav', delay: 100, origin: 'left', interval: 200 })
 ScrollReveal().reveal('.nav__lista__link ', { container: '.nav', delay: 300, origin: 'top', interval: 400, opacity: 1 })
-ScrollReveal().reveal('.saludo, .profecion', { delay: 2500, origin: 'bottom', interval: 2500 })
-ScrollReveal().reveal('figure', { delay: 3000, origin: 'right' })
+ScrollReveal().reveal('.saludo, .profecion', { delay: 250, origin: 'bottom', interval: 2500 })
+ScrollReveal().reveal('figure', { delay: 300, origin: 'right' })
 ScrollReveal().reveal('.inicio__nombre, .inicio__profecion, .text_Inicio', { delay: 400, origin: 'top', interval: 400 })
 ScrollReveal().reveal('.titulo, .subtitulos', { delay: 400, origin: 'bottom', interval: 1000 })
 ScrollReveal().reveal('.tab, .icon_redes', { delay: 200, origin: 'left', interval: 500 })
-ScrollReveal().reveal('.contenidoTabs, .parrafo_redes ', { delay: 4000, origin: 'right' })
+ScrollReveal().reveal('.contenidoTabs, .parrafo_redes ', { delay: 400, origin: 'right' })
 ScrollReveal().reveal('.flexcard, .box', { delay: 400, origin: 'top', interval: 800 })
