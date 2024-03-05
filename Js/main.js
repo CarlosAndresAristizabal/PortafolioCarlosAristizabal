@@ -23,14 +23,37 @@ const fragment = document.createDocumentFragment()
 let galeria = []
 let indexImg = 0
 // ------------- Activating each item in the menu bar----------
-activeMenu.forEach(item => {
-  item.addEventListener('click', () => {
-    activeMenu.forEach(item => {
-      item.classList.remove('activo');
+// const verificacion = (entries) => {
+//   const entry = entries[ 0 ]
+//   if (entry.isIntersecting) {
+//     activeMenu.forEach(item => {
+//       item.classList.remove('activo')
+//       if (item.classList.contains('contacto')) {
+//         console.log(item.classList.add('activo'))
+//       }
+
+//     });
+//   };
+
+
+// }
+
+// const observer = new IntersectionObserver(verificacion)
+// const portafolio = document.getElementById('portafolio')
+// const contacto = document.getElementById('contacto')
+
+// observer.observe(contacto)
+
+const activaMenu = () => {
+  activeMenu.forEach(item => {
+    item.addEventListener('click', () => {
+      activeMenu.forEach(item => {
+        item.classList.remove('activo');
+      });
+      item.classList.add('activo');
     });
-    item.classList.add('activo');
   });
-});
+}
 document.addEventListener('click', e => {
 
   // -------------- click open modals of the project--------
@@ -156,4 +179,20 @@ const imagenCursoSiguiente = () => {
   })
 }
 
+activaMenu()
 
+ScrollReveal({
+  distance: '50px',
+  duration: 4000,
+  delay: 100
+});
+
+ScrollReveal().reveal('.nav, .logo ', { delay: 100, origin: 'left', interval: 200 })
+ScrollReveal().reveal('.nav__lista__link ', { delay: 300, origin: 'top', interval: 400 })
+ScrollReveal().reveal('.saludo, .profecion', { delay: 2500, origin: 'bottom', interval: 2500 })
+ScrollReveal().reveal('figure', { delay: 3000, origin: 'right' })
+ScrollReveal().reveal('.inicio__nombre, .inicio__profecion, .text_Inicio', { delay: 400, origin: 'top', interval: 400 })
+ScrollReveal().reveal('.titulo, .subtitulo', { delay: 400, origin: 'bottom', interval: 1000 })
+ScrollReveal().reveal('.tab, .icon_redes', { delay: 200, origin: 'left', interval: 500 })
+ScrollReveal().reveal('.contenidoTabs, .parrafo_redes ', { delay: 4000, origin: 'right' })
+ScrollReveal().reveal('.flexcard, .box', { delay: 400, origin: 'top', interval: 800 })

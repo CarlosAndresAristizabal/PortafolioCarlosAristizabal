@@ -15,6 +15,8 @@
     rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <!-- --------------------ScrollReveal--------------- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -24,26 +26,26 @@
     <label for="check" class="checkbtn"><ion-icon name="grid-outline" size="large"></ion-icon></label>
     <a href="#" class="logo">Portafolio</a>
     <ul class="nav__lista " id="navegacion__lista">
-      <li class="nav__lista__item ">
-        <a href="#inicio" class="nav__lista__link activo">
+      <li class="nav__lista__item  ">
+        <a href="#inicio" class="nav__lista__link inicio activo">
           <span class="iconMenu"><ion-icon name="home-outline"></ion-icon></span>
           <span class="tituloMenu">Inicio</span>
         </a>
       </li>
       <li class="nav__lista__item">
-        <a href="#acercaDeMi" class="nav__lista__link">
+        <a href="#acercaDeMi" class="nav__lista__link acerca">
           <span class="iconMenu"><ion-icon name="person-outline"></ion-icon></span>
           <span class="tituloMenu">Sobre mi</span>
         </a>
       </li>
       <li class="nav__lista__item">
-        <a href="#portafolio" class="nav__lista__link">
+        <a href="#portafolio" class="nav__lista__link portafolio">
           <span class="iconMenu"><ion-icon name="briefcase-outline"></ion-icon></span>
           <span class="tituloMenu">Proyectos</span>
         </a>
       </li>
       <li class="nav__lista__item">
-        <a href="#contacto" class="nav__lista__link">
+        <a href="#contacto" class="nav__lista__link contacto">
           <span class="iconMenu"><ion-icon name="call-outline"></ion-icon></span>
           <span class="tituloMenu">Contacto</span>
         </a>
@@ -55,21 +57,24 @@
   <main class="main container  ">
     <section id="inicio" class="container ">
       <article class="section__inicio ">
-        <div class="fondo__animado ">
-          <div class="fondo__cubo Python"></div>
-          <div class="fondo__cubo iconHtml "></div>
-          <div class="fondo__cubo javaScript"></div>
-          <div class="fondo__cubo java"></div>
-          <div class="fondo__cubo css "></div>
-          <div class="fondo__cubo gitHub"></div>
-        </div>
+
         <figure>
-          <img class="img_inicio  lazyload lazyloading" data-src="/img/yo.jpg" alt="imagen mia " />
+          <img loading="lazy" class="img_inicio lazyload lazyloading" data-src="./img/yo.jpg" alt="imagen mia " />
         </figure>
         <div class="text_Inicio">
-          <h1 class="profecion parrafo" style="font-size: 2em">Hola! Me llamo </h1>
+          <div class="fondo__animado ">
+            <div class="fondo__cubo iconHtml "></div>
+            <div class="fondo__cubo javaScript"></div>
+            <div class="fondo__cubo java"></div>
+            <div class="fondo__cubo css "></div>
+            <div class="fondo__cubo python"></div>
+            <div class="fondo__cubo gitHub"></div>
+            <div class="fondo__cubo bootstrap"></div>
+            <div class="fondo__cubo mySql"></div>
+          </div>
+          <h1 class="profecion parrafo saludo" style="font-size: 2em">Hola! Me llamo </h1>
           <h1 class="inicio__nombre ">Carlos Andres Aristizabal Kenguan</h1>
-          <h3 class="profecion ">Desarrollador web Full Stack</h3>
+          <h3 class="profecion ">Desarrollador Web Full Stack</h3>
           <div class="inicio__profecion">
             <p>
               <br>
@@ -97,13 +102,13 @@
       </article>
       <!-- -----------------------Sobre mi----------- -->
     </section>
+    <!--------------- sección de acerca de mi --------------------->
     <section id="acercaDeMi" class="container  section__inicio ">
-      <article class=" section "><br>
-        <br>
+      <article class=" section ">
         <h2 class=" titulo ">Sobre mi</h2>
         <div class="union ">
           <figure>
-            <img src="/img/histo.png" class="img__Sobre  lazyload lazyloading" alt="imagen mia " />
+            <img loading="lazy" src="/img/histo.png" class="img__Sobre  lazyload lazyloading" alt="imagen mia " />
           </figure>
           <div class="text_Inicio">
             <p class="parrafo ">Certificado como Developer Full Stack y titulado como Tecnólogo en
@@ -126,7 +131,6 @@
         </div>
         <h3 class="subtitulos">Conocimientos técnicos:</h3>
         <div class="containerTabs">
-
           <input class="radio" id="tab-1" name="tabsCard" type="radio" checked - />
           <input class="radio" id="tab-2" name="tabsCard" type="radio" />
           <input class="radio" id="tab-3" name="tabsCard" type="radio" />
@@ -154,75 +158,75 @@
               <div class="contenedorIconos ">
                 <a href="https:/developer.mozilla.org/es/docs/Web/HTML" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading " data- src="/img/programas/html.png" alt="html"
-                      name="html5">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading " data- src="/img/programas/html.png"
+                      alt="html" name="html5">
                     <span class="tiptext">Html</span>
                   </div>
                 </a>
                 <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/css.png" alt="css"
-                      name="css">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/css.png"
+                      alt="css" name="css">
                     <span class="tiptext">Css</span>
                   </div>
                 </a>
                 <a href="https://developer.mozilla.org/es/docs/Web/JAVASCRIPT" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/javascript.png"
-                      alt="javascript" name="javascript">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading"
+                      data-src="/img/programas/javascript.png" alt="javascript" name="javascript">
                     <span class="tiptext">JavaScript</span>
                   </div>
                 </a>
                 <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/boostrap.png" alt="boostrap"
-                      name="boostrap">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/boostrap.png"
+                      alt="boostrap" name="boostrap">
                     <span class="tiptext">Bosstrap</span>
                   </div>
                 </a>
                 <a href="https://sass-lang.com/documentation/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/sass.png" alt="sass"
-                      name="sass">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/sass.png"
+                      alt="sass" name="sass">
                     <span class="tiptext">Sass</span>
                   </div>
                 </a>
                 <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/tailwind.png" alt="tailwind"
-                      name="tailwind">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/tailwind.png"
+                      alt="tailwind" name="tailwind">
                     <span class="tiptext">Tailwind</span>
                   </div>
                 </a>
                 <a href="https://materializecss.com/about.html" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/materialize.png"
-                      alt="materialize" name="materialize">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading"
+                      data-src="/img/programas/materialize.png" alt="materialize" name="materialize">
                     <span class="tiptext">Materialize</span>
                   </div>
                 </a><a href="https://wordpress.com/es/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/wordpress.png"
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/wordpress.png"
                       alt="wordpress" name="wordpress">
                     <span class="tiptext">Wordpress</span>
                   </div>
                 </a>
                 <a href="https://www.android.com/intl/es_es/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/android.png" alt="android"
-                      name="android">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/android.png"
+                      alt="android" name="android">
                     <span class="tiptext">Android</span>
                   </div>
                 </a>
                 <a href="https://es.wix.com/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/wix.png" alt="wix"
-                      name="wix"><span class="tiptext">Wix</span>
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/wix.png"
+                      alt="wix" name="wix"><span class="tiptext">Wix</span>
                   </div>
                 </a>
                 <a href="https://articulate.com/360/storyline" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/storyline.png"
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/storyline.png"
                       alt="storyline" name="storyline">
                     <span class="tiptext">storyline</span>
                   </div>
@@ -237,29 +241,29 @@
               <div class="contenedorIconos">
                 <a href="https://www.java.com/es/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/java.png" alt="java"
-                      name="java">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/java.png"
+                      alt="java" name="java">
                     <span class="tiptext">Java</span>
                   </div>
                 </a>
                 <a href="https://www.python.org/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/python.png" alt="python"
-                      name="python">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/python.png"
+                      alt="python" name="python">
                     <span class="tiptext">Python</span>
                   </div>
                 </a>
                 <a href="https://nodejs.org/en" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="img/programas/nodeJS.png" alt="NodeJs"
-                      name="NodeJs">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="img/programas/nodeJS.png"
+                      alt="NodeJs" name="NodeJs">
                     <span class="tiptext">NodeJs</span>
                   </div>
                 </a>
                 <a href="https://expressjs.com/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="img/programas/ExpressJS.png" alt="ExpressJs"
-                      name="ExpressJs">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="img/programas/ExpressJS.png"
+                      alt="ExpressJs" name="ExpressJs">
                     <span class="tiptext">Expressjs</span>
                   </div>
                 </a>
@@ -273,15 +277,15 @@
               <div class="contenedorIconos">
                 <a href="https://www.mysql.com/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/mysql.png" alt="mysql"
-                      name="mysql">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/mysql.png"
+                      alt="mysql" name="mysql">
                     <span class="tiptext">MySql</span>
                   </div>
                 </a>
                 <a href="https://www.mongodb.com/es" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/mongoDB.png" alt="MongoDB"
-                      name="MongoDB">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/mongoDB.png"
+                      alt="MongoDB" name="MongoDB">
                     <span class="tiptext">MongoDB</span>
                   </div>
                 </a>
@@ -295,8 +299,8 @@
               <div class="contenedorIconos">
                 <a href="https://swagger.io/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/Swagger.png" alt="Swagger"
-                      name="Swagger">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/Swagger.png"
+                      alt="Swagger" name="Swagger">
                     <span class="tiptext">Swagger</span>
                   </div>
                 </a>
@@ -312,8 +316,8 @@
                 <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/Tools_and_setup/Using_Github_pages"
                   target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/github.png" alt="github"
-                      name="github">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/github.png"
+                      alt="github" name="github">
                     <span class="tiptext">GitHub</span>
                   </div>
                 </a>
@@ -329,28 +333,28 @@
               <div class="contenedorIconos">
                 <a href="https://www.docker.com" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/Docker.png" alt="Docker"
-                      name="Docker">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/Docker.png"
+                      alt="Docker" name="Docker">
                     <span class="tiptext">Docker</span>
                   </div>
                 </a>
                 <a href="https://github.com/features/actions" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/githubAction.png
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/githubAction.png
                     " alt="GitHub-Action" name="GitHub-Action">
                     <span class="tiptext">GitHub-Action</span>
                   </div>
                 </a>
                 <a href="https://www.jenkins.io/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/jenkins.png
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/jenkins.png
                     " alt="Jenkins" name="Jenkins">
                     <span class="tiptext">Jenkins</span>
                   </div>
                 </a>
                 <a href="https://aws.amazon.com/es/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/AWS.png
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/AWS.png
                     " alt="AWS" name="AWS">
                     <span class="tiptext">AWS</span>
                   </div>
@@ -365,58 +369,58 @@
               <div class="contenedorIconos">
                 <a href="https://www.coreldraw.com/la/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/corel-draw-color.png"
-                      alt="corel-draw" name="corel-draw">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading"
+                      data-src="/img/programas/corel-draw-color.png" alt="corel-draw" name="corel-draw">
                     <span class="tiptext">Corel Draw</span>
                   </div>
                 </a>
                 <a href="https://www.adobe.com/co/products/photoshop.html" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/photoshop.png"
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/photoshop.png"
                       alt="photoshop" name="photoshop">
                     <span class="tiptext">Photoshop</span>
                   </div>
                 </a>
                 <a href="https://www.adobe.com/co/products/illustrator.html" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/illustrator.png"
-                      alt="illustrator" name="illustrator">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading"
+                      data-src="/img/programas/illustrator.png" alt="illustrator" name="illustrator">
                     <span class="tiptext">Illustrator</span>
                   </div>
                 </a>
                 <a href="https://helpx.adobe.com/co/xd/get-started.html" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/adobe-XD.png" alt="adobeXD"
-                      name="adobeXD">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/adobe-XD.png"
+                      alt="adobeXD" name="adobeXD">
                     <span class="tiptext">Adobe-XD</span>
                   </div>
                 </a>
                 <a href="https://latinoamerica.autodesk.com/products/3ds-max/overview?term=1-YEAR&tab=subscription"
                   target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/3dmax.png" alt="3dmax"
-                      name="3dmax">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/3dmax.png"
+                      alt="3dmax" name="3dmax">
                     <span class="tiptext">3Dmax</span>
                   </div>
                 </a>
                 <a href="https://www.figma.com/" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/figma.png" alt="figma"
-                      name="figma">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/figma.png"
+                      alt="figma" name="figma">
                     <span class="tiptext">Figma</span>
                   </div>
                 </a>
                 <a href="https://www.sketchup.com/es" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/sketchup.png" alt="sketchup"
-                      name="sketchup">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/sketchup.png"
+                      alt="sketchup" name="sketchup">
                     <span class="tiptext">Sketchup</span>
                   </div>
                 </a>
                 <a href="https://www.chaos.com/es/vray/sketchup" target="_blank">
                   <div class="tooltip top ">
-                    <img class="icons__img  lazyload lazyloading" data-src="/img/programas/Vray.png" alt="vyray"
-                      name="vyray">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/Vray.png"
+                      alt="vyray" name="vyray">
                     <span class="tiptext">Vray</span>
                   </div>
                 </a>
@@ -488,8 +492,8 @@
     <!-- ---------------Contacto-------------- -->
     <section id="contacto" class="container section__inicio">
       <article class="section__redes section ">
-        <h1 class="subtitulo titulo ">Redes sociales</h1>
-        <p class="parrafo text-center ">Te puedes comunicar por
+        <h2 class="subtitulo titulo ">Redes sociales</h2>
+        <p class="parrafo text-center parrafo_redes  ">Te puedes comunicar por
           medio de mis redes.</p>
         <div class="section__icon_redes">
           <a href="https://www.instagram.com/maryand1404/" target="_blank" class="icon_redes ">
@@ -518,14 +522,14 @@
   <!-- ------------Templates----------------- -->
   <template id="templateCardsProyecto">
     <figure class="galeria__figure cap-bot">
-      <img class="galeria__img  lazyload lazyloading">
+      <img loading="lazy" class="galeria__img  lazyload lazyloading">
       <figcaption class="galeria__caption"></figcaption>
     </figure>
   </template>
   <template id="templateCardsWeb">
     <div class="card">
       <div class="cardImg">
-        <img class="lazyload lazyloading card__img">
+        <img loading="lazy" class="lazyload lazyloading card__img">
       </div>
       <div class="cardTitulo">
         <h2 class="subtitulo"></h2>
@@ -539,7 +543,7 @@
 
   <template id="templateCursoWeb">
     <div class="slider__content__img">
-      <img class="slider-item lazyload lazyloading ">
+      <img loading="lazy" class="slider-item lazyload lazyloading ">
     </div>
     <span class="button-prev" id="atras">
       <ion-icon name="chevron-back-outline" class="ionfont"></ion-icon>

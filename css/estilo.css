@@ -22,16 +22,20 @@ body {
 	background: #2e2e2e;
 	overflow-x: hidden;
 }
-.lazyload {
+img {
+	aspect-ratio: 3/2 auto;
+}
+.lazyload,
+.lazyloading {
 	opacity: 0;
 }
-.lazyloading {
+.lazyloaded {
 	opacity: 1;
-	transition: opacity 900ms;
-	-webkit-transition: opacity 900ms;
-	-moz-transition: opacity 900ms;
-	-ms-transition: opacity 900ms;
-	-o-transition: opacity 900ms;
+	transition: opacity 2s;
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+	-ms-transition: opacity 2s;
+	-o-transition: opacity 2s;
 }
 
 .fondo__animado {
@@ -56,9 +60,8 @@ body {
 	transform: scale(0) rotate(0deg) translate(-50%, -50%);
 	-webkit-animation: cubo 7s ease-in forwards infinite;
 	animation: cubo 7s ease-in forwards infinite;
-	-webkit-filter: blur(2px);
-	filter: blur(2px);
-	background-image: url('../img/programas/mysql.png');
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
 }
 .gitHub {
 	-webkit-animation-delay: 3s;
@@ -67,18 +70,24 @@ body {
 	bottom: 5%;
 	background-image: url('../img/programas/github.png');
 }
+.mySql {
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
+	right: 30%;
+	bottom: 5%;
+	background-image: url('../img/programas/mysql.png');
+}
 .bootstrap {
-	position: relative;
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
-	right: 80%;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+	right: 60%;
 	top: 35%;
 	background-image: url('../img/programas/boostrap.png');
 }
 .iconHtml {
 	-webkit-animation-delay: 2s;
 	animation-delay: 2s;
-	left: 25%;
+	right: 25%;
 	top: 50%;
 	background-image: url('../img/programas/html.png');
 }
@@ -87,29 +96,27 @@ body {
 	animation-delay: 4s;
 	left: 40%;
 	top: 40%;
-	width: 96px;
-	height: 96px;
 	background-image: url('../img/programas/javascript.png');
 }
 .java {
 	-webkit-animation-delay: 6s;
 	animation-delay: 6s;
 	right: 40%;
-	top: 70%;
+	top: 20%;
 	background-image: url('../img/programas/java.png');
 }
 .css {
 	-webkit-animation-delay: 8s;
 	animation-delay: 8s;
-	left: 10%;
-	top: 65%;
+	right: 10%;
+	top: 45%;
 	background-image: url('../img/programas/css.png');
 }
 .python {
-	-webkit-animation-delay: 10s;
-	animation-delay: 10s;
-	left: 50%;
-	top: 30%;
+	-webkit-animation-delay: 5s;
+	animation-delay: 5s;
+	right: 20%;
+	top: 20%;
 	background-image: url('../img/programas/python.png');
 }
 @-webkit-keyframes cubo {
@@ -145,7 +152,7 @@ body {
 .container {
 	width: 90%;
 	margin: 0 auto;
-	scroll-behavior: smooth;
+
 	overflow-x: hidden;
 }
 .text-center {
@@ -778,40 +785,43 @@ body {
 	height: 90%;
 	justify-content: center;
 	gap: 1em;
-	padding: 2.5em 1em 1em 1em;
+	padding: 2.5em 1em 1em;
 	overflow: hidden;
 	overflow-y: scroll;
-	scroll-behavior: smooth;
 }
 .galeria__figure,
 .galeria__img {
 	display: flex;
-	/* max-width: inherit; */
 	position: relative;
 	overflow: hidden;
 	gap: 1em;
 	object-fit: cover;
 	border-radius: 10px;
+	transition: all 2s ease;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease;
 }
 .galeria__figure:hover {
 	box-shadow: 0 0 15px black;
-	-webkit-transition: 0.5s ease-out;
-	-o-transition: 0.5s ease-out;
-	-moz-transition: 0.5s ease-out;
-	-ms-transition: 0.5s ease-out;
-	transition: 0.5s ease-out;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
 }
 .galeria__img:hover {
-	object-fit: scale-down;
-	-webkit-transition: 0.5s ease-out;
-	-o-transition: 0.5s ease-out;
-	-moz-transition: 0.5s ease-out;
-	-ms-transition: 0.5s ease-out;
-	transition: 0.5s ease-out;
+	transition: all 1ms ease-in-out;
+	object-fit: contain;
+	-webkit-transition: all 1ms ease-in-out;
+	-o-transition: all 1ms ease-in-out;
+	-moz-transition: all 1ms ease-in-out;
+	-ms-transition: all 1ms ease-in-out;
 }
 
 .galeria__caption {
