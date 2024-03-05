@@ -185,7 +185,7 @@ activaMenu()
 
 ScrollReveal({
   reset: true,
-  distance: '50px',
+  distance: '70px',
   duration: 4000,
   delay: 100,
   opacity: 0
