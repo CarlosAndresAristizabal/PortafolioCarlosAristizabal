@@ -192,7 +192,7 @@ ScrollReveal().reveal('.nav__lista__link ', { delay: 300, origin: 'top', interva
 ScrollReveal().reveal('.saludo, .profecion', { delay: 2500, origin: 'bottom', interval: 2500 })
 ScrollReveal().reveal('figure', { delay: 3000, origin: 'right' })
 ScrollReveal().reveal('.inicio__nombre, .inicio__profecion, .text_Inicio', { delay: 400, origin: 'top', interval: 400 })
-ScrollReveal().reveal('.titulo, .subtitulo', { delay: 400, origin: 'bottom', interval: 1000 })
+ScrollReveal().reveal('.titulo, .subtitulos', { delay: 400, origin: 'bottom', interval: 1000 })
 ScrollReveal().reveal('.tab, .icon_redes', { delay: 200, origin: 'left', interval: 500 })
 ScrollReveal().reveal('.contenidoTabs, .parrafo_redes ', { delay: 4000, origin: 'right' })
 ScrollReveal().reveal('.flexcard, .box', { delay: 400, origin: 'top', interval: 800 })
