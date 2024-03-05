@@ -22,6 +22,9 @@ body {
 	background: #2e2e2e;
 	overflow-x: hidden;
 }
+.load-hidden {
+	visibility: hidden;
+}
 img {
 	aspect-ratio: 3/2 auto;
 }

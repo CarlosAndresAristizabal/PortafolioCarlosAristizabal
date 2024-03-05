@@ -184,13 +184,15 @@ const imagenCursoSiguiente = () => {
 activaMenu()
 
 ScrollReveal({
+  reset: true,
   distance: '50px',
   duration: 4000,
-  delay: 100
+  delay: 100,
+  opacity: 0
 });
 
-ScrollReveal().reveal('.nav, .logo ', { delay: 100, origin: 'left', interval: 200 })
-ScrollReveal().reveal('.nav__lista__link ', { delay: 300, origin: 'top', interval: 400 })
+ScrollReveal().reveal('.nav, .logo ', { container: '.nav', delay: 100, origin: 'left', interval: 200 })
+ScrollReveal().reveal('.nav__lista__link ', { container: '.nav', delay: 300, origin: 'top', interval: 400, opacity: 1 })
 ScrollReveal().reveal('.saludo, .profecion', { delay: 2500, origin: 'bottom', interval: 2500 })
 ScrollReveal().reveal('figure', { delay: 3000, origin: 'right' })
 ScrollReveal().reveal('.inicio__nombre, .inicio__profecion, .text_Inicio', { delay: 400, origin: 'top', interval: 400 })
