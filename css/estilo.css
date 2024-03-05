@@ -60,21 +60,21 @@ img {
 	transform: scale(0) rotate(0deg) translate(-50%, -50%);
 	-webkit-animation: cubo 7s ease-in forwards infinite;
 	animation: cubo 7s ease-in forwards infinite;
-	-webkit-filter: blur(4px);
-	filter: blur(4px);
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
 }
 .gitHub {
 	-webkit-animation-delay: 3s;
 	animation-delay: 3s;
 	left: 40%;
-	bottom: 5%;
+	top: 65%;
 	background-image: url('../img/programas/github.png');
 }
 .mySql {
 	-webkit-animation-delay: 3s;
 	animation-delay: 3s;
-	right: 30%;
-	bottom: 5%;
+	right: 70%;
+	top: 55%;
 	background-image: url('../img/programas/mysql.png');
 }
 .bootstrap {
