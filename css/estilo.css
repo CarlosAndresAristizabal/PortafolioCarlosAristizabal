@@ -1130,7 +1130,7 @@ figure img .img__sobre {
 	flex-direction: row;
 	width: 250px;
 	font-size: 3em;
-	/* gap: 0.2em; */
+	gap: 0.2em;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	padding: 1em 0;
