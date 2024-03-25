@@ -1285,7 +1285,7 @@ ion-icon:hover {
 
 	.container {
 		padding-top: 7%;
-		width: 85%;
+		width: 95%;
 	}
 
 	/*----------Section Inicio------------*/
@@ -1428,8 +1428,11 @@ ion-icon:hover {
 	/*----------Section Sobre mi------------*/
 
 	.union {
-		width: 95%;
+		width: 90%;
 		flex-direction: row-reverse;
+	}
+	.img__Sobre {
+		max-width: 400px;
 	}
 
 	/*----------proyectos weds------------*/
