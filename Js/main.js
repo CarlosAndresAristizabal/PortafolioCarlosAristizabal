@@ -35,7 +35,7 @@ const verificacion = (entries) => {
   })
 }
 
-const observer = new IntersectionObserver(verificacion, { rootMargin: "-60% 0px -40% 0px" })
+const observer = new IntersectionObserver(verificacion, { rootMargin: "-65% 0px -35% 0px" })
 
 const activaMenu = () => {
   activeMenu.forEach(item => {

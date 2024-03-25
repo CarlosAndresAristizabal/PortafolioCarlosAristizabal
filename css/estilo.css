@@ -261,7 +261,17 @@ img {
 #check:checked ~ .nav__lista {
 	top: 100%;
 }
-
+.main {
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+.section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 2em;
+	scroll-snap-align: start;
+}
 /*----------Section Inicio------------*/
 
 .section__inicio {
@@ -306,7 +316,6 @@ img {
 	color: var(--colorSegundario);
 	font-size: 1em;
 	letter-spacing: 0.1em;
-	border: 1px solid #fff;
 	background-color: #1617186a;
 	box-shadow: 0px 0px 5px rgba(49, 47, 47, 0.871);
 	border-radius: 15px;
@@ -326,16 +335,7 @@ img {
 	transform: scaleX(-1);
 }
 /*----------Section Sobre mi------------*/
-.section {
-	width: 100%;
-	height: max-content;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	gap: 2em;
-}
-figure img .img__sobre {
-}
+
 .img__Sobre {
 	display: flex;
 	margin: 0 auto;
