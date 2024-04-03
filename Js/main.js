@@ -199,3 +199,4 @@ ScrollReveal().reveal('.titulo, .subtitulos', { delay: 400, origin: 'bottom', in
 ScrollReveal().reveal('.tab, .icon_redes', { delay: 200, origin: 'left', interval: 500 })
 ScrollReveal().reveal('.contenidoTabs, .parrafo_redes ', { delay: 400, origin: 'right' })
 ScrollReveal().reveal('.flexcard, .box', { delay: 400, origin: 'top', interval: 800 })
+

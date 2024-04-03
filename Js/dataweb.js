@@ -26,7 +26,7 @@ const dataweb = [
     },
     {
         "id": 2,
-        "titulo": "Cree su Plan de Comunicación Digital.",
+        "titulo": " Cree  su  Plan  de  Comunicación  Digital. ",
         "urlImage": "/img/Web/htmlCSsJs/Mockup_Cree_su_Plan_de _Comunicacion/Diapositiva1.JPG",
         "descripcion": "Este proyecto es un curso virtual que esta realizado para la <strong>Cámara de Comercio de Bogotá</strong> por medio de la empresa <strong>Virtual Technologies S.A.S</strong>.",
         "galeria": [
@@ -213,6 +213,18 @@ const dataweb = [
             "/img/Web/storeLine/Mockup_Conoce_los_Beneficios_para_Ser_una_Sociedad_BIC/Diapositiva16.JPG"
         ]
     },
+    {
+        "id": 10,
+        "titulo": "A un clic del cambio.",
+        "urlImage": "/img/Web/backend/a_un_clic_del_cambio/Diapositiva1.jpg",
+        "descripcion": "Este proyecto es realizado en el BACKEND que consiste en la orquestación de CI/CD usando tecnologías como Jenkins, AWS, GitHub Actions y Docker con una app de React <strong> <a target='_blank' href='https://pinnate-wood-e69.notion.site/A-un-clic-del-cambio-por-Carlos-Aristizabal-e0ee9b3136f54fd6a01e45b222ca44f3'>para leer más en la documentación</a></strong>",
+        "galeria": [
+            "/img/Web/backend/a_un_clic_del_cambio/Diapositiva1.jpg",
+            "/img/Web/backend/a_un_clic_del_cambio/Diapositiva2.jpg",
+            "/img/Web/backend/a_un_clic_del_cambio/Diapositiva3.jpg",
+        ]
+
+    }
 
 ]
 
