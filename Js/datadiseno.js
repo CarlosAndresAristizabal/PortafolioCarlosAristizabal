@@ -1,4 +1,4 @@
-var datosDiseno = [
+const datosDiseno = [
     {
         "id": 1,
         "titulo": "Aviso luminoso mamanena",
@@ -37,12 +37,12 @@ var datosDiseno = [
     {
         "id": 9,
         "titulo": "Pendón Publicitario Soporte y Mantenimiento",
-        "urlImagen": "/img/Diseno/pedon_publicitario.jpg"
+        "urlImagen": "/img/Diseno/pedon_publicitario1.jpg"
     },
     {
         "id": 10,
         "titulo": "Pendón Publicitario Soporte Y Mantenimiento PC",
-        "urlImagen": "/img/Diseno/pedon_publicitario1.jpg"
+        "urlImagen": "/img/Diseno/pedon_publicitario_computo.jpg"
     },
     {
         "id": 11,
