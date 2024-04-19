@@ -93,8 +93,9 @@ document.addEventListener('click', e => {
 })
 // creation of an arrow function for the section of the cards of the design projects through an object and using a template
 const pintarCardsDiseno = dataDiseno => {
-  const datos = dataDiseno
-  datos.forEach(itemsDiseno => {
+  itemsDiseno.innerHTML = ""
+  const datosAleatorios = dataDiseno.sort(() => Math.random() - 0.5)
+  datosAleatorios.forEach(itemsDiseno => {
     cardDiseno.querySelector('figcaption').textContent = itemsDiseno.titulo;
     cardDiseno.querySelector('img').setAttribute('src', itemsDiseno.urlImagen)
     cardDiseno.querySelector('img').setAttribute('alt', itemsDiseno.titulo)
@@ -102,25 +103,26 @@ const pintarCardsDiseno = dataDiseno => {
     fragment.appendChild(clone)
   })
   itemsDiseno.appendChild(fragment)
-
 }
 // creation of an arrow function for the section of the cards of the 3D design  projects through an object and using a template
 const pintarCards3D = data3D => {
-  const datos = data3D
-  datos.forEach(items3D => {
+  items3D.innerHTML = ""
+  const datosAleatorios = data3D.sort(() => Math.random() - 0.5)
+  datosAleatorios.forEach(items3D => {
     cardDiseno.querySelector('figcaption').textContent = items3D.titulo;
     cardDiseno.querySelector('img').setAttribute('src', items3D.urlImagen)
     cardDiseno.querySelector('img').setAttribute('alt', items3D.titulo)
     const clone = cardDiseno.cloneNode(true)
     fragment.appendChild(clone)
+
   })
   items3D.appendChild(fragment)
-
 }
 // Creation of an arrow function for section of the cards of the web design  projects through an object and using a template
 const pintarCardsWeb = dataweb => {
-  const datosweb = dataweb
-  datosweb.forEach(itemsWeb => {
+  itemsWeb.innerHTML = ""
+  const datosAleatorios = dataweb.sort(() => Math.random() - 0.5)
+  datosAleatorios.forEach(itemsWeb => {
     cardWeb.querySelector('h2').textContent = itemsWeb.titulo;
     cardWeb.querySelector('.parrafo').innerHTML = itemsWeb.descripcion;
     cardWeb.querySelector('img').setAttribute('src', itemsWeb.urlImage)
@@ -133,7 +135,6 @@ const pintarCardsWeb = dataweb => {
 }
 // Creation of an arrow function to paint the courses according to their ID of each of the web design projects through an object and using a template.
 const obtenerCurso = (item) => {
-
   const cardItem = {
     id: item.querySelector('.btnImagen').dataset.id,
   }
