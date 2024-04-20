@@ -121,8 +121,7 @@ const pintarCards3D = data3D => {
 // Creation of an arrow function for section of the cards of the web design  projects through an object and using a template
 const pintarCardsWeb = dataweb => {
   itemsWeb.innerHTML = ""
-  const datosAleatorios = dataweb.sort(() => Math.random() - 0.5)
-  datosAleatorios.forEach(itemsWeb => {
+  dataweb.forEach(itemsWeb => {
     cardWeb.querySelector('h2').textContent = itemsWeb.titulo;
     cardWeb.querySelector('.parrafo').innerHTML = itemsWeb.descripcion;
     cardWeb.querySelector('img').setAttribute('src', itemsWeb.urlImage)
@@ -142,6 +141,7 @@ const obtenerCurso = (item) => {
   dataItem[ cardItem.id - 1 ].forEach(img => {
     galeria.push(img)
   })
+  console.log(indexImg)
   pintarCurso(galeria, indexImg)
 }
 //creation of an arrow function for the section of the gallery of the web projects through an object and using a template
