@@ -20,7 +20,7 @@ const cardCurso = document.getElementById('templateCursoWeb').content
 // ---------------Fragment------------
 const fragment = document.createDocumentFragment()
 // ---------------Variables----------------
-let galeria = []
+let galeriaImg = []
 let indexImg = 0
 // ------------- Activating each item in the menu bar----------
 const verificacion = (entries) => {
@@ -76,7 +76,8 @@ document.addEventListener('click', e => {
   // --------------capture the course by means of the id --------------
   if (e.target.classList.contains('btnImagen')) {
     modalCurso.classList.add('modal__mostrar_curso')
-    obtenerCurso(e.target.parentElement)
+
+    obtenerCurso(e.target.dataset.id)
     e.stopPropagation()
 
   }
@@ -86,7 +87,7 @@ document.addEventListener('click', e => {
   }
   if (e.target.matches('.modal__cerrar_curso')) {
     modalCurso.classList.remove("modal__mostrar_curso")
-    galeria = []
+    galeriaImg = []
     indexImg = 0
   }
   e.stopPropagation()
@@ -118,10 +119,12 @@ const pintarCards3D = data3D => {
   })
   items3D.appendChild(fragment)
 }
+const originalDataweb = [ ...dataweb ];
 // Creation of an arrow function for section of the cards of the web design  projects through an object and using a template
 const pintarCardsWeb = dataweb => {
   itemsWeb.innerHTML = ""
-  dataweb.forEach(itemsWeb => {
+  const datosAleatorios = dataweb.sort(() => Math.random() - 0.5)
+  datosAleatorios.forEach(itemsWeb => {
     cardWeb.querySelector('h2').textContent = itemsWeb.titulo;
     cardWeb.querySelector('.parrafo').innerHTML = itemsWeb.descripcion;
     cardWeb.querySelector('img').setAttribute('src', itemsWeb.urlImage)
@@ -133,55 +136,48 @@ const pintarCardsWeb = dataweb => {
   itemsWeb.appendChild(fragment)
 }
 // Creation of an arrow function to paint the courses according to their ID of each of the web design projects through an object and using a template.
-const obtenerCurso = (item) => {
-  const cardItem = {
-    id: item.querySelector('.btnImagen').dataset.id,
-  }
-  let dataItem = dataweb.map((item) => item.galeria)
-  dataItem[ cardItem.id - 1 ].forEach(img => {
-    galeria.push(img)
+const obtenerCurso = (itemId) => {
+  const item2 = originalDataweb[ itemId - 1 ].galeria
+  item2.forEach(item => {
+    galeriaImg.push(item)
   })
-  console.log(indexImg)
-  pintarCurso(galeria, indexImg)
+  pintarCurso(galeriaImg)
 }
 //creation of an arrow function for the section of the gallery of the web projects through an object and using a template
-const pintarCurso = (galeria, indexImg) => {
+const pintarCurso = (galeriaImg) => {
   itemsCurso.innerHTML = ""
-  let index = indexImg
-  cardCurso.querySelector('.slider-item').setAttribute('src', galeria[ index ])
+  cardCurso.querySelector('.slider-item').setAttribute('src', galeriaImg[ indexImg ])
   cardCurso.querySelector('.slider-item').classList.add('animeImgIn', 'animeImgOut')
   const clone = cardCurso.cloneNode(true)
   fragment.appendChild(clone)
   itemsCurso.appendChild(fragment)
   imagenCursoSiguiente()
-
 }
+
 //We perform the movements of the Slide
 const imagenCursoSiguiente = () => {
   const btnNext = document.getElementById('siguiente')
   const btnBack = document.getElementById('atras')
 
   btnNext.addEventListener('click', () => {
-    if (indexImg == galeria.length - 1) {
+    if (indexImg == galeriaImg.length - 1) {
       btnNext.setAttribute('disable', true)
-    } else if (indexImg < galeria.length - 1) {
-      pintarCurso(galeria, indexImg + 1)
+    } else if (indexImg <= galeriaImg.length - 1) {
       indexImg++;
+      pintarCurso(galeriaImg)
       itemsCurso.firstElementChild.firstChild.nextElementSibling.classList.remove('animeImgOut')
-
     }
   })
   btnBack.addEventListener('click', () => {
     if (indexImg == 0) {
       btnNext.setAttribute('disable', true)
-    } else if (indexImg <= galeria.length) {
-      pintarCurso(galeria, indexImg - 1)
+    } else if (indexImg <= galeriaImg.length - 1) {
       indexImg--;
+      pintarCurso(galeriaImg)
       itemsCurso.firstElementChild.firstChild.nextElementSibling.classList.remove('animeImgIn')
     }
   })
 }
-
 
 ScrollReveal({
   reset: true,
