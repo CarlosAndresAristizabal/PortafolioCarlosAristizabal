@@ -23,9 +23,24 @@ body {
 	font-family: var(--font-parrafo);
 	background: #2e2e2e;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 .load-hidden {
 	visibility: hidden;
+}
+section .section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 2em;
+	scroll-snap-type: y mandatory;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+	scroll-snap-align: start;
+	overflow-x: hidden;
+	padding-top: 0px;
 }
 img {
 	aspect-ratio: 3/2 auto;
@@ -154,12 +169,7 @@ img {
 		-o-transform: scale(2) rotate(960deg) translate(-50%, -50%);
 	}
 }
-.container {
-	width: 90%;
-	margin: 0 auto;
 
-	overflow-x: hidden;
-}
 .text-center {
 	display: flex;
 	justify-content: center;
@@ -168,7 +178,7 @@ img {
 }
 /*----------------Menú de navegación -------------------------*/
 .nav {
-	position: fixed;
+	position: sticky;
 	display: flex;
 	top: 0;
 	height: 70px;
@@ -261,17 +271,7 @@ img {
 #check:checked ~ .nav__lista {
 	top: 100%;
 }
-.main {
-	scroll-snap-type: y mandatory;
-	scroll-behavior: smooth;
-}
-.section {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	gap: 2em;
-	scroll-snap-align: start;
-}
+
 /*----------Section Inicio------------*/
 
 .section__inicio {
@@ -1284,7 +1284,7 @@ ion-icon:hover {
 	}
 
 	.container {
-		padding-top: 7%;
+		/* padding-top: 7%; */
 		width: 95%;
 	}
 
@@ -1402,7 +1402,7 @@ ion-icon:hover {
 
 @media screen and (min-width: 1024px) {
 	.section {
-		padding-top: 20%;
+		padding-top: 14%;
 	}
 	/*------------inicio------------*/
 	.img_inicio {
@@ -1429,6 +1429,7 @@ ion-icon:hover {
 
 	.union {
 		width: 90%;
+		margin: 0 auto;
 		flex-direction: row-reverse;
 	}
 	.img__Sobre {

@@ -181,7 +181,7 @@ const imagenCursoSiguiente = () => {
 
 ScrollReveal({
   reset: true,
-  distance: '60px',
+  distance: '50px',
   duration: 3000,
   delay: 100,
 
