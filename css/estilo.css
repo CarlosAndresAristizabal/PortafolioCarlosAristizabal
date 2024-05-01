@@ -51,11 +51,11 @@ img {
 }
 .lazyloaded {
 	opacity: 1;
-	transition: opacity 2s;
 	-webkit-transition: opacity 2s;
 	-moz-transition: opacity 2s;
 	-ms-transition: opacity 2s;
 	-o-transition: opacity 2s;
+	transition: opacity 2s;
 }
 
 .fondo__animado {
@@ -88,56 +88,56 @@ img {
 	animation-delay: 3s;
 	left: 40%;
 	top: 65%;
-	background-image: url('../img/programas/github.png');
+	background-image: url('../img/programas/github.webp');
 }
 .mySql {
 	-webkit-animation-delay: 3s;
 	animation-delay: 3s;
 	right: 70%;
 	top: 55%;
-	background-image: url('../img/programas/mysql.png');
+	background-image: url('../img/programas/mysql.webp');
 }
 .bootstrap {
 	-webkit-animation-delay: 2s;
 	animation-delay: 2s;
 	right: 60%;
 	top: 35%;
-	background-image: url('../img/programas/boostrap.png');
+	background-image: url('../img/programas/boostrap.webp');
 }
 .iconHtml {
 	-webkit-animation-delay: 2s;
 	animation-delay: 2s;
 	right: 25%;
 	top: 50%;
-	background-image: url('../img/programas/html.png');
+	background-image: url('../img/programas/html.webp');
 }
 .javaScript {
 	-webkit-animation-delay: 4s;
 	animation-delay: 4s;
 	left: 40%;
 	top: 40%;
-	background-image: url('../img/programas/javascript.png');
+	background-image: url('../img/programas/javascript.webp');
 }
 .java {
 	-webkit-animation-delay: 6s;
 	animation-delay: 6s;
 	right: 40%;
 	top: 20%;
-	background-image: url('../img/programas/java.png');
+	background-image: url('../img/programas/java.webp');
 }
 .css {
 	-webkit-animation-delay: 8s;
 	animation-delay: 8s;
 	right: 10%;
 	top: 45%;
-	background-image: url('../img/programas/css.png');
+	background-image: url('../img/programas/css.webp');
 }
 .python {
 	-webkit-animation-delay: 5s;
 	animation-delay: 5s;
 	right: 20%;
 	top: 20%;
-	background-image: url('../img/programas/python.png');
+	background-image: url('../img/programas/python.webp');
 }
 @-webkit-keyframes cubo {
 	from {
@@ -608,7 +608,7 @@ img {
 	border: 1px solid rgba(255, 255, 255, 0.75);
 	border-radius: 20px;
 	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
-	background: url(/img/graphic-design.png);
+	background: url(/img/graphic-design.webp);
 	background-size: 120px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -616,7 +616,7 @@ img {
 .box:hover .box__icon {
 	background: rgba(255, 255, 255, 0.1);
 	transform: translateZ(50px);
-	background: url(/img/color-graphic-design.png);
+	background: url(/img/color-graphic-design.webp);
 	transition: 0.5s;
 	background-size: 120px;
 	background-position: center;
@@ -628,25 +628,25 @@ img {
 	box-shadow: 5px 5px 45px var(--colorHover);
 }
 .web {
-	background: url(/img/programming.png);
+	background: url(/img/programming.webp);
 	background-size: 120px;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .box:hover .web {
-	background: url(/img/color-programming.png);
+	background: url(/img/color-programming.webp);
 	background-size: 120px;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .treD {
-	background: url(/img/3d-modeling.png);
+	background: url(/img/3d-modeling.webp);
 	background-size: 120px;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .box:hover .treD {
-	background: url(/img/color-3d-modeling.png);
+	background: url(/img/color-3d-modeling.webp);
 	background-size: 120px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -808,33 +808,37 @@ img {
 	position: relative;
 	overflow: hidden;
 	gap: 1em;
+	width: 100%;
+	height: initial;
 	object-fit: cover;
-	border-radius: 10px;
-	transition: all 2s ease;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-ms-transition: all 2s ease;
-	-o-transition: all 2s ease;
+	border-radius: 10px;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	aspect-ratio: 16/9;
 }
 .galeria__figure:hover {
+	aspect-ratio: 16/9;
 	box-shadow: 0 0 15px black;
-	transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.9s ease;
+	-moz-transition: all 0.9s ease;
+	-ms-transition: all 0.9s ease;
+	-o-transition: all 0.9s ease;
+	transition: all 0.9s ease-in-out;
 }
 .galeria__img:hover {
-	transition: all 1ms ease-in-out;
 	object-fit: contain;
-	-webkit-transition: all 1ms ease-in-out;
-	-o-transition: all 1ms ease-in-out;
-	-moz-transition: all 1ms ease-in-out;
-	-ms-transition: all 1ms ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 .galeria__caption {
@@ -847,16 +851,16 @@ img {
 	margin: 0;
 	padding: 5px 0;
 	text-align: center;
-	border-radius: 0 0 5px 5px;
-	transition: all 0.6s ease;
-	-moz-transition: all 0.6s ease;
-	-o-transition: all 0.6s ease;
 	-webkit-border-radius: 0 0 5px 5px;
 	-moz-border-radius: 0 0 5px 5px;
 	-ms-border-radius: 0 0 5px 5px;
 	-o-border-radius: 0 0 5px 5px;
-	-webkit-transition: all 0.6s ease;
-	-ms-transition: all 0.6s ease;
+	border-radius: 0 0 5px 5px;
+	-webkit-transition: all 0.9s ease-in-out;
+	-ms-transition: all 0.9s ease-in-out;
+	-o-transition: all 0.9s ease-in-out;
+	-moz-transition: all 0.9s ease-in-out;
+	transition: all 0.9s ease-in-out;
 }
 .galeria__figure:hover .galeria__caption {
 	opacity: 1;
@@ -1153,22 +1157,22 @@ img {
 }
 
 .icon_redes:nth-child(1) {
-	background-image: url('/img/instagram.png');
+	background-image: url('/img/instagram.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .icon_redes:nth-child(2) {
-	background-image: url('/img/facebook.png');
+	background-image: url('/img/facebook.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .icon_redes:nth-child(3) {
-	background-image: url('/img/linkedin.png');
+	background-image: url('/img/linkedin.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .icon_redes:nth-child(4) {
-	background-image: url('/img/github.png');
+	background-image: url('/img/github.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -1181,7 +1185,7 @@ ion-icon:hover {
 	-webkit-filter: drop-shadow(0 0 0.2em #0074b7);
 }
 .icon_redes:nth-child(1):hover {
-	background-image: url('/img/instagramEfect.png');
+	background-image: url('/img/instagramEfect.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
@@ -1191,7 +1195,7 @@ ion-icon:hover {
 	-o-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
 }
 .icon_redes:nth-child(2):hover {
-	background-image: url('/img/facebookEfect.png');
+	background-image: url('/img/facebookEfect.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
@@ -1201,7 +1205,7 @@ ion-icon:hover {
 	-o-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
 }
 .icon_redes:nth-child(3):hover {
-	background-image: url('/img/linkedinEfect.png');
+	background-image: url('/img/linkedinEfect.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
@@ -1211,7 +1215,7 @@ ion-icon:hover {
 	-o-transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);
 }
 .icon_redes:nth-child(4):hover {
-	background-image: url('/img/githubEfect.png');
+	background-image: url('/img/githubEfect.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: all 3s cubic-bezier(0.03, 0.98, 0.52, 0.99);

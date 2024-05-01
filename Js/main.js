@@ -190,10 +190,10 @@ ScrollReveal({
 ScrollReveal().reveal('.nav, .logo ', { container: '.nav', delay: 100, origin: 'left', interval: 200 })
 ScrollReveal().reveal('.nav__lista__link ', { container: '.nav', delay: 300, origin: 'top', interval: 400, opacity: 1 })
 ScrollReveal().reveal('.saludo, .profecion', { delay: 250, origin: 'bottom', interval: 2500 })
-ScrollReveal().reveal('figure', { delay: 300, origin: 'right' })
+ScrollReveal().reveal('figure', { delay: 200, origin: 'right' })
 ScrollReveal().reveal('.inicio__nombre, .inicio__profecion, .text_Inicio', { delay: 400, origin: 'top', interval: 400 })
 ScrollReveal().reveal('.titulo, .subtitulos', { delay: 400, origin: 'bottom', interval: 1000 })
 ScrollReveal().reveal('.tab, .icon_redes', { delay: 200, origin: 'left', interval: 500 })
 ScrollReveal().reveal('.contenidoTabs, .parrafo_redes ', { delay: 400, origin: 'right' })
-ScrollReveal().reveal('.flexcard, .box', { delay: 400, origin: 'top', interval: 800 })
+ScrollReveal().reveal('.flexcard, .box', { delay: 100, origin: 'top', interval: 500 })
 
