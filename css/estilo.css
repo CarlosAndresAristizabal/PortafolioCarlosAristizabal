@@ -246,17 +246,17 @@ img {
 	width: 100%;
 }
 .checkbtn {
+	display: flex;
 	font-size: 2em;
 	color: white;
 	float: right;
 	line-height: 80%;
 	margin-right: 5%;
 	cursor: pointer;
-	display: none;
 	position: absolute;
-	display: flex;
 	flex-direction: row-reverse;
 	right: 0;
+	padding-top: 0.8rem;
 }
 #check {
 	display: none;
@@ -280,7 +280,7 @@ img {
 	flex-direction: column;
 	width: 100%;
 	gap: 1.5em;
-	/* padding-bottom: 4.73rem; */
+	padding-bottom: 4.73rem;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -349,8 +349,7 @@ figure {
 .img__Sobre {
 	display: flex;
 	margin: 0 auto;
-	max-width: 450px;
-	/* padding: 1rem 0; */
+	max-width: 350px;
 	-webkit-filter: drop-shadow(0 0 10px var(--colorHover));
 	filter: drop-shadow(0 0 10px var(--colorHover));
 	border-radius: 25px;
@@ -367,7 +366,9 @@ figure {
 	padding: 3% 5%;
 	text-align: left;
 }
-
+p .parrafo {
+	margin: 0 auto;
+}
 .containerTabs {
 	display: flex;
 	flex-direction: column;
@@ -1269,6 +1270,11 @@ ion-icon:hover {
 		background-color: transparent;
 		font-size: 1rem;
 		right: 3%;
+	}
+	.containernav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.activo {
