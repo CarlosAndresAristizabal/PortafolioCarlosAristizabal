@@ -35,7 +35,7 @@ const verificacion = (entries) => {
   })
 }
 
-const observer = new IntersectionObserver(verificacion, { rootMargin: "-65% 0px -35% 0px" })
+const observer = new IntersectionObserver(verificacion, { rootMargin: "-85% 0px -15% 0px" })
 
 const activaMenu = () => {
   activeMenu.forEach(item => {
@@ -90,7 +90,7 @@ document.addEventListener('click', e => {
     galeriaImg = []
     indexImg = 0
   }
-  e.stopPropagation()
+  // e.stopPropagation()
 })
 // creation of an arrow function for the section of the cards of the design projects through an object and using a template
 const pintarCardsDiseno = dataDiseno => {

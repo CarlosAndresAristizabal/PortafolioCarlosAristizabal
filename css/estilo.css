@@ -1,5 +1,4 @@
 :root {
-	/* --colorPrimario: #000; */
 	--colorSegundario: #fff;
 	--colorHover: #a0bdf7;
 	--colorSeleccion: #0074b7;
@@ -32,7 +31,8 @@ section .section {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	gap: 2em;
+	/* gap: 2em; */
+	padding: 4.3rem 0;
 	scroll-snap-type: y mandatory;
 }
 .container {
@@ -187,6 +187,7 @@ img {
 	justify-content: space-between;
 	background-color: #04324998;
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	font-size: 1.5em;
 	color: var(--colorSegundario);
 	font-weight: bold;
@@ -206,7 +207,7 @@ img {
 	width: 100%;
 	height: 100vh;
 	background-color: #2e2e2ef8;
-	top: -1000px;
+	top: -2000px;
 	text-align: center;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -279,7 +280,7 @@ img {
 	flex-direction: column;
 	width: 100%;
 	gap: 1.5em;
-	padding-top: 75px;
+	/* padding-bottom: 4.73rem; */
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -288,6 +289,7 @@ img {
 .textGrande {
 	font-size: 2em;
 }
+
 .inicio__nombre,
 .titulo,
 .subtitulos {
@@ -312,7 +314,7 @@ img {
 }
 .inicio__profecion {
 	padding: 3% 5%;
-	text-align: left;
+	text-align: center;
 	color: var(--colorSegundario);
 	font-size: 1em;
 	letter-spacing: 0.1em;
@@ -323,6 +325,12 @@ img {
 	-moz-border-radius: 15px;
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
+}
+
+.saludo {
+	font-size: 2rem;
+	color: white;
+	padding: 3rem 0 0 0;
 }
 .img_inicio {
 	display: flex;
@@ -335,15 +343,16 @@ img {
 	transform: scaleX(-1);
 }
 /*----------Section Sobre mi------------*/
-
+figure {
+	padding: 1.5rem 0;
+}
 .img__Sobre {
 	display: flex;
 	margin: 0 auto;
-	max-width: 250px;
+	max-width: 450px;
+	/* padding: 1rem 0; */
 	-webkit-filter: drop-shadow(0 0 10px var(--colorHover));
 	filter: drop-shadow(0 0 10px var(--colorHover));
-	/* padding: 3% 5%; */
-	border-image: 5px solid white;
 	border-radius: 25px;
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
@@ -366,27 +375,24 @@ img {
 	padding: 4em 1em;
 	width: 100%;
 }
-.cardtabs {
+/* .cardtabs {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
+} */
 
 .tab {
 	display: inline-block;
 	cursor: pointer;
-	padding: 1em 0.5em;
+	padding: 0.25rem 0.4rem;
 	color: white;
-	width: 100%;
 	background-color: #504a4a;
 	border-radius: 7px;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	-ms-border-radius: 7px;
 	-o-border-radius: 7px;
-	font-size: 0.65em;
-	letter-spacing: 0.1em;
 }
 
 .tab:hover {
@@ -394,11 +400,8 @@ img {
 	font-weight: bold;
 	background-color: var(--colorHover);
 	cursor: pointer;
-	font-size: 1em;
-	animation: all 1s ease-in;
-	-webkit-animation: all 1s ease-In;
-	text-align: center;
-	padding-top: 1em 0 0 0;
+	-webkit-animation: all 4s ease-in;
+	animation: all 4s ease-in;
 }
 .radio {
 	display: none;
@@ -476,7 +479,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 3.5em 1em;
+	gap: 2.3rem 0.3rem;
 	padding: 2.5em 0;
 }
 .tooltip {
@@ -530,6 +533,7 @@ img {
 	margin: 3px;
 	background-color: #ffffff56;
 	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(10px);
 	justify-content: center;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -579,6 +583,7 @@ img {
 	cursor: pointer;
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	border: 1px solid rgba (255, 255, 255, 0.5);
 	border-left: 1px solid rgba(255, 255, 255, 0.75);
 	border-top: 1px solid rgba(255, 255, 255, 0.75);
@@ -603,6 +608,7 @@ img {
 	-ms-transform: translateZ(20px);
 	-o-transform: translateZ(20px);
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	border: 1px solid rgba (255, 255, 255, 0.5);
 	border: 1px solid rgba(255, 255, 255, 0.75);
 	border: 1px solid rgba(255, 255, 255, 0.75);
@@ -748,6 +754,7 @@ img {
 	-o-border-radius: 6px;
 	overflow: hidden;
 	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(10px);
 }
 .modal__container__curso {
 	max-width: calc(100% - 2em);
@@ -887,6 +894,7 @@ img {
 	overflow-x: hidden;
 }
 .card {
+	height: fit-content;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -894,15 +902,14 @@ img {
 	align-items: center;
 	gap: 1em;
 	width: 250px;
-	height: fit-content;
 	padding: 2em 1em;
 	background-color: var(--colorSegundario);
 	border: 2px solid var(--colorHover);
-	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
+	border-radius: 10px;
 }
 .card:hover {
 	box-shadow: 0 0 25px #000000ad;
@@ -912,11 +919,11 @@ img {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	-ms-border-radius: 5px 5px 0 0;
 	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 }
 
 .cardTitulo .subtitulo {
@@ -956,7 +963,6 @@ img {
 	border: 3px solid #ffffff;
 	border-radius: 25px 25px 25px 25px;
 	box-shadow: 0px 2.5px 5.7px 0px #000000;
-	transition: all 0.3s;
 	margin-top: 1.2em;
 	letter-spacing: 0.02em;
 	cursor: pointer;
@@ -965,6 +971,7 @@ img {
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	font-family: var(--font-parrafo);
+	transition: all 0.3s;
 }
 .btnImagen:hover {
 	color: #fff;
@@ -974,11 +981,11 @@ img {
 		rgba(9, 9, 121, 1) 2%,
 		rgba(2, 0, 36, 1) 100%
 	);
-	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 /*---------------Sections de los Cursos Web------------------------*/
@@ -1003,12 +1010,12 @@ img {
 	padding: 1em;
 }
 .animeImgIn {
-	animation: imgCursoIn 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 	-webkit-animation: imgCursoIn 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+	animation: imgCursoIn 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .animeImgOut {
-	animation: imgCursoOut 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 	-webkit-animation: imgCursoOut 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+	animation: imgCursoOut 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .button-next,
 .button-prev {
@@ -1033,21 +1040,21 @@ img {
 .button-next {
 	right: 1%;
 	top: 50%;
-	transform: translate(50%, -50%);
 	-webkit-transform: translate(50%, -50%);
 	-moz-transform: translate(50%, -50%);
 	-ms-transform: translate(50%, -50%);
 	-o-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
 }
 
 .button-prev {
 	left: 1%;
 	top: 50%;
-	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 .button-next:hover,
 .button-prev:hover {
@@ -1057,65 +1064,65 @@ img {
 @-webkit-keyframes imgCursoOut {
 	100% {
 		-webkit-transform: translateX(0);
-		transform: translateX(0);
 		-moz-transform: translateX(0);
 		-ms-transform: translateX(0);
 		-o-transform: translateX(0);
+		transform: translateX(0);
 	}
 	0% {
 		-webkit-transform: translateX(100px);
-		transform: translateX(100px);
 		-moz-transform: translateX(100px);
 		-ms-transform: translateX(100px);
 		-o-transform: translateX(100px);
+		transform: translateX(100px);
 	}
 }
 @keyframes imgCursoOut {
 	100% {
 		-webkit-transform: translateX(0);
-		transform: translateX(0);
 		-moz-transform: translateX(0);
 		-ms-transform: translateX(0);
 		-o-transform: translateX(0);
+		transform: translateX(0);
 	}
 	0% {
-		-webkit-transform: translateX(100px);
-		transform: translateX(100px);
 		-moz-transform: translateX(100px);
 		-ms-transform: translateX(100px);
 		-o-transform: translateX(100px);
+		-webkit-transform: translateX(100px);
+		transform: translateX(100px);
 	}
 }
 @-webkit-keyframes imgCursoIn {
 	100% {
 		-webkit-transform: translateX(0);
-		transform: translateX(0);
 		-moz-transform: translateX(0);
 		-ms-transform: translateX(0);
 		-o-transform: translateX(0);
+		transform: translateX(0);
 	}
 	0% {
 		-webkit-transform: translateX(-100px);
-		transform: translateX(-100px);
 		-moz-transform: translateX(-100px);
 		-ms-transform: translateX(-100px);
 		-o-transform: translateX(-100px);
+		transform: translateX(-100px);
 	}
 }
 @keyframes imgCursoIn {
 	100% {
-		-webkit-transform: translateX(0);
-		transform: translateX(0);
 		-moz-transform: translateX(0);
 		-ms-transform: translateX(0);
 		-o-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
 	}
 	0% {
 		-webkit-transform: translateX(-100px);
-		transform: translateX(-100px);
 		-moz-transform: translateX(-100px);
 		-ms-transform: translateX(-100px);
 		-o-transform: translateX(-100px);
+		transform: translateX(-100px);
 	}
 }
 /*--------------section Redes sociales -------------*/
@@ -1148,11 +1155,11 @@ img {
 	align-items: center;
 	font-weight: bold;
 	text-shadow: 0 0 0.2em #000000;
-	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
+	border-radius: 5px;
 	padding: 0.5em;
 }
 
@@ -1260,22 +1267,8 @@ ion-icon:hover {
 		height: 50px;
 		top: 0px;
 		background-color: transparent;
-		font-size: 0.8em;
-		right: 5%;
-	}
-	.nav__lista__item {
-		float: right;
-		display: flex;
-		margin: 0;
-		right: 0;
-		background: transparent;
-	}
-	.nav__lista__link {
-		position: relative;
-		font-size: 1em;
-		padding: 7px 13px;
-		text-transform: uppercase;
-		color: var(--colorSegundario);
+		font-size: 1rem;
+		right: 3%;
 	}
 
 	.activo {
@@ -1294,26 +1287,27 @@ ion-icon:hover {
 
 	/*----------Section Inicio------------*/
 	.section__inicio {
-		display: flex;
 		flex-direction: column-reverse;
-		gap: 4em;
+		gap: 0;
 	}
 
 	.inicio__nombre,
 	.titulo {
 		font-size: 3.5rem;
 	}
-	.text_Inicio {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 2em;
+
+	figure {
+		padding: 0;
 	}
 	.inicio__profecion,
 	.profecion {
-		text-align: left;
-		font-size: 1.2em;
+		text-align: center;
+		font-size: 1.2rem;
 	}
+	.saludo {
+		text-align: left;
+	}
+
 	.profecion {
 		font-size: 2em;
 	}
@@ -1323,7 +1317,6 @@ ion-icon:hover {
 
 	.img_inicio {
 		width: 480px;
-		margin: 1em;
 	}
 	.union {
 		display: flex;
@@ -1332,13 +1325,20 @@ ion-icon:hover {
 	}
 	.img__Sobre {
 		max-width: 580px;
+		/* padding-bottom: 2rem; */
 	}
-
+	.subtitulos {
+		padding-top: 2rem;
+	}
+	.cardtabs {
+		width: 100%;
+	}
 	.tab {
-		font-size: 1em;
+		padding: 0.2rem 1rem;
+		font-size: 1.2rem;
 	}
 	.tab:hover {
-		font-size: 1.5em;
+		font-size: 1.2rem;
 	}
 	#tab-1:checked ~ .cardtabs #tab1,
 	#tab-2:checked ~ .cardtabs #tab2,
@@ -1347,14 +1347,10 @@ ion-icon:hover {
 	#tab-5:checked ~ .cardtabs #tab5,
 	#tab-6:checked ~ .cardtabs #tab6,
 	#tab-7:checked ~ .cardtabs #tab7 {
-		letter-spacing: 0.01em;
-		font-size: 1.5em;
+		letter-spacing: 0.02rem;
+		font-size: 1.3rem;
 	}
-	/*-----------section Portafolio----------------*/
-	.flexcard {
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
+
 	/* --------------modal------------ */
 
 	.galeria {
@@ -1383,6 +1379,22 @@ ion-icon:hover {
 	.slider__content__img img {
 		padding: 0;
 	}
+	/*---------------- Redes---------- */
+
+	.secion__icon_redes,
+	.flexcard {
+		width: 100%;
+		padding: 2rem 0;
+		gap: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1.3rem;
+	}
+	.icon_redes {
+		font-size: 2.3rem;
+		/* padding: 1rem 0; */
+	}
+
 	/*-------Footer-------*/
 	.footer {
 		margin-bottom: 0;
@@ -1399,14 +1411,22 @@ ion-icon:hover {
 		text-align: left;
 		margin: 0;
 		align-items: center;
-		font-size: 1.3em;
+		font-size: 1em;
 		color: white;
 	}
 }
 
 @media screen and (min-width: 1024px) {
+	.containernav {
+		display: flex;
+		width: 84rem;
+		margin: 0 auto;
+	}
+	.container {
+		width: calc(1024px - 2rem);
+	}
 	.section {
-		padding-top: 14%;
+		padding-top: 5rem;
 	}
 	/*------------inicio------------*/
 	.img_inicio {
@@ -1439,15 +1459,25 @@ ion-icon:hover {
 	.img__Sobre {
 		max-width: 400px;
 	}
-
+	.cardtabs {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	/*----------proyectos weds------------*/
 
+	.modal__container,
+	.modal__container__curso {
+		width: 1424px;
+	}
 	.card {
-		width: 300px;
+		width: 350px;
+		aspect-ratio: 3/4;
 	}
 	/*----------------Curso Weds------------*/
 	.modal__container__curso {
-		width: calc(80% - 1em);
+		width: calc(60% - 1em);
 		height: calc(80% - 3em);
 	}
 	.slider-container {
@@ -1460,17 +1490,5 @@ ion-icon:hover {
 	/*-----------Redes Sociales---------------*/
 	.section__redes {
 		padding-bottom: 10%;
-	}
-	.section__icon_redes {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
-	.icon_redes {
-		width: 255px;
-		object-fit: cover;
 	}
 }

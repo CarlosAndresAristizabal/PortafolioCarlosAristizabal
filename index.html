@@ -22,35 +22,37 @@
 <body>
   <!----------------- menú de navegación ------------------------->
   <nav class="nav">
-    <input type="checkbox" name="hambuguer" id="check">
-    <label for="check" class="checkbtn"><ion-icon name="grid-outline" size="large"></ion-icon></label>
-    <a href="#" class="logo">Portafolio</a>
-    <ul class="nav__lista " id="navegacion__lista">
-      <li class="nav__lista__item  ">
-        <a href="#inicio" class="nav__lista__link inicio activo">
-          <span class="iconMenu"><ion-icon name="home-outline"></ion-icon></span>
-          <span class="tituloMenu">Inicio</span>
-        </a>
-      </li>
-      <li class="nav__lista__item">
-        <a href="#acercaDeMi" class="nav__lista__link acerca">
-          <span class="iconMenu"><ion-icon name="person-outline"></ion-icon></span>
-          <span class="tituloMenu">Sobre mi</span>
-        </a>
-      </li>
-      <li class="nav__lista__item">
-        <a href="#portafolio" class="nav__lista__link portafolio">
-          <span class="iconMenu"><ion-icon name="briefcase-outline"></ion-icon></span>
-          <span class="tituloMenu">Proyectos</span>
-        </a>
-      </li>
-      <li class="nav__lista__item">
-        <a href="#contacto" class="nav__lista__link contacto">
-          <span class="iconMenu"><ion-icon name="call-outline"></ion-icon></span>
-          <span class="tituloMenu">Contacto</span>
-        </a>
-      </li>
-    </ul>
+    <div class="containernav">
+      <input type="checkbox" name="hambuguer" id="check">
+      <label for="check" class="checkbtn"><ion-icon name="grid-outline" size="large"></ion-icon></label>
+      <a href="#" class="logo">Portafolio</a>
+      <ul class="nav__lista " id="navegacion__lista">
+        <li class="nav__lista__item  ">
+          <a href="#inicio" class="nav__lista__link inicio activo">
+            <span class="iconMenu"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="tituloMenu">Inicio</span>
+          </a>
+        </li>
+        <li class="nav__lista__item">
+          <a href="#acercaDeMi" class="nav__lista__link acerca">
+            <span class="iconMenu"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="tituloMenu">Sobre mi</span>
+          </a>
+        </li>
+        <li class="nav__lista__item">
+          <a href="#portafolio" class="nav__lista__link portafolio">
+            <span class="iconMenu"><ion-icon name="briefcase-outline"></ion-icon></span>
+            <span class="tituloMenu">Proyectos</span>
+          </a>
+        </li>
+        <li class="nav__lista__item">
+          <a href="#contacto" class="nav__lista__link contacto">
+            <span class="iconMenu"><ion-icon name="call-outline"></ion-icon></span>
+            <span class="tituloMenu">Contacto</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <!--------------- sección de inicio --------------------->
@@ -62,7 +64,7 @@
           <img loading="lazy" class="img_inicio lazyload lazyloading" data-src="./img/yo.webp" alt="imagen mia " />
         </figure>
         <div class="text_Inicio">
-          <div class="fondo__animado ">
+          <!-- <div class="fondo__animado ">
             <div class="fondo__cubo iconHtml "></div>
             <div class="fondo__cubo javaScript"></div>
             <div class="fondo__cubo java"></div>
@@ -71,8 +73,8 @@
             <div class="fondo__cubo gitHub"></div>
             <div class="fondo__cubo bootstrap"></div>
             <div class="fondo__cubo mySql"></div>
-          </div>
-          <h1 class="profecion parrafo saludo" style="font-size: 2em">Hola! Mi nombre es</h1>
+          </div> -->
+          <h1 class="profecion parrafo saludo">Hola! Mi nombre es</h1>
           <h1 class="inicio__nombre ">Carlos Andres Aristizabal Kenguan</h1>
           <h3 class="profecion ">Desarrollador Full Stack</h3>
           <div class="inicio__profecion">
@@ -135,17 +137,11 @@
           <input class="radio" id="tab-2" name="tabsCard" type="radio" />
           <input class="radio" id="tab-3" name="tabsCard" type="radio" />
           <input class="radio" id="tab-4" name="tabsCard" type="radio" />
-          <input class="radio" id="tab-5" name="tabsCard" type="radio" />
-          <input class="radio" id="tab-6" name="tabsCard" type="radio" />
-          <input class="radio" id="tab-7" name="tabsCard" type="radio" />
           <section class="cardtabs">
             <label for="tab-1" id="tab1" class="tab ">FrontEnd</label>
             <label for="tab-2" id="tab2" class="tab ">BackEnd</label>
-            <label for="tab-3" id="tab3" class="tab ">BD</label>
-            <label for="tab-4" id="tab4" class="tab ">Apis</label>
-            <label for="tab-5" id="tab5" class="tab ">Version</label>
-            <label for="tab-6" id="tab6" class="tab ">CI/CD</label>
-            <label for="tab-7" id="tab7" class="tab ">Diseño</label>
+            <label for="tab-3" id="tab3" class="tab ">BD, API's, CI/CD y VCS</label>
+            <label for="tab-4" id="tab4" class="tab ">Diseño</label>
           </section>
           <div class="contenidoTabs">
             <div id="content-1" class="itemTabs">
@@ -278,8 +274,16 @@
             </section>
             <section id="content-3" class="itemTabs">
               <p class="parrafo">
-                <span class="item">Base de datos:</span> Profundo conocimiento en el diseño y optimización
-                de bases de datos relacionales (Mysql, Postgresql) y no relacionales (MongoDB).
+                <span class="item">Base de datos, API's, CI/CD y sistema de control de versiones:</span> Profundo
+                conocimiento en
+                el diseño y optimización
+                de bases de datos relacionales (Mysql, Postgresql) y no relacionales (MongoDB), creación y consumo de
+                Apis Restfull, diseño y documentación
+                con Swagger ⁄ OpenApi, además Experiencia en implementación y
+                administración
+                de servidores utilizando Docker y orquestación con Github Actions y Jenkins, conocimientos
+                en AWS y Uso experto de sistemas de control de
+                versiones como Git, Github.
               </p>
               <div class="contenedorIconos">
                 <a href="https://www.mysql.com/" target="_blank">
@@ -296,14 +300,6 @@
                     <span class="tiptext">MongoDB</span>
                   </div>
                 </a>
-              </div>
-            </section>
-            <section id="content-4" class="itemTabs">
-              <p class="parrafo">
-                <span class="item">Apis:</span> Creación y consumo de Apis Restfull, diseño y documentación
-                con Swagger ⁄ OpenApi.
-              </p>
-              <div class="contenedorIconos">
                 <a href="https://swagger.io/" target="_blank">
                   <div class="tooltip top ">
                     <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/Swagger.webp"
@@ -311,33 +307,6 @@
                     <span class="tiptext">Swagger</span>
                   </div>
                 </a>
-
-              </div>
-            </section>
-            <section id="content-5" class="itemTabs">
-              <p class="parrafo">
-                <span class="item">Control de versiones:</span> Uso experto de sistemas de control de
-                versiones como Git, Github.
-              </p>
-              <div class="contenedorIconos">
-                <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/Tools_and_setup/Using_Github_pages"
-                  target="_blank">
-                  <div class="tooltip top ">
-                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/github.webp"
-                      alt="github" name="github">
-                    <span class="tiptext">GitHub</span>
-                  </div>
-                </a>
-              </div>
-            </section>
-            <section id="content-6" class="itemTabs">
-              <p class="parrafo">
-                <span class="item">Despliegue y gestión:</span> Experiencia en implementación y
-                administración
-                de servidores utilizando Docker y orquestación con Github Actions y Jenkins, conocimientos
-                en AWS.
-              </p>
-              <div class="contenedorIconos">
                 <a href="https://www.docker.com" target="_blank">
                   <div class="tooltip top ">
                     <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/Docker.webp"
@@ -366,9 +335,17 @@
                     <span class="tiptext">AWS</span>
                   </div>
                 </a>
+                <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/Tools_and_setup/Using_Github_pages"
+                  target="_blank">
+                  <div class="tooltip top ">
+                    <img loading="lazy" class="icons__img  lazyload lazyloading" data-src="/img/programas/github.webp"
+                      alt="github" name="github">
+                    <span class="tiptext">GitHub</span>
+                  </div>
+                </a>
               </div>
             </section>
-            <section id="content-7" class="itemTabs">
+            <section id="content-4" class="itemTabs">
               <p class="parrafo">
                 <span class="item">Diseño:</span> Imágenes digitales de publicidad y en 3D usando estas
                 tecnologías
